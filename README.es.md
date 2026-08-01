@@ -21,6 +21,15 @@ prospecto (PDF/MD)   ──paso 2──▶  texto limpio
                                  paso 4 ──▶  prospecto adecuado (JSON/TXT/DOCX)
 ```
 
+![Una corrida completa, del prospecto al informe y al documento adecuado](documentacion/media/corrida-completa.gif)
+
+<sub>Una corrida real sobre el prospecto de ejemplo, acelerada. 15 disposiciones
+clasificadas, 4 aplicables, **85 reglas verificadas a una llamada al modelo cada una** —
+29 cumplidas, 33 incumplidas, 17 que no se pueden decidir sin información externa.
+**101 llamadas, 6 min 32 s, US$ 0,23**, con el 81,5% de los tokens de entrada servidos
+desde el caché (US$ 0,15 ahorrados). Son los números de la propia corrida, leídos de la
+API e impresos al final de cada ejecución.</sub>
+
 ## Pharma es el primer dominio, no el único
 
 El problema que resuelve no es exclusivo de los prospectos. Es la forma que comparte

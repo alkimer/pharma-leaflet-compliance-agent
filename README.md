@@ -32,9 +32,17 @@ leaflet (PDF/MD)  ──step 2──▶  clean text
                                step 5 ──▶  final verification with Claude (optional)
 ```
 
-Every run is fully traceable: 15 regulations, ~200 rules, one model call per rule, each
+Every run is fully traceable: 15 regulations, 300 rules, one model call per rule, each
 verdict carrying the evidence snippet that justifies it — and a token/cost report at the
 end telling you exactly what the run cost and how much the prompt cache saved.
+
+![A full run, from the leaflet to the compliance report and the adequated document](documentacion/media/corrida-completa.gif)
+
+<sub>A real run on the sample leaflet, sped up. 15 dispositions classified, 4 of them
+applicable, **85 rules verified one model call at a time** — 29 met, 33 not met, 17 that
+cannot be decided without external information. **101 model calls, 6 min 32 s, US$ 0.23**,
+with 81.5% of the input tokens served from the prompt cache (US$ 0.15 saved). Those are
+the run's own numbers, read from the API and printed at the end of every run.</sub>
 
 ---
 
