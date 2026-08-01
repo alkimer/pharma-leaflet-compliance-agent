@@ -1,0 +1,154 @@
+﻿{
+    "disposition_id":  "ANMAT_1210_1999",
+    "title":  "Información que deberán incluir en sus prospectos los laboratorios titulares de especialidades medicinales con SILDENAFIL",
+    "source_type":  "DISPOSICIÓN",
+    "sale_condition":  null,
+    "dosage_form":  null,
+    "route_of_administration":  null,
+    "active_substances":  [
+                              "SILDENAFIL"
+                          ],
+    "contains_alcohol":  null,
+    "objective":  "Establecer la incorporación obligatoria, en los prospectos de especialidades medicinales que contengan SILDENAFIL, de información de seguridad (contraindicaciones, advertencias y precauciones/interacciones) incluida en el ANEXO I y el trámite de presentación para su registro.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Asegurar que los prospectos de especialidades medicinales que contengan como principio activo SILDENAFIL incluyan la información del ANEXO I.",
+                      "verification_procedure":  "Confirmar que el producto contiene SILDENAFIL. Revisar el prospecto vigente/aprobado y verificar que incorpora la información de CONTRAINDICACIONES, ADVERTENCIAS y PRECAUCIONES–Interacciones Medicamentosas incluida en el ANEXO I (contenido completo).",
+                      "acceptance_criteria":  "Para productos con SILDENAFIL, el prospecto contiene la información incluida en el ANEXO I (contraindicaciones, advertencias y precauciones/interacciones), sin omisiones de los ítems consignados.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Incluir en CONTRAINDICACIONES la información sobre ausencia de intervalo de seguridad para administración de nitratos luego de la ingesta de SILDENAFIL.",
+                      "verification_procedure":  "Buscar la sección \u0027CONTRAINDICACIONES\u0027 del prospecto y verificar la presencia del enunciado sobre el intervalo de seguridad para nitratos post-ingesta de SILDENAFIL.",
+                      "acceptance_criteria":  "La sección \u0027CONTRAINDICACIONES\u0027 del prospecto incluye el enunciado requerido sobre nitratos.",
+                      "must_include_phrases":  [
+                                                   "No se ha establecido el intervalo de seguridad para la administración de nitratos en caso de necesidad luego de la ingesta de SILDENAFIL."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Incluir en CONTRAINDICACIONES la recomendación de especial precaución para los casos enumerados (edad, insuficiencia hepática/renal e inhibidores potentes de CYP3A4) con la explicación farmacocinética consignada.",
+                      "verification_procedure":  "En la sección \u0027CONTRAINDICACIONES\u0027 del prospecto, verificar que se consigne la recomendación de especial precaución y que se enumeren los casos indicados (edad \u003e65, insuficiencia hepática, insuficiencia renal severa con el umbral de clearance, y tratamiento concomitante con inhibidores potentes del citocromo P450 3 A4 incluyendo los ejemplos), junto con la explicación de aumento de niveles plasmáticos.",
+                      "acceptance_criteria":  "La sección \u0027CONTRAINDICACIONES\u0027 incluye la recomendación de especial precaución con la enumeración completa de casos y la explicación farmacocinética indicada en el ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "Se recomienda especial precaución en los siguientes casos: edad mayor de 65 años, insuficiencia hepática (por ejemplo, cirrosis), insuficiencia renal severa (clearance de creatina \u003c30 ml./minuto), tratamiento concomitante con medicamentos inhibidores potentes del citocromo P450 3 A4 (eritromicina, ketoconazol, itraconazol) pues el perfil farmacocinético y los niveles plasmáticos de Sildenafil hallados en tales pacientes han sido 3 a 8 veces mayores que en los voluntarios sanos a las 24 horas de la administración de la dosis."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Incluir en ADVERTENCIAS la advertencia de riesgo asociado a actividad sexual en pacientes con enfermedad cardiovascular subyacente.",
+                      "verification_procedure":  "Buscar en la sección \u0027ADVERTENCIAS\u0027 del prospecto el ítem \u0027Riesgo de actividad sexual\u0027 y verificar el texto indicado.",
+                      "acceptance_criteria":  "La sección \u0027ADVERTENCIAS\u0027 incluye la advertencia \u0027Riesgo de actividad sexual\u0027 conforme al ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "Riesgo de actividad sexual: SILDENAFIL no debe ser empleado en pacientes en los cuales no es recomendable la actividad sexual por presentar enfermedad cardiovascular subyacente."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Incluir en ADVERTENCIAS la advertencia sobre efectos vasodilatadores y disminución transitoria de la presión arterial con potencial efecto adverso en enfermedad cardiovascular, especialmente combinada con actividad sexual.",
+                      "verification_procedure":  "Buscar en la sección \u0027ADVERTENCIAS\u0027 del prospecto el ítem \u0027Efectos vasodilatadores\u0027 y verificar que el texto describa el efecto vasodilatador sistémico, la disminución transitoria de la presión arterial y el riesgo potencial en pacientes con enfermedad cardiovascular, más aún combinado con actividad sexual.",
+                      "acceptance_criteria":  "La sección \u0027ADVERTENCIAS\u0027 contiene el ítem \u0027Efectos vasodilatadores\u0027 con el contenido requerido por ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "Efectos vasodilatadores: SILDENAFIL tiene efecto vasodilatador sistémico que produce disminución transitoria de la presión arterial. Este efecto, de escasas consecuencias en la mayoría de los pacientes en condiciones normales, puede afectar adversamente a pacientes con enfermedad cardiovascular, más aún si la vasodilatación provocada se combina con actividad sexual."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  6,
+                      "objective":  "Incluir en ADVERTENCIAS la declaración de ausencia de datos de ensayos clínicos controlados y la indicación de prescribir con extrema precaución en los grupos de pacientes enumerados.",
+                      "verification_procedure":  "Verificar en la sección \u0027ADVERTENCIAS\u0027 del prospecto el ítem \u0027Pacientes no estudiados en ensayos clínicos\u0027 y confirmar que lista los grupos (a a d) y la indicación de prescribir con extrema precaución.",
+                      "acceptance_criteria":  "La sección \u0027ADVERTENCIAS\u0027 incluye el ítem \u0027Pacientes no estudiados en ensayos clínicos\u0027 y enumera los grupos a-d del ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "Pacientes no estudiados en ensayos clínicos: no existen datos de ensayos clínicos controlados que indiquen la seguridad o eficacia del Sildenafil en los siguientes",
+                                                   "a) pacientes que hayan sufrido infarto de miocardio, accidente cerebrovascular o arritmia severa en los últimos 6 meses.",
+                                                   "b) pacientes con hipotensión (presión arterial \u003c90/50 mmg. o hipertensión arterial \u003e170/100.",
+                                                   "c) pacientes con historia de insuficiencia cardíaca o enfermedad coronaría causal de angina inestable.",
+                                                   "d) pacientes con retinitis pigmentosa (una pequeña proporción de estos pacientes presenta alteraciones genéticas de las fosfodiesterasas de la retina) y enfermedades ocular."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  7,
+                      "objective":  "Incluir en ADVERTENCIAS la advertencia sobre priapismo/erecciones prolongadas y la conducta de consulta médica inmediata si la erección dura más de 4 horas, indicando el riesgo de daño tisular y pérdida permanente.",
+                      "verification_procedure":  "Buscar el ítem \u0027Priapismo\u0027 en la sección \u0027ADVERTENCIAS\u0027 del prospecto y verificar que incluya la descripción de erecciones prolongadas/priapismo, el umbral de 4 horas para consulta médica inmediata y la consecuencia de daño tisular/pérdida permanente.",
+                      "acceptance_criteria":  "La sección \u0027ADVERTENCIAS\u0027 incluye el ítem \u0027Priapismo\u0027 con el contenido requerido, incluyendo el umbral de 4 horas para consulta inmediata y la advertencia de daño tisular/pérdida permanente.",
+                      "must_include_phrases":  [
+                                                   "Priapismo: raramente se han informado erecciones prolongadas de más de cuatro horas de duración y priapismo (erecciones dolorosas de más de seis horas de duración) con el uso de sildenafil.",
+                                                   "En caso de producirse una erección con duración mayor a 4 horas debe efectuarse una consulta médica inmediata.",
+                                                   "Si esta situación no es tratada inmediatamente puede sobrevenir daño tisular del pene y pérdida permanente de la potencia sexual."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  8,
+                      "objective":  "Incluir en PRECAUCIONES–Interacciones Medicamentosas la información sobre reducción del clearance de Sildenafil con ketoconazol e itraconazol.",
+                      "verification_procedure":  "Revisar la sección \u0027PRECAUCIONES - Interacciones Medicamentosas\u0027 del prospecto y verificar la presencia del enunciado sobre reducción del clearance cuando se asocia con ketoconazol e itraconazol.",
+                      "acceptance_criteria":  "La sección \u0027PRECAUCIONES - Interacciones Medicamentosas\u0027 incluye el enunciado sobre reducción del clearance con ketoconazol e itraconazol.",
+                      "must_include_phrases":  [
+                                                   "Algunos datos de ensayos clínicos indican una reducción del clearance de Sildenafil cuando se asocia con ketoconazol e itraconazol."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  9,
+                      "objective":  "Incluir en PRECAUCIONES–Interacciones Medicamentosas la información sobre descenso adicional de la presión arterial con el uso concomitante de amlodipina y Sildenafil 100 mg en pacientes hipertensos.",
+                      "verification_procedure":  "Revisar la sección \u0027PRECAUCIONES - Interacciones Medicamentosas\u0027 del prospecto y verificar la presencia del enunciado sobre descenso adicional de presión arterial en hipertensos tratados con amlodipina (5 ó 10 mg.) y Sildenafil 100 mg.",
+                      "acceptance_criteria":  "La sección \u0027PRECAUCIONES - Interacciones Medicamentosas\u0027 incluye el enunciado sobre descenso adicional de la presión arterial con amlodipina y Sildenafil 100 mg.",
+                      "must_include_phrases":  [
+                                                   "Se ha informado un descenso adicional de la presión arterial en pacientes hipertensos tratados concomitantemente con amlodipina (5 ó 10 mg.) y Sildenafil 100 mg."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  10,
+                      "objective":  "Presentar un expediente para el registro de la información incorporada en prospectos, conforme a la Disposición ANMAT N° 3855/98, para especialidades medicinales con SILDENAFIL.",
+                      "verification_procedure":  "Confirmar que el producto contiene SILDENAFIL y que se incorporó la información del ANEXO I en el prospecto. Verificar en el legajo/expediente regulatorio que el titular presentó un expediente para el registro de la información conforme la normativa de la Disposición ANMAT N° 3855/98.",
+                      "acceptance_criteria":  "Existe un expediente presentado por el titular, acorde con la Disposición ANMAT N° 3855/98, para registrar la información exigida por el Art. 1.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+
+                                           ]
+                  }
+              ]
+}

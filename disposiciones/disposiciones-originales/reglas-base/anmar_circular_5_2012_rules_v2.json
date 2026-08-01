@@ -1,0 +1,42 @@
+﻿{
+    "disposition_id":  "ANMAT_CIRCULAR_005_2012",
+    "title":  "CIRCULAR Nº 0005/2012 - Forma de expresión de los excipientes en los rótulos y prospectos. Documentación a presentar en primer lote",
+    "source_type":  "CIRCULAR",
+    "sale_condition":  null,
+    "dosage_form":  null,
+    "route_of_administration":  null,
+    "active_substances":  null,
+    "contains_alcohol":  null,
+    "objective":  "Establecer que, en los rótulos del envase secundario y en los prospectos de especialidades medicinales, los titulares del registro pueden optar por detallar o no las cantidades de los excipientes, y disponer que el acto dispositivo de autorización de comercialización del primer lote incluya un anexo con las artes aprobadas.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Verificar que la presencia o ausencia de cantidades de excipientes en el rótulo del envase secundario y/o prospecto no sea considerada incumplimiento por sí misma.",
+                      "verification_procedure":  "Revisar el rótulo del envase secundario y el prospecto. Identificar si se listan excipientes y si se consignan o no sus cantidades. No marcar incumplimiento por la sola ausencia de cantidades de excipientes.",
+                      "acceptance_criteria":  "Se considera conforme tanto que los excipientes estén declarados con cantidades como que estén declarados sin cantidades.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Circular Nº 0005/2012",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Verificar que el acto dispositivo de autorización de comercialización del primer lote incluya un anexo con las artes aprobadas.",
+                      "verification_procedure":  "Revisar el acto dispositivo correspondiente a la autorización de comercialización del primer lote. Confirmar la existencia de un anexo y verificar que dicho anexo incluya las artes aprobadas.",
+                      "acceptance_criteria":  "El acto dispositivo de autorización de comercialización del primer lote contiene un anexo con las artes aprobadas.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Circular Nº 0005/2012",
+                      "attach_reference":  [
+
+                                           ]
+                  }
+              ]
+}

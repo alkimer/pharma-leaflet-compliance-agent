@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prospectos · ANMAT</title>
+<style>
+  /* -------------------------------------------------------------------------
+     Light view: the bare minimum, with the process always in sight.
+     ---------------------------------------------------------------------- */
+  :root {
+    --bg: #fbfbfd;
+    --card: #ffffff;
+    --ink: #1d1d1f;
+    --ink-2: #6e6e73;
+    --ink-3: #a1a1a6;
+    --line: #e8e8ed;
+    --accent: #0071e3;
+    --ok: #1d9a5b;
+    --warn: #b26a00;
+    --err: #d0342c;
+    --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Inter, system-ui, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --radius: 16px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main { max-width: 720px; margin: 0 auto; padding: 72px 24px 96px; }
+  @media (max-width: 600px) { main { padding: 40px 18px 64px; } }
+
+  /* ------------------------------------------------------------- header */
+  header { margin-bottom: 44px; }
+  h1 {
+    margin: 0; font-size: 34px; line-height: 1.15;
+    font-weight: 600; letter-spacing: -.02em;
+  }
+  .lede { margin: 8px 0 0; color: var(--ink-2); font-size: 17px; }
+
+  .switch {
+    display: inline-block; margin-top: 18px; font-size: 13px;
+    color: var(--accent); text-decoration: none;
+  }
+  .switch:hover { text-decoration: underline; }
+
+  /* ------------------------------------------------------ language switch */
+  .lang { position: absolute; top: 0; right: 0; display: inline-flex; gap: 2px; }
+  .lang .flag {
+    padding: 3px 6px; font-size: 15px; line-height: 1.1; cursor: pointer;
+    background: none; border: 1px solid transparent; border-radius: 8px;
+    opacity: .35; filter: grayscale(1); transition: opacity .2s, filter .2s, border-color .2s;
+  }
+  .lang .flag:hover { opacity: .8; filter: grayscale(.2); }
+  .lang .flag[data-active="true"] { opacity: 1; filter: none; border-color: var(--line); }
+  header { position: relative; }
+
+  /* --------------------------------------------------------------- cards */
+  section, details.card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 26px 28px; margin-bottom: 18px;
+  }
+  @media (max-width: 600px) { section, details.card { padding: 20px; } }
+
+  h2 {
+    margin: 0 0 18px; font-size: 13px; font-weight: 600;
+    letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3);
+  }
+
+  /* -------------------------------------- notice: base rules are missing */
+  .aviso {
+    padding: 18px 20px; margin-bottom: 22px;
+    background: #f5f5f7; border-radius: 12px;
+  }
+  .aviso-rot { font-size: 15px; font-weight: 500; }
+  .aviso-txt { margin: 6px 0 14px; font-size: 13.5px; color: var(--ink-2); }
+
+  button.secundario {
+    padding: 9px 18px; font-family: var(--sans); font-size: 14px; font-weight: 500;
+    color: #fff; background: var(--ink); border: 0; border-radius: 999px; cursor: pointer;
+  }
+  button.secundario:hover:not(:disabled) { background: #000; }
+  button.secundario:disabled { background: #d2d2d7; cursor: default; }
+
+  /* The leaflet cannot be chosen until the rules exist. */
+  .apagado { opacity: .4; pointer-events: none; }
+
+  /* ------------------------------------------------------------- fields */
+  .campo { margin-bottom: 16px; }
+  .campo:last-child { margin-bottom: 0; }
+  .campo > span.lbl {
+    display: block; margin-bottom: 6px; font-size: 13px; color: var(--ink-2);
+  }
+
+  select {
+    width: 100%; padding: 11px 14px; font-family: var(--sans); font-size: 15px;
+    color: var(--ink); background: #fff; border: 1px solid var(--line);
+    border-radius: 10px; appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' fill='none' stroke='%236e6e73' stroke-width='1.6'/></svg>");
+    background-repeat: no-repeat; background-position: right 14px center;
+  }
+  select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,113,227,.14); }
+
+  .subir { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
+  .subir label {
+    padding: 8px 16px; font-size: 13px; color: var(--ink);
+    background: #f5f5f7; border-radius: 999px; cursor: pointer;
+  }
+  .subir label:hover { background: #ececf0; }
+  .subir .nombre { font-size: 13px; color: var(--ink-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .subir button.quitar { border: 0; background: none; color: var(--ink-3); cursor: pointer; font-size: 15px; padding: 0 4px; }
+  .subir button.quitar:hover { color: var(--err); }
+
+  .check { display: flex; align-items: center; gap: 9px; margin-top: 16px; font-size: 14px; color: var(--ink-2); }
+  .check input { accent-color: var(--accent); width: 16px; height: 16px; }
+  .check input:disabled + label { opacity: .5; }
+  .nota { margin-top: 6px; font-size: 12.5px; line-height: 1.5; color: var(--ink-3); }
+
+  /* Rules folder: fixed, not a choice. Same shape as the fields around it, but
+     it is plain text and nothing to click. */
+  .fijo {
+    width: 100%; padding: 11px 14px; font-size: 14px; color: var(--ink-2);
+    background: #f5f5f7; border: 1px solid var(--line); border-radius: 10px;
+  }
+
+  button.primary {
+    width: 100%; margin-top: 24px; padding: 13px;
+    font-family: var(--sans); font-size: 16px; font-weight: 500;
+    color: #fff; background: var(--accent); border: 0; border-radius: 999px;
+    cursor: pointer; transition: background .18s, opacity .18s;
+  }
+  button.primary:hover:not(:disabled) { background: #0077ed; }
+  button.primary:disabled { background: #d2d2d7; cursor: default; }
+
+  /* ------------------------------------------------------------ process */
+  .proceso-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 22px; }
+  .proceso-head h2 { margin: 0; }
+  .flex { flex: 1; }
+  .reloj { font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  button.detener {
+    border: 0; background: none; padding: 0; cursor: pointer;
+    font-family: var(--sans); font-size: 13px; color: var(--err);
+  }
+  button.detener:disabled { color: var(--ink-3); cursor: default; opacity: .5; }
+
+  .pasos { list-style: none; margin: 0; padding: 0; }
+  .paso {
+    position: relative; display: flex; gap: 16px;
+    padding-bottom: 22px;
+  }
+  .paso:last-child { padding-bottom: 0; }
+  /* line joining the steps: the workflow reads at a glance */
+  .paso:not(:last-child)::before {
+    content: ""; position: absolute; left: 10px; top: 24px; bottom: 2px;
+    width: 1.5px; background: var(--line);
+  }
+  .paso[data-state="done"]:not(:last-child)::before { background: #cfe6fb; }
+
+  .marca {
+    position: relative; z-index: 1; flex: 0 0 21px; height: 21px; margin-top: 1px;
+    border-radius: 50%; border: 1.5px solid var(--line); background: #fff;
+    display: grid; place-items: center;
+    transition: border-color .25s, background .25s;
+  }
+  .marca svg { display: none; }
+
+  .paso[data-state="running"] .marca { border-color: var(--accent); border-top-color: transparent; animation: girar .8s linear infinite; }
+  @keyframes girar { to { transform: rotate(360deg); } }
+
+  .paso[data-state="done"] .marca { border-color: var(--accent); background: var(--accent); }
+  .paso[data-state="done"] .marca svg { display: block; stroke: #fff; }
+
+  .paso[data-state="error"] .marca { border-color: var(--err); background: var(--err); }
+  .paso[data-state="error"] .marca::after { content: "!"; color: #fff; font-size: 12px; font-weight: 600; }
+
+  .paso[data-state="cancelado"] .marca { border-color: var(--warn); background: var(--warn); }
+  .paso[data-state="cancelado"] .marca::after { content: "×"; color: #fff; font-size: 13px; }
+
+  .cuerpo { min-width: 0; flex: 1; padding-top: 0; }
+  .paso .rot { font-size: 15px; color: var(--ink-3); transition: color .25s; }
+  .paso[data-state="running"] .rot { color: var(--ink); font-weight: 500; }
+  .paso[data-state="done"] .rot,
+  .paso[data-state="error"] .rot,
+  .paso[data-state="cancelado"] .rot { color: var(--ink); }
+
+  .paso .nota {
+    margin-top: 3px; font-size: 13px; color: var(--ink-3);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .paso[data-state="idle"] .nota { display: none; }
+
+  .barra { margin-top: 9px; height: 3px; border-radius: 2px; background: var(--line); overflow: hidden; display: none; }
+  .paso[data-state="running"] .barra { display: block; }
+  .barra > i { display: block; height: 100%; width: 0; background: var(--accent); border-radius: 2px; transition: width .3s ease; }
+
+  .dur { flex: 0 0 auto; font-size: 12px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+  .cierre { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; }
+  .cierre.ok { color: var(--ok); }
+  .cierre.warn { color: var(--warn); }
+  .cierre.err { color: var(--err); }
+
+  /* ------------------------------------------------------------ results */
+  .archivos { display: grid; gap: 10px; }
+  .archivo {
+    display: flex; align-items: center; gap: 14px; padding: 16px 18px;
+    border: 1px solid var(--line); border-radius: 12px; text-decoration: none;
+    color: var(--ink); transition: border-color .2s, background .2s;
+  }
+  .archivo:hover { border-color: #c9c9ce; background: #fcfcfd; }
+  .archivo .ico {
+    flex: 0 0 auto; width: 34px; height: 34px; display: grid; place-items: center;
+    border-radius: 9px; font-size: 10px; font-weight: 600; letter-spacing: .02em;
+    color: #fff; background: var(--accent);
+  }
+  .archivo.doc .ico { background: #5856d6; }
+  /* Step 6, the expert audit: only there when it was asked for. */
+  .archivo.verif .ico { background: #b26a00; }
+  .archivo .rot { font-size: 15px; }
+  .archivo .sub { font-size: 12.5px; color: var(--ink-3); }
+  .archivo .cta { margin-left: auto; font-size: 13px; color: var(--accent); white-space: nowrap; }
+
+  .otros { margin-top: 14px; }
+  .otros summary { list-style: none; cursor: pointer; font-size: 13px; color: var(--accent); }
+  .otros summary::-webkit-details-marker { display: none; }
+  .otros-lista { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 12px; }
+  .otros-lista a {
+    font-size: 12px; color: var(--ink-2); text-decoration: none;
+    padding: 5px 11px; border: 1px solid var(--line); border-radius: 999px;
+  }
+  .otros-lista a:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* -------------------------------------------------------------- usage */
+  .cifras { display: flex; flex-wrap: wrap; gap: 34px; }
+  .cifra .v { font-size: 26px; font-weight: 500; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .cifra .k { margin-top: 2px; font-size: 12.5px; color: var(--ink-3); }
+  .pie { margin-top: 18px; font-size: 12.5px; color: var(--ink-3); }
+
+  /* ------------------------------------------------------------- detail */
+  details.card > summary {
+    list-style: none; cursor: pointer; font-size: 13px; font-weight: 600;
+    letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3);
+  }
+  details.card > summary::-webkit-details-marker { display: none; }
+  details.card[open] > summary { margin-bottom: 16px; }
+
+  .term {
+    max-height: 42vh; overflow-y: auto; font-family: var(--mono); font-size: 12px;
+    line-height: 1.65; color: var(--ink-2); white-space: pre-wrap; word-break: break-word;
+  }
+  .term .ln { display: flex; gap: 10px; }
+  .term .ts { flex: 0 0 42px; text-align: right; color: #c7c7cc; }
+  .k-step .txt { color: var(--ink); font-weight: 600; }
+  .k-ok .txt { color: var(--ok); }
+  .k-warn .txt { color: var(--warn); }
+  .k-error .txt { color: var(--err); font-weight: 600; }
+  .k-detail .txt, .k-log .txt { color: var(--ink-3); }
+
+  /* ------------------------------------------------------------- viewer */
+  .visor {
+    position: fixed; inset: 0; z-index: 20; display: flex; flex-direction: column;
+    background: rgba(250,250,252,.96); backdrop-filter: blur(12px); padding: 20px;
+  }
+  .visor-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+  .visor-head .nm { font-size: 14px; color: var(--ink-2); }
+  .visor-head a, .visor-head button {
+    font-family: var(--sans); font-size: 13px; color: var(--accent);
+    background: none; border: 0; cursor: pointer; text-decoration: none; padding: 4px;
+  }
+  .visor iframe { flex: 1; width: 100%; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+
+  .hidden { display: none !important; }
+  .aparece { animation: subir .35s ease-out; }
+  @keyframes subir { from { opacity: 0; transform: translateY(8px); } }
+
+  /* ---------- Onboarding (see /static/onboarding.js) ---------- */
+  /* The same wizard as the terminal view, dressed for this one. */
+  :root {
+    --ob-backdrop: rgba(20, 20, 24, .5);
+    --ob-panel: var(--card, #fff);
+    --ob-surface: #fff;
+    --ob-text: var(--ink);
+    --ob-title: var(--ink);
+    --ob-muted: var(--ink-2);
+    --ob-border: var(--line);
+    --ob-accent: var(--accent);
+    --ob-accent-text: #fff;
+    --ob-error: var(--err);
+    --ob-radius: 18px;
+    --ob-font: var(--sans);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="lang" id="lang"></div>
+    <h1 data-i18n="minTitle">Leaflets</h1>
+    <p class="lede" data-i18n="minLede">Compliance analysis and adequation · ANMAT</p>
+    <a class="switch" href="/clasico" data-i18n="viewTerminal">Switch to the terminal view →</a>
+    <button type="button" class="switch" data-onboarding-open
+            style="background:none;border:0;cursor:pointer;font-family:var(--sans);margin-left:16px;padding:0"
+            data-i18n="howItWorks">how it works</button>
+  </header>
+
+  <!-- --------------------------------------------------------------- form -->
+  <form id="form">
+    <!-- With no rules there is no analysis: it is step one and it gates the rest. -->
+    <div class="aviso hidden" id="aviso-reglas">
+      <div class="aviso-rot" data-i18n="noticeRulesTitle">The rules have to be generated first</div>
+      <p class="aviso-txt" id="aviso-txt"></p>
+      <button type="button" class="secundario" id="btn-reglas" data-i18n="btnGenerateRules">Generate rules</button>
+    </div>
+
+    <div class="campo" id="campo-prospecto">
+      <span class="lbl" data-i18n="fieldLeaflet">Leaflet</span>
+      <select id="ejemplo"><option value=""></option></select>
+      <div class="subir">
+        <label for="archivo" data-i18n="uploadFile">Upload file</label>
+        <input type="file" id="archivo" class="hidden" accept=".pdf,.docx,.md,.txt,.mmd,.markdown">
+        <span class="nombre" id="archivo-nombre"></span>
+        <button type="button" class="quitar hidden" id="archivo-quitar" data-i18n-title="remove">✕</button>
+      </div>
+    </div>
+
+    <!-- The rules are not a choice: every run uses the ANMAT-Argentina base
+         rules the backend points at (`reglas_predeterminadas`). -->
+    <div class="campo">
+      <span class="lbl" data-i18n="fieldRulesShort">Rules</span>
+      <div class="fijo" id="reglas-fijas" data-i18n="rulesFixed">Using ANMAT-Argentina rules</div>
+    </div>
+
+    <!-- Optional and off by default: it is the run's most expensive call. -->
+    <div class="check">
+      <input type="checkbox" id="verificar">
+      <label for="verificar" data-i18n="auditStep6">Run Step 6 - Expert Agent Audit</label>
+    </div>
+    <div class="nota" id="verificar-nota"></div>
+
+    <button type="submit" class="primary" id="btn" data-i18n="btnRunMin">Analyze</button>
+  </form>
+
+  <!-- ------------------------------------------------------------ process -->
+  <section>
+    <div class="proceso-head">
+      <h2 data-i18n="processTitle">Process</h2>
+      <div class="flex"></div>
+      <span class="reloj" id="reloj"></span>
+      <button type="button" class="detener" id="stop" disabled data-i18n="btnStopMin">Stop</button>
+    </div>
+    <ol class="pasos" id="pasos"></ol>
+    <div class="cierre hidden" id="cierre"></div>
+  </section>
+
+  <!-- ------------------------------------------------------------ results -->
+  <section id="resultados" class="hidden">
+    <h2 data-i18n="resultsTitle">Results</h2>
+    <div class="archivos" id="archivos"></div>
+    <details class="otros hidden" id="otros">
+      <summary id="otros-rot"></summary>
+      <div class="otros-lista" id="otros-lista"></div>
+    </details>
+  </section>
+
+  <!-- -------------------------------------------------------------- usage -->
+  <section id="consumo" class="hidden">
+    <h2 data-i18n="usageTitle">Usage</h2>
+    <div class="cifras" id="cifras"></div>
+    <div class="pie" id="pie"></div>
+  </section>
+
+  <!-- ------------------------------------------------------------- detail -->
+  <details class="card" id="detalle">
+    <summary data-i18n="logTitle">Log</summary>
+    <div class="term" id="term"></div>
+  </details>
+</main>
+
+<div class="visor hidden" id="visor">
+  <div class="visor-head">
+    <span class="nm" id="visor-nombre"></span>
+    <div class="flex"></div>
+    <a id="visor-descargar" href="#" download data-i18n="viewerDownload">Download</a>
+    <button type="button" id="visor-cerrar" data-i18n="viewerCloseMin">Close</button>
+  </div>
+  <iframe id="visor-frame" data-i18n-title="viewerTitle"></iframe>
+</div>
+
+<script src="/static/i18n.js"></script>
+<script src="/static/onboarding.js"></script>
+<script>
+// Step 5 (the expert audit) is listed too: it is optional, so it stays pending
+// unless the checkbox asked for it, but hiding it would leave the run showing a
+// step that never appears in the process.
+const PASOS = ["0", "1", "2", "3", "4", "5"];
+
+const TILDE = '<svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke-width="1.9" stroke-linecap="round"><path d="M1.4 5.9l2.6 2.6L9.6 2.9"/></svg>';
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+
+let pasoActual = null, corriendo = false, cronometro = null, t0 = 0, faltanReglas = false;
+const inicioPaso = {};   // step → second of the run when it started
+const notaPaso = {};     // step → last "real" note, so the heartbeat does not lose it
+
+// Kept so a language switch can repaint what is already on screen without a reload.
+let ctxCache = null, ultimoDone = null;
+
+const duracion = (s) => s < 60 ? `${Math.round(s)}s`
+  : `${Math.floor(s / 60)}m ${String(Math.round(s % 60)).padStart(2, "0")}s`;
+
+// Note of the current step: the latest known state, plus the wait if a heartbeat arrives.
+function nota(n, texto) {
+  notaPaso[n] = texto;
+  const el = $(`nota-${n}`);
+  if (el) el.textContent = texto;
+}
+
+// ------------------------------------------------------------------- steps
+function pintarPasos() {
+  $("pasos").innerHTML = PASOS.map(n => `
+    <li class="paso" id="paso-${n}" data-state="idle">
+      <span class="marca">${TILDE}</span>
+      <span class="cuerpo">
+        <span class="rot">${t(`step${n}Title`)}</span>
+        <div class="nota" id="nota-${n}">${t(`step${n}Note`)}</div>
+        <div class="barra"><i id="bar-${n}"></i></div>
+      </span>
+      <span class="dur" id="dur-${n}"></span>
+    </li>`).join("");
+}
+
+// Only the idle steps get their note reset: a running one holds live information.
+function textosPasos() {
+  PASOS.forEach(n => {
+    const paso = $(`paso-${n}`);
+    paso.querySelector(".rot").textContent = t(`step${n}Title`);
+    if (paso.dataset.state === "idle") nota(n, t(`step${n}Note`));
+  });
+}
+
+function estadoPaso(n, estado) {
+  const el = $(`paso-${n}`);
+  if (el) el.dataset.state = estado;
+}
+
+// When a step closes, only what matters is left: how long it took.
+function cerrarPaso(n, estado, at) {
+  estadoPaso(n, estado);
+  nota(n, "");
+  const dur = $(`dur-${n}`);
+  if (dur && inicioPaso[n] !== undefined && at !== undefined) {
+    dur.textContent = Math.max(0, Math.round(at - inicioPaso[n])) + "s";
+  }
+}
+
+function reiniciarPasos() {
+  PASOS.forEach(n => {
+    estadoPaso(n, "idle");
+    nota(n, t(`step${n}Note`));
+    $(`bar-${n}`).style.width = "0";
+    $(`dur-${n}`).textContent = "";
+    delete inicioPaso[n];
+  });
+  pasoActual = null;
+  $("cierre").classList.add("hidden");
+}
+
+// ----------------------------------------------------------------- log
+const term = $("term");
+
+function linea(clases, html, at) {
+  const div = document.createElement("div");
+  div.className = "ln " + clases;
+  const ts = at === undefined ? "" : at.toFixed(1) + "s";
+  div.innerHTML = `<span class="ts">${ts}</span><span class="txt">${html}</span>`;
+  term.appendChild(div);
+  const alFinal = term.scrollHeight - term.scrollTop - term.clientHeight < 120;
+  if (alFinal) term.scrollTop = term.scrollHeight;
+  while (term.children.length > 4000) term.removeChild(term.firstChild);
+}
+
+// The page only shows the current step; everything else lives in the log.
+function manejar(ev) {
+  switch (ev.kind) {
+    case "step":
+      if (pasoActual !== null && pasoActual !== ev.number) cerrarPaso(pasoActual, "done", ev.t);
+      pasoActual = ev.number;
+      inicioPaso[ev.number] = ev.t;
+      estadoPaso(ev.number, "running");
+      nota(ev.number, ev.detail || ev.title);
+      linea("k-step", `${t("stepWordCap")} ${esc(ev.number)} · ${esc(ev.title)}`, ev.t);
+      break;
+
+    case "progress":
+      if (pasoActual !== null && ev.total) {
+        $(`bar-${pasoActual}`).style.width = (ev.current / ev.total * 100).toFixed(1) + "%";
+        nota(pasoActual, `${ev.current}/${ev.total} · ${ev.text}`);
+      }
+      linea("k-detail", `[${ev.current}/${ev.total}] ${esc(ev.text)}`, ev.t);
+      break;
+
+    // A model call can take minutes: the heartbeat keeps the step from looking
+    // hung. It never reaches the log, it only updates the step's note.
+    case "heartbeat": {
+      if (pasoActual === null) break;
+      const base = notaPaso[pasoActual] || "";
+      const espera = ev.retrying
+        ? `${t("retrying")} · ${duracion(ev.elapsed)}`
+        : `${ev.text} · ${duracion(ev.elapsed)}`;
+      const el = $(`nota-${pasoActual}`);
+      if (el) el.textContent = base ? `${base} · ${espera}` : espera;
+      break;
+    }
+
+    case "banner":   linea("k-step", esc(ev.title), ev.t); break;
+    case "section":  linea("k-detail", esc(ev.text), ev.t); break;
+    case "kv":       linea("k-detail", `${esc(ev.label)} ${esc(ev.value)}`, ev.t); break;
+    case "info":     linea("", esc(ev.text), ev.t); break;
+    case "ok":       linea("k-ok", esc(ev.text), ev.t); break;
+    case "warn":     linea("k-warn", esc(ev.text), ev.t); break;
+    case "error":    linea("k-error", esc(ev.text), ev.t); break;
+    case "detail":   linea("k-detail", esc(ev.text), ev.t); break;
+    case "status":   linea("k-detail", `${esc(ev.status)} · ${esc(ev.text)}`, ev.t); break;
+    case "log":      linea("k-log", `${esc(ev.name)} · ${esc(ev.text)}`, ev.t); break;
+
+    case "table":
+      if (ev.title) linea("k-detail", esc(ev.title), ev.t);
+      ev.rows.forEach(([k, v]) => linea("k-detail", `${esc(k)} ${esc(v)}`, undefined));
+      break;
+
+    case "done": terminar(ev); break;
+  }
+}
+
+// --------------------------------------------------------------- results
+const ETIQUETAS = {
+  clean_text_file: "TXT", report_json: "JSON", report_markdown: "MD",
+  report_html: "HTML", report_pdf: "PDF",
+};
+
+const url = (ruta) => `/api/archivo?path=${encodeURIComponent(ruta)}`;
+
+function recolectar(artifacts) {
+  const items = [];
+  for (const paso of Object.values(artifacts || {})) {
+    for (const [clave, valor] of Object.entries(paso)) {
+      if (ETIQUETAS[clave] && typeof valor === "string") items.push([ETIQUETAS[clave], valor, clave]);
+      if (clave === "output_files" && valor && typeof valor === "object") {
+        // Steps 4 and 5 both record `output_files`; they are told apart by the
+        // folder each writes into, the same way the terminal view does it.
+        const prefijo = String(Object.values(valor)[0] || "").includes("verificacion-final")
+          ? "verificacion_" : "adecuado_";
+        for (const [tipo, ruta] of Object.entries(valor)) items.push([tipo.toUpperCase(), ruta, prefijo + tipo]);
+      }
+    }
+  }
+  return items;
+}
+
+function pintarResultados(artifacts) {
+  const items = recolectar(artifacts);
+  if (!items.length) return;
+
+  const buscar = (clave) => items.find(i => i[2] === clave);
+  const pdf = buscar("report_pdf");
+  const docx = buscar("adecuado_docx");
+
+  const tarjetas = [];
+  if (pdf) tarjetas.push({
+    clase: "", ico: "PDF", rot: t("resultReport"),
+    arch: pdf[1].split("/").pop(), cta: t("ctaView"), ruta: pdf[1], visor: true,
+  });
+  if (docx) tarjetas.push({
+    clase: "doc", ico: "DOCX", rot: t("resultAdequated"),
+    arch: docx[1].split("/").pop(), cta: t("ctaDownloadPlain"), ruta: docx[1], visor: false,
+  });
+  // Only there when step 6 was asked for.
+  const verif = buscar("verificacion_txt");
+  if (verif) tarjetas.push({
+    clase: "verif", ico: "TXT", rot: t("resultVerification"),
+    arch: verif[1].split("/").pop(), cta: t("ctaOpen"), ruta: verif[1], visor: false,
+  });
+
+  $("archivos").innerHTML = tarjetas.map(card => `
+    <a class="archivo ${card.clase}" href="${url(card.ruta)}${card.visor ? "" : "&descargar=true"}"
+       ${card.visor ? 'data-pdf="1"' : ""} data-ruta="${esc(card.ruta)}" title="${esc(card.ruta)}">
+      <span class="ico">${esc(card.ico)}</span>
+      <span>
+        <span class="rot">${esc(card.rot)}</span>
+        <div class="sub">${esc(card.arch)}</div>
+      </span>
+      <span class="cta">${esc(card.cta)} →</span>
+    </a>`).join("");
+
+  $("archivos").querySelectorAll("[data-pdf]").forEach(a => {
+    a.addEventListener("click", (e) => { e.preventDefault(); abrirVisor(a.dataset.ruta); });
+  });
+
+  const resto = items.filter(i => i !== pdf && i !== docx && i !== verif);
+  $("otros-lista").innerHTML = resto.map(([tag, ruta]) => `
+    <a href="${url(ruta)}" target="_blank" title="${esc(ruta)}">${esc(tag)}</a>`).join("");
+  $("otros-rot").textContent = t("othersMin", { n: resto.length });
+  $("otros").classList.toggle("hidden", !resto.length);
+
+  $("resultados").classList.remove("hidden");
+  $("resultados").classList.add("aparece");
+}
+
+// ------------------------------------------------------------------ usage
+const miles = (n) => (n ?? 0).toLocaleString(numLocale());
+const dinero = (n) => n == null ? t("noData") : "US$ " + n.toLocaleString(numLocale(),
+  { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+function pintarConsumo(uso) {
+  const tot = uso && uso.totals;
+  if (!tot || !tot.calls) return;
+
+  const cifras = [
+    [dinero(tot.cost_usd), t("usageCost")],
+    [miles(tot.calls), tot.calls === 1 ? t("modelCallOne") : t("modelCallMany")],
+    [Math.round((tot.cache_hit_rate || 0) * 100) + "%", t("usageCachedIn")],
+  ];
+  $("cifras").innerHTML = cifras.map(([v, k]) =>
+    `<div class="cifra"><div class="v">${esc(v)}</div><div class="k">${esc(k)}</div></div>`).join("");
+
+  $("pie").textContent =
+    t("usageFoot", { in: miles(tot.input_tokens), out: miles(tot.output_tokens) }) +
+    (tot.cache_savings_usd ? t("usageFootSaved", { money: dinero(tot.cache_savings_usd) }) : "");
+
+  $("consumo").classList.remove("hidden");
+  $("consumo").classList.add("aparece");
+}
+
+// -------------------------------------------------------------------- viewer
+function abrirVisor(ruta) {
+  $("visor-nombre").textContent = ruta.split("/").pop();
+  $("visor-descargar").href = url(ruta) + "&descargar=true";
+  $("visor-frame").src = url(ruta);
+  $("visor").classList.remove("hidden");
+}
+
+function cerrarVisor() {
+  $("visor").classList.add("hidden");
+  $("visor-frame").src = "about:blank";
+}
+
+$("visor-cerrar").addEventListener("click", cerrarVisor);
+$("visor").addEventListener("click", (e) => { if (e.target === $("visor")) cerrarVisor(); });
+addEventListener("keydown", (e) => { if (e.key === "Escape") cerrarVisor(); });
+
+// --------------------------------------------------------------------- lifecycle
+const CIERRE = {
+  ok:        ["done",      "ok",   "closeOkMin"],
+  cancelado: ["cancelado", "warn", "closeCancelledMin"],
+  error:     ["error",     "err",  "closeFailedMin"],
+};
+
+function terminar(ev) {
+  corriendo = false;
+  ultimoDone = ev;
+  clearInterval(cronometro);
+
+  const [estadoFinal, clase, mensajeKey] = CIERRE[ev.status] || CIERRE.error;
+  if (pasoActual !== null) cerrarPaso(pasoActual, estadoFinal, ev.t);
+
+  pintarCierre(ev, clase, mensajeKey);
+  linea(clase === "ok" ? "k-ok" : clase === "warn" ? "k-warn" : "k-error", t(mensajeKey), ev.t);
+
+  pintarResultados(ev.artifacts);
+  pintarConsumo(ev.usage);
+  $("btn").disabled = false;
+  $("btn").textContent = t("btnRunMin");
+  $("stop").disabled = true;
+  $("stop").textContent = t("btnStopMin");
+  $("btn-reglas").disabled = false;
+  // If the run generated rules, there are some now: reload the context to lift
+  // the gate and offer the new folder.
+  cargarContexto();
+}
+
+function pintarCierre(ev, clase, mensajeKey) {
+  const cierre = $("cierre");
+  cierre.className = "cierre " + clase;
+  cierre.textContent = ev.status === "error" && ev.error
+    ? t("closeFailedMinDetail", { error: ev.error })
+    : t(mensajeKey);
+}
+
+function seguir(runId, cursor = 0) {
+  const src = new EventSource(`/api/corridas/${runId}/eventos?cursor=${cursor}`);
+  src.onmessage = (e) => {
+    const ev = JSON.parse(e.data);
+    manejar(ev);
+    if (ev.kind === "done") src.close();
+  };
+  src.onerror = () => { if (!corriendo) src.close(); };
+}
+
+function arrancarUI(sesion, rotuloKey = "btnAnalyzing") {
+  corriendo = true;
+  t0 = Date.now() - (sesion.elapsed || 0) * 1000;
+  $("btn").disabled = true;
+  $("btn").dataset.rotulo = rotuloKey;
+  $("btn").textContent = t(rotuloKey);
+  $("btn-reglas").disabled = true;
+  $("stop").disabled = false;
+  $("stop").dataset.runId = sesion.run_id;
+  clearInterval(cronometro);
+  cronometro = setInterval(() => {
+    $("reloj").textContent = ((Date.now() - t0) / 1000).toFixed(0) + "s";
+  }, 500);
+}
+
+// Builds the form from the cached context, so it can be repainted on a language
+// switch while keeping whatever the user had selected.
+function pintarFormulario(ctx) {
+  if (!ctx) return;
+  const previo = $("ejemplo").value;
+
+  $("ejemplo").innerHTML = `<option value="">${t("optChooseExample")}</option>` +
+    ctx.ejemplos.map(e => `<option value="${esc(e.ruta)}">${esc(e.nombre)}</option>`).join("");
+  $("ejemplo").value = previo || "";
+
+  // Step 5 needs its own credential: without it the checkbox stays disabled
+  // instead of letting the run fail at the very end.
+  const verificar = $("verificar");
+  verificar.disabled = !ctx.verificacion_final_disponible;
+  if (ctx.verificacion_final_disponible) {
+    $("verificar-nota").textContent = t("auditNote", { model: ctx.verificador });
+  } else {
+    verificar.checked = false;
+    $("verificar-nota").textContent = t("auditUnavailable");
+  }
+
+  const disp = ctx.disposiciones || { cantidad: 0, carpeta: "" };
+  puertaReglas(ctx, disp);
+  if (!$("archivo").files[0]) $("archivo-nombre").textContent = t("fileTypes");
+}
+
+async function cargarContexto() {
+  ctxCache = await (await fetch("/api/contexto")).json();
+  pintarFormulario(ctxCache);
+
+  if (ctxCache.corrida_activa) {
+    arrancarUI(ctxCache.corrida_activa);
+    seguir(ctxCache.corrida_activa.run_id, 0);
+  }
+}
+
+// With no rules there is nothing to verify: generating them is offered as the first
+// step and the analysis stays blocked until they exist.
+function puertaReglas(ctx, disp) {
+  faltanReglas = !ctx.reglas.length;
+  $("aviso-reglas").classList.toggle("hidden", !faltanReglas);
+  $("campo-prospecto").classList.toggle("apagado", faltanReglas);
+  $("btn").disabled = faltanReglas || corriendo;
+
+  if (!faltanReglas) return;
+
+  $("aviso-txt").textContent = disp.cantidad
+    ? t("noticeRulesBody", { n: disp.cantidad })
+    : t("noticeRulesNoDocs", { folder: disp.carpeta });
+  $("btn-reglas").disabled = !disp.cantidad;
+}
+
+// Short run: step 1 only, generating. It needs no leaflet.
+$("btn-reglas").addEventListener("click", async () => {
+  if (corriendo) return;
+  const datos = new FormData();
+  datos.append("generar_reglas", "true");
+  datos.append("desde", 1);
+  datos.append("hasta", 1);
+  await lanzar(datos, "btnGeneratingRules");
+});
+
+// --------------------------------------------------------------- form
+$("archivo").addEventListener("change", () => {
+  const f = $("archivo").files[0];
+  $("archivo-nombre").textContent = f ? f.name : t("fileTypes");
+  $("archivo-quitar").classList.toggle("hidden", !f);
+  if (f) $("ejemplo").value = "";
+});
+
+$("archivo-quitar").addEventListener("click", () => {
+  $("archivo").value = "";
+  $("archivo-nombre").textContent = t("fileTypes");
+  $("archivo-quitar").classList.add("hidden");
+});
+
+$("stop").addEventListener("click", async () => {
+  const runId = $("stop").dataset.runId;
+  if (!runId || !corriendo) return;
+  $("stop").disabled = true;
+  $("stop").textContent = t("btnCancelling");
+  await fetch(`/api/corridas/${runId}/cancelar`, { method: "POST" });
+});
+
+$("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (corriendo || faltanReglas) return;
+
+  const datos = new FormData();
+  const archivo = $("archivo").files[0];
+  if (archivo) datos.append("archivo", archivo);
+  else if ($("ejemplo").value) datos.append("ruta_prospecto", $("ejemplo").value);
+  else { alert(t("alertPick")); return; }
+
+  // Always the ANMAT-Argentina base rules. Everything else the API asks for has
+  // a default that matches what this form does — steps 1 to 4, OCR only if the
+  // PDF has no text layer, no final verification — so it is not sent.
+  if (ctxCache && ctxCache.reglas_predeterminadas) {
+    datos.append("ruta_reglas", ctxCache.reglas_predeterminadas);
+  }
+  datos.append("verificacion_final", $("verificar").checked);
+  // Both come from the first screen: the email is written in the chosen language,
+  // and the address — if one was left — receives the results when the run ends.
+  datos.append("idioma", currentLang());
+  if (Onboarding.email()) datos.append("email", Onboarding.email());
+
+  await lanzar(datos, "btnAnalyzing");
+});
+
+// Launch the run and hook onto the stream; the API's error is shown verbatim.
+async function lanzar(datos, rotuloKey) {
+  term.innerHTML = "";
+  reiniciarPasos();
+  ultimoDone = null;
+  $("resultados").classList.add("hidden");
+  $("consumo").classList.add("hidden");
+
+  const resp = await fetch("/api/corridas", { method: "POST", body: datos });
+  if (!resp.ok) {
+    const err = await resp.json().catch(() => ({ detail: resp.statusText }));
+    const cierre = $("cierre");
+    cierre.className = "cierre err";
+    cierre.classList.remove("hidden");
+    cierre.textContent = err.detail;
+    return;
+  }
+  const sesion = await resp.json();
+  arrancarUI(sesion, rotuloKey);
+  seguir(sesion.run_id, 0);
+}
+
+// --------------------------------------------------------------------- language
+// Re-render what is on screen in the new language. The log is left alone: those
+// lines come from the pipeline, which speaks Spanish.
+function aplicarIdioma() {
+  document.title = t("tabTitleMin");
+  applyStaticText();
+  textosPasos();
+  pintarFormulario(ctxCache);
+  if (corriendo) {
+    $("btn").textContent = t($("btn").dataset.rotulo || "btnAnalyzing");
+  }
+  if (ultimoDone) {
+    const [, clase, mensajeKey] = CIERRE[ultimoDone.status] || CIERRE.error;
+    pintarCierre(ultimoDone, clase, mensajeKey);
+    pintarResultados(ultimoDone.artifacts);
+    pintarConsumo(ultimoDone.usage);
+  }
+}
+
+// Options the wizard needs. Whether email can be offered is only known once the
+// context is in, so it is read from the cache the load filled.
+const opcionesOnboarding = () => ({
+  emailEnabled: !!(ctxCache && ctxCache.email_disponible),
+  onLanguage: (code) => { if (setLang(code)) aplicarIdioma(); },
+});
+
+document.title = t("tabTitleMin");
+applyStaticText();
+initLangSwitch("lang", aplicarIdioma);
+pintarPasos();
+
+// The wizard waits for the context: it decides whether to offer the email, and
+// the form behind it is already painted when the overlay steps aside.
+cargarContexto().then(() => {
+  Onboarding.startIfFirstTime(opcionesOnboarding());
+  Onboarding.bindOpeners(opcionesOnboarding());
+});
+</script>
+</body>
+</html>

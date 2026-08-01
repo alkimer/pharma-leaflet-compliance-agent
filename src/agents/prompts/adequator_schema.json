@@ -1,0 +1,142 @@
+{
+  "name": "adequation_result",
+  "description": "Schema for regulatory prospect adequation result with one or more rules applied",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "prospect_filename": {
+        "type": "string",
+        "description": "Name of the prospect file being modified"
+      },
+      "disposition": {
+        "type": "object",
+        "properties": {
+          "disposition_id": {
+            "type": "string",
+            "description": "Unique identifier for the disposition (e.g., ANMAT_7572_2006)"
+          },
+          "title": {
+            "type": "string",
+            "description": "Full title of the disposition or circular"
+          }
+        },
+        "required": ["disposition_id", "title"],
+        "additionalProperties": false
+      },
+      "rule_result": {
+        "type": "array",
+        "description": "Array of rule application results (usually 1 per call)",
+        "items": {
+          "type": "object",
+          "properties": {
+            "rule_id": {
+              "type": "integer",
+              "description": "Numeric identifier of the rule being applied"
+            },
+            "input_version": {
+              "type": "integer",
+              "description": "Version number of the prospect before applying this rule"
+            },
+            "output_version": {
+              "type": "integer",
+              "description": "Version number of the prospect after applying this rule"
+            },
+            "status_before": {
+              "type": "string",
+              "enum": ["missing", "partial", "ok", "not_applicable", "unknown"],
+              "description": "Compliance status before applying the rule"
+            },
+            "status_after": {
+              "type": "string",
+              "enum": ["fixed", "already_compliant", "conflict", "not_applicable"],
+              "description": "Compliance status after attempting to apply the rule"
+            },
+            "section_selected": {
+              "type": "string",
+              "description": "Name of the prospect section where changes were made or would be made"
+            },
+            "rationale": {
+              "type": "string",
+              "description": "Brief explanation of the decision made and changes applied"
+            },
+            "changes": {
+              "type": "array",
+              "description": "List of specific changes made to the prospect text",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "location_hint": {
+                    "type": "string",
+                    "description": "Human-readable description of where the change was made"
+                  },
+                  "before_snippet": {
+                    "type": "string",
+                    "description": "Short excerpt of text before the change (empty if insertion)"
+                  },
+                  "after_snippet": {
+                    "type": "string",
+                    "description": "Short excerpt of text after the change (empty if deletion)"
+                  }
+                },
+                "required": ["location_hint", "before_snippet", "after_snippet"],
+                "additionalProperties": false
+              }
+            },
+            "updated_prospect_text": {
+              "type": "string",
+              "description": "Full prospect text after applying this rule"
+            }
+          },
+          "required": [
+            "rule_id",
+            "input_version",
+            "output_version",
+            "status_before",
+            "status_after",
+            "section_selected",
+            "rationale",
+            "changes",
+            "updated_prospect_text"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "updated_prospect_text": {
+        "type": "string",
+        "description": "Final prospect text for this disposition (same as last rule_result item)"
+      },
+      "summary": {
+        "type": "object",
+        "description": "Summary statistics for this adequation response",
+        "properties": {
+          "rules_in_payload": {
+            "type": "integer",
+            "description": "Number of rules included in this response"
+          },
+          "fixed": {
+            "type": "integer",
+            "description": "Number of rules successfully fixed"
+          },
+          "already_compliant": {
+            "type": "integer",
+            "description": "Number of rules that were already compliant"
+          },
+          "conflict": {
+            "type": "integer",
+            "description": "Number of rules that could not be applied due to conflicts or missing information"
+          },
+          "not_applicable": {
+            "type": "integer",
+            "description": "Number of rules that do not apply to this prospect"
+          }
+        },
+        "required": ["rules_in_payload", "fixed", "already_compliant", "conflict", "not_applicable"],
+        "additionalProperties": false
+      }
+    },
+    "required": ["prospect_filename", "disposition", "rule_result", "updated_prospect_text", "summary"],
+    "additionalProperties": false
+  }
+}
+

@@ -1,0 +1,83 @@
+﻿{
+    "disposition_id":  "ANMAT_7096_97",
+    "title":  "Prospectos de especialidades medicinales con LOPERAMIDA: contraindicaciones y advertencias (pediatría)",
+    "source_type":  "DISPOSICIÓN",
+    "sale_condition":  null,
+    "dosage_form":  null,
+    "route_of_administration":  null,
+    "active_substances":  [
+                              "LOPERAMIDA"
+                          ],
+    "contains_alcohol":  null,
+    "objective":  "Unificar y exigir la inclusión de contraindicaciones y advertencias específicas (con énfasis en seguridad pediátrica) en los prospectos de especialidades medicinales con LOPERAMIDA, y fijar el plazo y forma de presentación de nuevos proyectos de prospecto para aprobación.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Asegurar que los prospectos de especialidades medicinales con LOPERAMIDA incorporen la información del ANEXO I.",
+                      "verification_procedure":  "Confirmar que el producto contiene LOPERAMIDA como principio activo. Revisar el prospecto vigente/propuesto y verificar que incluya los apartados y textos de CONTRAINDICACIONES y ADVERTENCIAS indicados en el ANEXO I.",
+                      "acceptance_criteria":  "Para productos con LOPERAMIDA, el prospecto incluye la información del ANEXO I en sus secciones de CONTRAINDICACIONES y ADVERTENCIAS (sin omisiones de los textos obligatorios).",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Presentar para aprobación los nuevos proyectos de prospectos por triplicado dentro del plazo establecido desde la publicación en Boletín Oficial.",
+                      "verification_procedure":  "Verificar la fecha de publicación de la disposición en el Boletín Oficial y revisar el expediente/registros del titular para comprobar que presentó los nuevos proyectos de prospecto por triplicado para aprobación dentro de los 60 días corridos desde dicha publicación.",
+                      "acceptance_criteria":  "Se presentaron los nuevos proyectos de prospecto por triplicado para aprobación dentro de los 60 (sesenta) días corridos contados desde la publicación en el Boletín Oficial.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Incluir la contraindicación absoluta de uso en niños menores de 2 años en el prospecto.",
+                      "verification_procedure":  "Revisar la sección CONTRAINDICACIONES del prospecto y verificar la presencia del texto obligatorio correspondiente a la contraindicación absoluta en menores de 2 años.",
+                      "acceptance_criteria":  "La sección CONTRAINDICACIONES del prospecto incluye la frase obligatoria sobre contraindicación absoluta en niños menores de 2 años.",
+                      "must_include_phrases":  [
+                                                   "Contraindicación Absoluta: Niños Menores de 2 años."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Incluir la restricción de uso en niños entre 2 y 6 años, limitada a indicación por especialista en gastroenterología infantil y bajo supervisión continua.",
+                      "verification_procedure":  "Revisar la sección CONTRAINDICACIONES del prospecto y verificar la inclusión del texto obligatorio referido a la no recomendación en niños de 2 a 6 años y la excepción bajo indicación y supervisión de especialista en gastroenterología infantil.",
+                      "acceptance_criteria":  "La sección CONTRAINDICACIONES del prospecto incluye la restricción de uso para niños entre 2 y 6 años con la excepción de indicación por especialista y supervisión continua.",
+                      "must_include_phrases":  [
+                                                   "No se recomienda su uso en niños entre 2 y 6 años, a menos que el mismo sea indicado por el médico especialista en gastroenterología infantil y bajo su supervisión continua."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Incluir la advertencia pediátrica sobre mayor sensibilidad a efectos adversos en SNC y variabilidad de respuesta en niños.",
+                      "verification_procedure":  "Revisar la sección ADVERTENCIAS del prospecto y verificar la presencia del texto obligatorio de advertencia pediátrica relativo a sensibilidad del sistema nervioso central y variabilidad de respuesta.",
+                      "acceptance_criteria":  "La sección ADVERTENCIAS del prospecto incluye la advertencia pediátrica obligatoria indicada en el ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "Pediatría: los niños presentan mayor sensibilidad a los efectos adversos en Sistema Nervioso Central y una gran variabilidad en respuestas a LOPERAMIDA."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  }
+              ]
+}

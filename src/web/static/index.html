@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analizador de prospectos · ANMAT</title>
+<style>
+  :root {
+    --bg: #080c11;
+    /* Opaque panels: the translucent ones sat on top of the background and washed
+       the text out. Flat surfaces keep every line at full contrast. */
+    --panel: #0e151b;
+    --surface: #070b0e;
+    --line: rgba(125, 214, 178, .26);
+    --line-strong: rgba(125, 214, 178, .42);
+    --phos: #5cffb0;
+    --phos-dim: #56cc95;
+    --cyan: #6feaff;
+    --magenta: #ff86dd;
+    --amber: #ffcf6e;
+    --red: #ff7280;
+    --text: #e3f1ea;
+    --muted: #93aca3;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  .wrap { position: relative; z-index: 1; max-width: 1440px; margin: 0 auto; padding: 22px; }
+
+  /* ---------- Header ---------- */
+  header {
+    display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+    padding: 16px 20px; margin-bottom: 18px;
+    border: 1px solid var(--line); border-radius: 12px;
+    background: var(--panel);
+  }
+  h1 {
+    margin: 0; font-size: 16px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--phos);
+  }
+  .sub { color: var(--muted); font-size: 12px; letter-spacing: .08em; }
+  .spacer { flex: 1; }
+
+  .pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 5px 12px; border-radius: 999px; font-size: 11.5px;
+    letter-spacing: .1em; text-transform: uppercase;
+    border: 1px solid var(--line); color: var(--muted);
+  }
+  .pill .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+  .pill[data-state="running"] { color: var(--cyan); border-color: rgba(111,234,255,.55); }
+  .pill[data-state="running"] .dot { animation: blink 1s steps(2) infinite; }
+  .pill[data-state="ok"] { color: var(--phos); border-color: rgba(92,255,176,.55); }
+  .pill[data-state="error"] { color: var(--red); border-color: rgba(255,114,128,.55); }
+  .pill.vista { text-decoration: none; cursor: pointer; }
+  .pill.vista:hover { color: var(--cyan); border-color: rgba(111,234,255,.55); }
+  @keyframes blink { 50% { opacity: .25; } }
+
+  /* ---------- Language switch ---------- */
+  .lang { display: inline-flex; gap: 4px; }
+  .lang .flag {
+    padding: 2px 5px; font-size: 15px; line-height: 1.1; cursor: pointer;
+    background: transparent; border: 1px solid transparent; border-radius: 6px;
+    opacity: .55; filter: grayscale(.8); transition: opacity .2s, filter .2s, border-color .2s;
+  }
+  .lang .flag:hover { opacity: .9; filter: grayscale(.2); }
+  .lang .flag[data-active="true"] {
+    opacity: 1; filter: none; border-color: rgba(92,255,176,.55);
+  }
+
+  /* ---------- Layout ---------- */
+  .grid { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 18px; align-items: start; }
+  @media (max-width: 980px) { .grid { grid-template-columns: 1fr; } }
+
+  .panel {
+    border: 1px solid var(--line); border-radius: 12px;
+    background: var(--panel);
+    padding: 16px;
+  }
+  .panel h2 {
+    margin: 0 0 14px; font-size: 12px; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--phos-dim);
+  }
+
+  /* ---------- Form ---------- */
+  label { display: block; margin: 12px 0 5px; font-size: 12px; color: var(--muted); letter-spacing: .06em; }
+  select, input[type=file], input[type=number] {
+    width: 100%; padding: 8px 10px; font-family: var(--mono); font-size: 13px;
+    color: var(--text); background: var(--surface);
+    border: 1px solid var(--line); border-radius: 7px;
+  }
+  select:focus, input:focus { outline: none; border-color: var(--phos); box-shadow: 0 0 0 2px rgba(92,255,176,.18); }
+  input[type=file]::file-selector-button {
+    font-family: var(--mono); font-size: 12px; color: var(--bg); background: var(--phos-dim);
+    border: 0; border-radius: 5px; padding: 5px 10px; margin-right: 10px; cursor: pointer;
+  }
+  .row { display: flex; gap: 10px; }
+  .row > * { flex: 1; }
+  .check { display: flex; align-items: center; gap: 8px; margin-top: 14px; color: var(--muted); font-size: 12px; }
+  .check input { width: auto; accent-color: var(--phos); }
+  /* Rules folder: fixed, not a choice. Looks like the fields around it so the
+     form reads as one block, but it is plain text and nothing to click. */
+  .fijo {
+    width: 100%; padding: 8px 10px; font-size: 12px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--phos-dim); background: var(--surface);
+    border: 1px dashed var(--line); border-radius: 7px;
+  }
+
+  button.run {
+    width: 100%; margin-top: 18px; padding: 11px;
+    font-family: var(--mono); font-size: 12.5px; letter-spacing: .16em; text-transform: uppercase;
+    color: #04120b; background: var(--phos); border: 0; border-radius: 8px; cursor: pointer;
+    font-weight: 600; transition: transform .1s, filter .2s;
+  }
+  button.run:hover:not(:disabled) { filter: brightness(1.1); }
+  button.run:active:not(:disabled) { transform: translateY(1px); }
+  button.run:disabled { background: #24382f; color: var(--muted); cursor: not-allowed; }
+
+  button.stop {
+    width: 100%; margin-top: 10px; padding: 10px;
+    font-family: var(--mono); font-size: 12px; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--red); background: transparent; border: 1px solid rgba(255,114,128,.55);
+    border-radius: 8px; cursor: pointer; transition: background .2s;
+  }
+  button.stop:hover:not(:disabled) { background: rgba(255,114,128,.14); }
+  button.stop:disabled { opacity: .45; cursor: not-allowed; }
+
+  .pill[data-state="cancelado"] { color: var(--amber); border-color: rgba(255,207,110,.5); }
+  .step[data-state="cancelado"] { border-color: rgba(255,207,110,.55); }
+  .step[data-state="cancelado"] .num { color: var(--amber); }
+  .step[data-state="cancelado"] .num::after { content: "  ⊘"; }
+
+  /* ---------- PDF viewer ---------- */
+  .visor {
+    position: fixed; inset: 0; z-index: 10; display: flex; flex-direction: column;
+    background: rgba(3,6,9,.96); padding: 18px;
+  }
+  .visor-head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+  .visor-head .nm { color: var(--phos); font-size: 13px; letter-spacing: .04em; }
+  .visor-head a, .visor-head button {
+    font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--text); background: transparent; border: 1px solid var(--line-strong);
+    border-radius: 7px; padding: 6px 12px; cursor: pointer; text-decoration: none;
+  }
+  .visor-head a:hover, .visor-head button:hover { border-color: var(--phos); color: var(--phos); }
+  .visor iframe { flex: 1; width: 100%; border: 1px solid var(--line); border-radius: 9px; background: #fff; }
+
+  .hint { margin-top: 10px; font-size: 12px; color: var(--muted); line-height: 1.55; }
+
+  /* ---------- Steps ---------- */
+  .steps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-bottom: 18px; }
+  @media (max-width: 780px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+
+  .step {
+    position: relative; overflow: hidden;
+    border: 1px solid var(--line); border-radius: 10px; padding: 12px;
+    background: var(--panel); transition: border-color .3s, background .3s;
+  }
+  .step .num { font-size: 11px; letter-spacing: .12em; color: var(--muted); }
+  .step .title { margin-top: 4px; font-size: 13px; color: var(--text); }
+  .step .note { margin-top: 6px; font-size: 11.5px; color: var(--muted); min-height: 15px; }
+  .step .bar { position: absolute; left: 0; bottom: 0; height: 2px; width: 0; background: var(--cyan); transition: width .3s; }
+
+  .step[data-state="running"] { border-color: rgba(111,234,255,.6); background: #0d1a20; }
+  .step[data-state="running"] .num { color: var(--cyan); }
+  .step[data-state="done"] { border-color: rgba(92,255,176,.45); }
+  .step[data-state="done"] .num { color: var(--phos); }
+  .step[data-state="done"] .num::after { content: "  ✔"; }
+  .step[data-state="error"] { border-color: rgba(255,114,128,.6); }
+  .step[data-state="error"] .num { color: var(--red); }
+  .step[data-state="error"] .num::after { content: "  ✖"; }
+
+  /* ---------- Terminal ---------- */
+  .term-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .term-head h2 { margin: 0; }
+  .term {
+    height: 52vh; min-height: 320px; overflow-y: auto; padding: 14px 16px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 9px;
+    font-size: 13px; line-height: 1.65; white-space: pre-wrap; word-break: break-word;
+  }
+  .term::-webkit-scrollbar { width: 8px; }
+  .term::-webkit-scrollbar-thumb { background: rgba(92,255,176,.3); border-radius: 4px; }
+
+  .ln { display: flex; gap: 12px; padding: 1px 0; animation: fade .18s ease-out; }
+  @keyframes fade { from { opacity: 0; transform: translateX(-4px); } }
+  .ln .ts { color: #6b8a7e; flex: 0 0 48px; text-align: right; font-size: 11.5px; padding-top: 1px; }
+  .ln .txt { flex: 1; }
+
+  .k-step .txt { color: var(--magenta); font-weight: 700; letter-spacing: .08em; margin-top: 12px; }
+  .k-section .txt { color: var(--cyan); margin-top: 6px; }
+  .k-banner .txt { color: var(--phos); font-weight: 700; letter-spacing: .1em; }
+  .k-ok .txt { color: var(--phos); }
+  .k-info .txt { color: var(--text); }
+  .k-warn .txt { color: var(--amber); }
+  .k-error .txt { color: var(--red); font-weight: 700; }
+  .k-detail .txt, .k-log .txt { color: var(--muted); }
+  .k-kv .txt { color: var(--text); }
+  .k-kv .lbl { display: inline-block; min-width: 200px; color: var(--muted); }
+  .k-progress .txt { color: var(--cyan); }
+  .k-log.lvl-error .txt, .k-log.lvl-warning .txt { color: var(--amber); }
+
+  .st { display: inline-block; min-width: 124px; }
+  .st-ok { color: var(--phos); } .st-missing { color: var(--red); }
+  .st-not_applicable { color: var(--muted); } .st-not_evaluable { color: var(--amber); }
+
+  .cursor { display: inline-block; width: 7px; height: 14px; background: var(--phos); animation: blink 1s steps(2) infinite; vertical-align: -2px; }
+
+  /* ---------- Artifacts ---------- */
+  .files { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px; margin-top: 12px; }
+  .file {
+    display: flex; align-items: center; gap: 9px; padding: 9px 11px;
+    border: 1px solid var(--line); border-radius: 8px; background: var(--surface);
+    color: var(--text); text-decoration: none; font-size: 12px; transition: border-color .2s, transform .1s;
+  }
+  .file:hover { border-color: var(--phos); transform: translateY(-1px); }
+  .file .tag {
+    flex: 0 0 auto; padding: 2px 6px; border-radius: 4px; font-size: 10.5px;
+    letter-spacing: .08em; background: rgba(92,255,176,.18); color: var(--phos);
+  }
+  .file .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  /* ---------- Highlighted artifacts ---------- */
+  .destacados { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin-top: 12px; }
+
+  .destacado {
+    position: relative; overflow: hidden; display: flex; align-items: center; gap: 15px;
+    padding: 18px 20px; border-radius: 12px; text-decoration: none;
+    border: 1px solid rgba(92,255,176,.5); background: #10231b;
+    transition: transform .15s, border-color .25s, background .25s;
+    animation: aparecer .45s ease-out;
+  }
+  @keyframes aparecer { from { opacity: 0; transform: translateY(6px); } }
+  .destacado:hover {
+    transform: translateY(-2px); border-color: var(--phos); background: #143026;
+  }
+
+  .destacado .ico {
+    flex: 0 0 auto; width: 46px; height: 46px; display: grid; place-items: center;
+    border-radius: 10px; font-size: 12px; letter-spacing: .02em; font-weight: 600;
+    color: #04120b; background: var(--phos);
+  }
+  .destacado .cuerpo { min-width: 0; }
+  .destacado .rot { font-size: 14px; color: var(--phos); letter-spacing: .02em; }
+  .destacado .arch { margin-top: 3px; font-size: 12px; color: var(--muted);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .destacado .cta { margin-top: 5px; font-size: 11px; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--cyan); }
+
+  .destacado.docx { border-color: rgba(111,234,255,.5); background: #0e2530; }
+  .destacado.docx:hover { border-color: var(--cyan); background: #133140; }
+  .destacado.docx .ico { background: var(--cyan); }
+  .destacado.docx .rot { color: var(--cyan); }
+  .destacado.docx .cta { color: var(--phos); }
+
+  .destacado.verif { border-color: rgba(255,134,221,.5); background: #2a1628; }
+  .destacado.verif:hover { border-color: var(--magenta); background: #351d33; }
+  .destacado.verif .ico { background: var(--magenta); }
+  .destacado.verif .rot { color: var(--magenta); }
+  .destacado.verif .cta { color: var(--amber); }
+
+  .otros-toggle {
+    margin-top: 14px; font-size: 12px; color: var(--muted); background: none;
+    border: 0; cursor: pointer; font-family: var(--mono); letter-spacing: .08em; padding: 0;
+  }
+  .otros-toggle:hover { color: var(--phos); }
+
+  /* ---------- Usage ---------- */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; margin-top: 12px; }
+  .tile {
+    padding: 11px 13px; border: 1px solid var(--line); border-radius: 9px;
+    background: var(--surface);
+  }
+  .tile .v { font-size: 19px; color: var(--phos); letter-spacing: .01em; }
+  .tile .k { margin-top: 3px; font-size: 11px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+  .tile.ahorro .v { color: var(--cyan); }
+  .modelos { margin-top: 10px; font-size: 12px; color: var(--muted); }
+  .modelos div { padding: 2px 0; }
+  .modelos b { color: var(--text); font-weight: 400; }
+
+  .hidden { display: none; }
+
+  /* ---------- Onboarding (see /static/onboarding.js) ---------- */
+  /* The wizard paints itself with these; here it is dressed as the terminal. */
+  :root {
+    --ob-backdrop: rgba(4, 8, 11, .86);
+    --ob-panel: var(--panel);
+    --ob-surface: var(--surface);
+    --ob-text: var(--text);
+    --ob-title: var(--phos);
+    --ob-muted: var(--muted);
+    --ob-border: var(--line);
+    --ob-accent: var(--phos);
+    --ob-accent-text: #06110c;
+    --ob-error: var(--red);
+    --ob-radius: 12px;
+    --ob-font: var(--mono);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1 data-i18n="appTitle">Leaflet compliance analyzer &amp; fixer</h1>
+      <div class="sub" data-i18n="appSubtitle">ANMAT · 4-step pipeline</div>
+    </div>
+    <div class="spacer"></div>
+    <div class="lang" id="lang"></div>
+    <button type="button" class="pill vista" data-onboarding-open
+            data-i18n="howItWorks">how it works</button>
+    <a class="pill vista" href="/laboratorio" data-i18n="viewLab" data-i18n-title="viewLabTitle">laboratory ↗</a>
+    <a class="pill vista" href="/minimal" data-i18n="viewLight" data-i18n-title="viewLightTitle">light view ↗</a>
+    <div class="pill" id="stamp"><span class="dot"></span><span id="stamp-txt"></span></div>
+    <div class="pill" id="status" data-state="idle"><span class="dot"></span><span id="status-txt"></span></div>
+  </header>
+
+  <div class="grid">
+    <!-- ------------------- Form ------------------- -->
+    <form class="panel" id="form">
+      <h2 data-i18n="formTitle">New run</h2>
+
+      <label for="ejemplo" data-i18n="fieldExample">Sample leaflet</label>
+      <select id="ejemplo"><option value=""></option></select>
+
+      <label for="archivo" data-i18n="fieldUpload">…or upload one (PDF, DOCX, MD, TXT)</label>
+      <input type="file" id="archivo" accept=".pdf,.docx,.md,.txt,.mmd,.markdown">
+
+      <!-- The rules are not a choice: every run uses the ANMAT-Argentina base
+           rules the backend points at (`reglas_predeterminadas`). -->
+      <label data-i18n="fieldRules">Rules folder</label>
+      <div class="fijo" id="reglas-fijas" data-i18n="rulesFixed">Using ANMAT-Argentina rules</div>
+
+      <!-- Optional and off by default: it is the run's most expensive call. -->
+      <div class="check">
+        <input type="checkbox" id="verificar">
+        <label for="verificar" style="margin:0" data-i18n="auditStep6">Run Step 6 - Expert Agent Audit</label>
+      </div>
+      <div class="hint" id="verificar-nota"></div>
+
+      <button class="run" type="submit" id="btn" data-i18n="btnRun">Run pipeline</button>
+      <button class="stop" type="button" id="stop" disabled data-i18n="btnStop">■ Stop run</button>
+      <div class="hint" id="hint" data-i18n="hintDefault"></div>
+    </form>
+
+    <!-- ------------------- Run ------------------- -->
+    <div>
+      <div class="steps" id="steps"></div>
+
+      <div class="panel">
+        <div class="term-head">
+          <h2 data-i18n="consoleTitle">Console</h2>
+          <div class="spacer"></div>
+          <div class="sub" id="elapsed"></div>
+        </div>
+        <div class="term" id="term"></div>
+        <div id="consumo" class="hidden">
+          <h2 style="margin-top:18px" data-i18n="usageTitle">Usage</h2>
+          <div class="tiles" id="tiles"></div>
+          <div class="modelos" id="modelos"></div>
+        </div>
+        <div id="artefactos" class="hidden">
+          <h2 style="margin-top:18px" data-i18n="resultsTitle">Results</h2>
+          <div class="destacados" id="destacados"></div>
+          <button type="button" class="otros-toggle" id="otros-toggle"></button>
+          <div class="files hidden" id="files"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="visor hidden" id="visor">
+  <div class="visor-head">
+    <span class="nm" id="visor-nombre"></span>
+    <div class="spacer"></div>
+    <a id="visor-descargar" href="#" download data-i18n="viewerDownload">Download</a>
+    <button type="button" id="visor-cerrar" data-i18n="viewerClose">Close ✕</button>
+  </div>
+  <iframe id="visor-frame" data-i18n-title="viewerTitle"></iframe>
+</div>
+
+<script src="/static/i18n.js"></script>
+<script src="/static/onboarding.js"></script>
+<script>
+const PASOS = ["0", "1", "2", "3", "4", "5"];
+
+const $ = (id) => document.getElementById(id);
+const term = $("term");
+
+let pasoActual = null, corriendo = false, cronometro = null, t0 = 0;
+
+// Kept so a language switch can re-render everything already on screen without
+// reloading (a reload would lose the results of a finished run).
+let ctxCache = null, ultimoDone = null, estadoKey = "statusIdle", terminalVacia = true;
+let stampActual = null;   // the run's <timestamp>, or null when there is no run
+
+function pintarStamp() {
+  $("stamp-txt").textContent = stampActual || (corriendo ? t("stampStarting") : t("stampNone"));
+}
+
+// ---------------------------------------------------------------- steps
+function pintarPasos() {
+  $("steps").innerHTML = PASOS.map(n => `
+    <div class="step" id="paso-${n}" data-state="idle">
+      <div class="num">${t("stepWord")} ${n}</div>
+      <div class="title">${t(`step${n}Title`)}</div>
+      <div class="note" id="nota-${n}">${t(`step${n}Note`)}</div>
+      <div class="bar" id="bar-${n}"></div>
+    </div>`).join("");
+}
+
+// Only the idle steps get their note reset: a running one holds live information.
+function textosPasos() {
+  PASOS.forEach(n => {
+    const paso = $(`paso-${n}`);
+    paso.querySelector(".num").textContent = `${t("stepWord")} ${n}`;
+    paso.querySelector(".title").textContent = t(`step${n}Title`);
+    if (paso.dataset.state === "idle") $(`nota-${n}`).textContent = t(`step${n}Note`);
+  });
+}
+
+function estadoPaso(n, estado) {
+  const el = $(`paso-${n}`);
+  if (el) el.dataset.state = estado;
+}
+
+function reiniciarPasos() {
+  PASOS.forEach(n => {
+    estadoPaso(n, "idle");
+    $(`nota-${n}`).textContent = t(`step${n}Note`);
+    $(`bar-${n}`).style.width = "0";
+  });
+  pasoActual = null;
+}
+
+// ---------------------------------------------------------------- console
+function placeholderConsola() {
+  term.innerHTML = `<div class="ln"><span class="ts"></span><span class="txt" `
+    + `style="color:var(--muted)">${t("consoleWaiting")} <span class="cursor"></span></span></div>`;
+  terminalVacia = true;
+}
+
+function limpiarConsola() {
+  term.innerHTML = "";
+  terminalVacia = false;
+}
+
+function linea(clases, html, at) {
+  if (terminalVacia) limpiarConsola();
+  const div = document.createElement("div");
+  div.className = "ln " + clases;
+  const ts = at === undefined ? "" : at.toFixed(1) + "s";
+  div.innerHTML = `<span class="ts">${ts}</span><span class="txt">${html}</span>`;
+  term.appendChild(div);
+  const alFinal = term.scrollHeight - term.scrollTop - term.clientHeight < 120;
+  if (alFinal) term.scrollTop = term.scrollHeight;
+  while (term.children.length > 4000) term.removeChild(term.firstChild);
+}
+
+const esc = (s) => String(s ?? "").replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+
+const duracion = (s) => s < 60 ? `${Math.round(s)}s`
+  : `${Math.floor(s / 60)}m ${String(Math.round(s % 60)).padStart(2, "0")}s`;
+
+function manejar(ev) {
+  switch (ev.kind) {
+    case "banner":
+      linea("k-banner", esc(ev.title), ev.t);
+      if (ev.subtitle) linea("k-detail", esc(ev.subtitle), ev.t);
+      break;
+
+    case "step": {
+      if (pasoActual !== null && pasoActual !== ev.number) estadoPaso(pasoActual, "done");
+      pasoActual = ev.number;
+      estadoPaso(ev.number, "running");
+      $(`nota-${ev.number}`).textContent = ev.detail || ev.title;
+      linea("k-step", `▶ ${t("stepWord")} ${esc(ev.number)} · ${esc(ev.title)}`, ev.t);
+      break;
+    }
+
+    case "section":  linea("k-section", "·· " + esc(ev.text), ev.t); break;
+    case "kv":       linea("k-kv", `<span class="lbl">${esc(ev.label)}</span>${esc(ev.value)}`, ev.t); break;
+    case "info":     linea("k-info", "ℹ  " + esc(ev.text), ev.t); break;
+    case "ok":       linea("k-ok", "✔  " + esc(ev.text), ev.t); break;
+    case "warn":     linea("k-warn", "⚠  " + esc(ev.text), ev.t); break;
+    case "error":    linea("k-error", "✖  " + esc(ev.text), ev.t); break;
+    case "detail":   linea("k-detail", "   " + esc(ev.text), ev.t); break;
+
+    case "progress": {
+      linea("k-progress", `[${ev.current}/${ev.total}] ${esc(ev.text)}`, ev.t);
+      if (pasoActual !== null && ev.total) {
+        $(`bar-${pasoActual}`).style.width = (ev.current / ev.total * 100).toFixed(1) + "%";
+        $(`nota-${pasoActual}`).textContent = `${ev.current}/${ev.total} · ${ev.text}`;
+      }
+      break;
+    }
+
+    // Heartbeat of a long wait: a model call can take minutes and without this
+    // the run is indistinguishable from a hang.
+    case "heartbeat": {
+      const pasado = ev.retrying;
+      const txt = pasado
+        ? `${t("retrying")} · ${esc(ev.text)} · ${duracion(ev.elapsed)}`
+        : `${esc(ev.text)} · ${duracion(ev.elapsed)}`;
+      linea(pasado ? "k-warn" : "k-detail", "⋯  " + txt, ev.t);
+      break;
+    }
+
+    case "status":
+      linea("k-detail", `<span class="st st-${esc(ev.status)}">${esc(ev.status)}</span>${esc(ev.text)}`, ev.t);
+      break;
+
+    case "table": {
+      if (ev.title) linea("k-section", "·· " + esc(ev.title), ev.t);
+      ev.rows.forEach(([k, v]) => linea("k-kv", `<span class="lbl">${esc(k)}</span>${esc(v)}`, undefined));
+      break;
+    }
+
+    case "log":
+      linea("k-log lvl-" + esc(ev.level), `${esc(ev.name)} · ${esc(ev.text)}`, ev.t);
+      break;
+
+    case "done": terminar(ev); break;
+  }
+}
+
+// ---------------------------------------------------------------- artifacts
+const ETIQUETAS = {
+  clean_text_file: "TXT", report_json: "JSON", report_markdown: "MD",
+  report_html: "HTML", report_pdf: "PDF",
+};
+
+const url = (ruta) => `/api/archivo?path=${encodeURIComponent(ruta)}`;
+
+function recolectar(artifacts) {
+  const items = [];
+  for (const paso of Object.values(artifacts || {})) {
+    for (const [clave, valor] of Object.entries(paso)) {
+      if (ETIQUETAS[clave] && typeof valor === "string") items.push([ETIQUETAS[clave], valor, clave]);
+      if (clave === "output_files" && valor && typeof valor === "object") {
+        // El paso 4 y el 5 usan la misma clave: se distinguen por la carpeta.
+        const prefijo = String(Object.values(valor)[0] || "").includes("verificacion-final")
+          ? "verificacion_" : "adecuado_";
+        for (const [tipo, ruta] of Object.entries(valor)) items.push([tipo.toUpperCase(), ruta, prefijo + tipo]);
+      }
+    }
+  }
+  return items;
+}
+
+// The two that matter: the compliance report and the already-adequated leaflet.
+function pintarArtefactos(artifacts) {
+  const items = recolectar(artifacts);
+  if (!items.length) return;
+
+  const buscar = (clave) => items.find(i => i[2] === clave);
+  const pdf = buscar("report_pdf");
+  const docx = buscar("adecuado_docx");
+  const verif = buscar("verificacion_txt");
+
+  const tarjetas = [];
+  if (pdf) tarjetas.push({
+    clase: "", ico: "PDF", rot: t("resultReport"),
+    arch: pdf[1].split("/").pop(), cta: t("ctaViewer"), ruta: pdf[1], visor: true,
+  });
+  if (docx) tarjetas.push({
+    clase: "docx", ico: "DOCX", rot: t("resultAdequated"),
+    arch: docx[1].split("/").pop(), cta: t("ctaDownload"), ruta: docx[1], visor: false, descarga: true,
+  });
+  if (verif) tarjetas.push({
+    clase: "verif", ico: "TXT", rot: t("resultVerification"),
+    arch: verif[1].split("/").pop(), cta: t("ctaOpen"), ruta: verif[1], visor: false,
+  });
+
+  $("destacados").innerHTML = tarjetas.map(card => `
+    <a class="destacado ${card.clase}" href="${url(card.ruta)}${card.descarga ? "&descargar=true" : ""}"
+       ${card.visor ? 'data-pdf="1"' : 'target="_blank"'} data-ruta="${esc(card.ruta)}" title="${esc(card.ruta)}">
+      <span class="ico">${esc(card.ico)}</span>
+      <span class="cuerpo">
+        <span class="rot">${esc(card.rot)}</span>
+        <div class="arch">${esc(card.arch)}</div>
+        <div class="cta">${esc(card.cta)}</div>
+      </span>
+    </a>`).join("");
+
+  $("destacados").querySelectorAll("[data-pdf]").forEach(a => {
+    a.addEventListener("click", (e) => { e.preventDefault(); abrirVisor(a.dataset.ruta); });
+  });
+
+  // The rest stays within reach without stealing attention.
+  const resto = items.filter(i => i !== pdf && i !== docx);
+  $("files").innerHTML = resto.map(([tag, ruta]) => `
+    <a class="file" href="${url(ruta)}" target="_blank" title="${esc(ruta)}">
+      <span class="tag">${esc(tag)}</span><span class="nm">${esc(ruta.split("/").pop())}</span>
+    </a>`).join("");
+
+  const toggle = $("otros-toggle");
+  const oculto = () => $("files").classList.contains("hidden");
+  const rotulo = () => `${oculto() ? "▸" : "▾"} ${t("othersToggle", { n: resto.length })}`;
+  $("files").classList.add("hidden");
+  toggle.textContent = rotulo();
+  toggle.classList.toggle("hidden", !resto.length);
+  toggle.onclick = () => {
+    $("files").classList.toggle("hidden");
+    toggle.textContent = rotulo();
+  };
+
+  $("artefactos").classList.remove("hidden");
+}
+
+// ---------------------------------------------------------------- usage
+const miles = (n) => (n ?? 0).toLocaleString(numLocale());
+const dinero = (n) => n == null ? t("noData") : "US$ " + n.toLocaleString(numLocale(),
+  { minimumFractionDigits: 4, maximumFractionDigits: 4 });
+
+function pintarConsumo(uso) {
+  const tot = uso && uso.totals;
+  if (!tot || !tot.calls) return;
+
+  const pctCache = (tot.cache_hit_rate * 100).toLocaleString(numLocale(),
+    { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const pctAhorro = tot.cost_without_cache_usd
+    ? Math.round(tot.cache_savings_usd / tot.cost_without_cache_usd * 100) : 0;
+
+  const tiles = [
+    [dinero(tot.cost_usd), t("usageCost"), ""],
+    [dinero(tot.cache_savings_usd), t("usageSaved", { p: pctAhorro }), "ahorro"],
+    [miles(tot.input_tokens), t("usageInput"), ""],
+    [pctCache + "%", t("usageCachedIn"), "ahorro"],
+    [miles(tot.output_tokens), t("usageOutput"), ""],
+    [miles(tot.calls), t("usageCalls"), ""],
+  ];
+  $("tiles").innerHTML = tiles.map(([v, k, cls]) =>
+    `<div class="tile ${cls}"><div class="v">${esc(v)}</div><div class="k">${esc(k)}</div></div>`).join("");
+
+  $("modelos").innerHTML = (uso.by_model || []).map(m => `
+    <div><b>${esc(m.model)}</b> · ${miles(m.calls)} ${m.calls === 1 ? t("callOne") : t("callMany")} ·
+    ${miles(m.input_tokens)} in (${(m.cache_hit_rate * 100).toFixed(0)}% ${t("cacheWord")}) /
+    ${miles(m.output_tokens)} out · ${esc(dinero(m.cost_usd))}</div>`).join("");
+
+  $("consumo").classList.remove("hidden");
+}
+
+// ---------------------------------------------------------------- viewer
+function abrirVisor(ruta) {
+  const url = `/api/archivo?path=${encodeURIComponent(ruta)}`;
+  $("visor-nombre").textContent = ruta.split("/").pop();
+  $("visor-descargar").href = url + "&descargar=true";
+  $("visor-frame").src = url;
+  $("visor").classList.remove("hidden");
+}
+
+function cerrarVisor() {
+  $("visor").classList.add("hidden");
+  $("visor-frame").src = "about:blank";   // releases the loaded PDF
+}
+
+$("visor-cerrar").addEventListener("click", cerrarVisor);
+$("visor").addEventListener("click", (e) => { if (e.target === $("visor")) cerrarVisor(); });
+addEventListener("keydown", (e) => { if (e.key === "Escape") cerrarVisor(); });
+
+// ---------------------------------------------------------------- lifecycle
+function estado(key, st) {
+  estadoKey = key;
+  $("status-txt").textContent = t(key);
+  $("status").dataset.state = st;
+}
+
+const CIERRE = {
+  ok:        ["done",      "statusDone",      "ok",        "k-ok",    "closeOk"],
+  cancelado: ["cancelado", "statusCancelled", "cancelado", "k-warn",  "closeCancelled"],
+  error:     ["error",     "statusFailed",    "error",     "k-error", "closeFailed"],
+};
+
+function terminar(ev) {
+  corriendo = false;
+  ultimoDone = ev;
+  clearInterval(cronometro);
+
+  const [estadoPasoFinal, textoKey, pill, clase, mensajeKey] = CIERRE[ev.status] || CIERRE.error;
+  if (pasoActual !== null) estadoPaso(pasoActual, estadoPasoFinal);
+  estado(textoKey, pill);
+  linea(clase, t(mensajeKey), ev.t);
+
+  if (ev.stamp) stampActual = ev.stamp;
+  pintarStamp();
+  pintarConsumo(ev.usage);
+  pintarArtefactos(ev.artifacts);
+  $("btn").disabled = false;
+  $("btn").textContent = t("btnRun");
+  $("stop").disabled = true;
+  $("stop").textContent = t("btnStop");
+}
+
+function seguir(runId, cursor = 0) {
+  const src = new EventSource(`/api/corridas/${runId}/eventos?cursor=${cursor}`);
+  src.onmessage = (e) => {
+    const ev = JSON.parse(e.data);
+    manejar(ev);
+    if (ev.kind === "done") src.close();
+  };
+  src.onerror = () => { if (!corriendo) src.close(); };
+}
+
+// Builds the form from the cached context, so it can be repainted on a language
+// switch while keeping whatever the user had selected.
+function pintarFormulario(ctx) {
+  if (!ctx) return;
+  const previo = $("ejemplo").value;
+
+  $("ejemplo").innerHTML = `<option value="">${t("optChoose")}</option>` +
+    ctx.ejemplos.map(e => `<option value="${esc(e.ruta)}">${esc(e.nombre)}</option>`).join("");
+  $("ejemplo").value = previo || "";
+
+  // The rules are fixed, so the only thing left to say about them is when they
+  // are missing: without rules there is nothing to check the leaflet against.
+  const disp = ctx.disposiciones || { cantidad: 0, carpeta: "" };
+  if (!ctx.reglas.length) {
+    $("hint").innerHTML = disp.cantidad
+      ? `<span style="color:var(--amber)">${esc(t("hintNoRules", { n: disp.cantidad }))}</span>`
+      : `<span style="color:var(--red)">${esc(t("hintNoDocs", { folder: disp.carpeta }))}</span>`;
+  } else {
+    $("hint").textContent = t("hintDefault");
+  }
+
+  // Step 5 needs its own credential: without it the checkbox stays disabled
+  // instead of letting the run fail at the very end.
+  const verificar = $("verificar");
+  verificar.disabled = !ctx.verificacion_final_disponible;
+  if (ctx.verificacion_final_disponible) {
+    $("verificar-nota").textContent = t("auditNote", { model: ctx.verificador });
+  } else {
+    verificar.checked = false;
+    $("verificar-nota").textContent = t("auditUnavailable");
+  }
+}
+
+async function cargarContexto() {
+  ctxCache = await (await fetch("/api/contexto")).json();
+  pintarFormulario(ctxCache);
+
+  if (ctxCache.corrida_activa) {
+    // A run was already in progress: hook onto it from the beginning.
+    arrancarUI(ctxCache.corrida_activa);
+    seguir(ctxCache.corrida_activa.run_id, 0);
+  }
+}
+
+function arrancarUI(sesion) {
+  corriendo = true;
+  t0 = Date.now() - (sesion.elapsed || 0) * 1000;
+  estado("statusRunning", "running");
+  stampActual = sesion.stamp || null;
+  pintarStamp();
+  $("btn").disabled = true;
+  $("btn").textContent = t("btnRunning");
+  $("stop").disabled = false;
+  $("stop").dataset.runId = sesion.run_id;
+  clearInterval(cronometro);
+  cronometro = setInterval(() => {
+    $("elapsed").textContent = ((Date.now() - t0) / 1000).toFixed(0) + "s";
+  }, 500);
+}
+
+$("stop").addEventListener("click", async () => {
+  const runId = $("stop").dataset.runId;
+  if (!runId || !corriendo) return;
+  $("stop").disabled = true;
+  $("stop").textContent = t("btnCancelling");
+  await fetch(`/api/corridas/${runId}/cancelar`, { method: "POST" });
+});
+
+$("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (corriendo) return;
+
+  const datos = new FormData();
+  const archivo = $("archivo").files[0];
+  if (archivo) datos.append("archivo", archivo);
+  else if ($("ejemplo").value) datos.append("ruta_prospecto", $("ejemplo").value);
+  else { alert(t("alertPick")); return; }
+
+  // Always the ANMAT-Argentina base rules. Everything else the API asks for has
+  // a default that matches what this form does — steps 1 to 4, OCR only if the
+  // PDF has no text layer, no final verification — so it is not sent.
+  if (ctxCache && ctxCache.reglas_predeterminadas) {
+    datos.append("ruta_reglas", ctxCache.reglas_predeterminadas);
+  }
+  datos.append("verificacion_final", $("verificar").checked);
+  // Both come from the first screen: the email is written in the chosen language,
+  // and the address — if one was left — receives the results when the run ends.
+  datos.append("idioma", currentLang());
+  if (Onboarding.email()) datos.append("email", Onboarding.email());
+
+  limpiarConsola();
+  reiniciarPasos();
+  ultimoDone = null;
+  $("artefactos").classList.add("hidden");
+  $("consumo").classList.add("hidden");
+
+  const resp = await fetch("/api/corridas", { method: "POST", body: datos });
+  if (!resp.ok) {
+    const err = await resp.json().catch(() => ({ detail: resp.statusText }));
+    linea("k-error", "✖  " + esc(err.detail), 0);
+    estado("statusFailed", "error");
+    return;
+  }
+  const sesion = await resp.json();
+  arrancarUI(sesion);
+  seguir(sesion.run_id, 0);
+});
+
+// ---------------------------------------------------------------- language
+// Re-render everything already on screen in the new language. The console log is
+// left alone: those lines come from the pipeline, which speaks Spanish.
+function aplicarIdioma() {
+  document.title = t("tabTitle");
+  applyStaticText();
+  textosPasos();
+  pintarFormulario(ctxCache);
+  if (terminalVacia) placeholderConsola();
+  $("status-txt").textContent = t(estadoKey);
+  pintarStamp();
+  if (corriendo) $("btn").textContent = t("btnRunning");
+  if (ultimoDone) {
+    pintarConsumo(ultimoDone.usage);
+    pintarArtefactos(ultimoDone.artifacts);
+  }
+}
+
+// Options the wizard needs. Whether email can be offered is only known once the
+// context is in, so it is read from the cache the load filled.
+const opcionesOnboarding = () => ({
+  emailEnabled: !!(ctxCache && ctxCache.email_disponible),
+  onLanguage: (code) => { if (setLang(code)) aplicarIdioma(); },
+});
+
+document.title = t("tabTitle");
+applyStaticText();
+initLangSwitch("lang", aplicarIdioma);
+estado("statusIdle", "idle");
+pintarStamp();
+pintarPasos();
+placeholderConsola();
+
+// The wizard waits for the context: it decides whether to offer the email, and
+// the form behind it is already painted when the overlay steps aside.
+cargarContexto().then(() => {
+  Onboarding.startIfFirstTime(opcionesOnboarding());
+  Onboarding.bindOpeners(opcionesOnboarding());
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+﻿{
+    "disposition_id":  "ANMAT_6907_2010",
+    "title":  "Armonización de prospectos para especialidades medicinales con PSEUDOEFEDRINA (Posología y Presentaciones)",
+    "source_type":  "DISPOSICIÓN",
+    "sale_condition":  "VENTA BAJO RECETA",
+    "dosage_form":  null,
+    "route_of_administration":  null,
+    "active_substances":  [
+                              "PSEUDOEFEDRINA"
+                          ],
+    "contains_alcohol":  null,
+    "objective":  "Establecer la inclusión obligatoria y armonizada de información en los ítems “Posología” y “Presentaciones” de los prospectos de especialidades medicinales que contengan PSEUDOEFEDRINA, y fijar el plazo y forma de presentación para su adecuación.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Incluir en el ítem “Posología” del prospecto el esquema de dosificación por grupo etario, dosis máximas diarias y el período máximo de tratamiento para especialidades medicinales que contengan PSEUDOEFEDRINA.",
+                      "verification_procedure":  "Confirmar que el producto contiene PSEUDOEFEDRINA y que el prospecto incluye el ítem “Posología”. Verificar que dentro de ese ítem se incorporan las dosis diarias por grupo etario (2 a 6 años, 6 a 12 años, adultos y mayores de 12 años), sus dosis máximas diarias y el período máximo de tratamiento, según el texto del ANEXO I.",
+                      "acceptance_criteria":  "El ítem “Posología” del prospecto incluye: (1) “Dosis diarias:” con las tres franjas etarias y sus dosis/intervalos y dosis máximas diarias, y (2) el “Período de tratamiento máximo: 5 días en adultos y niños.”, conforme ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "Dosis diarias:",
+                                                   "Niños de 2 a 6 años: 15 mg cada 4 - 6 hs. Dosis máxima 60 mg/día.",
+                                                   "Niños de 6 a 12 años: 30 mg cada 4 - 6 hs. Dosis máxima 120 mg/día.",
+                                                   "Adultos y mayores de 12 años: 60 mg cada 4 - 6 hs. Dosis máxima 240 mg/día.",
+                                                   "Período de tratamiento máximo: 5 días en adultos y niños."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Incluir en el ítem “Presentaciones” del prospecto las limitaciones de presentación máxima para soluciones (o formas similares) y de cantidad máxima para comprimidos (o formas similares) en especialidades medicinales que contengan PSEUDOEFEDRINA.",
+                      "verification_procedure":  "Confirmar que el producto contiene PSEUDOEFEDRINA y revisar el ítem “Presentaciones” del prospecto. Si el producto es solución o forma farmacéutica similar, verificar que la presentación máxima declarada no exceda 100 ml. Si el producto es comprimido o forma farmacéutica similar, verificar que la cantidad declarada no exceda la necesaria para un máximo de 5 días de tratamiento.",
+                      "acceptance_criteria":  "En el ítem “Presentaciones”: (a) para solución o forma farmacéutica similar, la presentación máxima declarada es ≤ 100 ml; y (b) para comprimidos o forma farmacéutica similar, la cantidad declarada se limita a la necesaria para un máximo de 5 días de tratamiento, conforme ANEXO I.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Adecuar los prospectos y presentar los proyectos de nuevos prospectos por triplicado dentro del plazo establecido, incorporando la información del ANEXO I.",
+                      "verification_procedure":  "Revisar el expediente regulatorio del titular (autorizado o en trámite de autorización) para confirmar: (1) la adecuación del prospecto a lo requerido por ANEXO I; (2) la presentación de los proyectos de nuevos prospectos por triplicado; y (3) que la presentación se realizó dentro de los noventa (90) días hábiles administrativos contados desde la entrada en vigencia de la disposición.",
+                      "acceptance_criteria":  "El titular presentó, dentro de 90 días hábiles administrativos desde la entrada en vigencia, los proyectos de nuevos prospectos por triplicado, con inclusión de la información del ANEXO I.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Aplicar correctamente la fecha de entrada en vigencia para el cómputo de plazos de adecuación.",
+                      "verification_procedure":  "Identificar la fecha de publicación en el Boletín Oficial y establecer como fecha de entrada en vigencia el día siguiente. Utilizar esa fecha como inicio del cómputo del plazo del Art. 2 (90 días hábiles administrativos).",
+                      "acceptance_criteria":  "La entrada en vigencia se considera el día siguiente al de la publicación en el Boletín Oficial y el plazo del Art. 2 se computa desde esa fecha.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 4.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Reconocer el régimen sancionatorio aplicable ante incumplimiento de la disposición.",
+                      "verification_procedure":  "Ante detección de incumplimiento de las obligaciones establecidas por la disposición, verificar que el encuadre sancionatorio se corresponda con la Ley 16.463 y el Decreto 341/92.",
+                      "acceptance_criteria":  "El incumplimiento de la disposición se considera pasible de las sanciones previstas en la Ley 16.463 y en el Decreto 341/92.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 3.",
+                      "attach_reference":  [
+
+                                           ]
+                  }
+              ]
+}

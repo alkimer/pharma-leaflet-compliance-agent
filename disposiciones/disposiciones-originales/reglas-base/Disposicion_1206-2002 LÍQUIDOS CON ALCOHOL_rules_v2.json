@@ -1,0 +1,146 @@
+﻿{
+    "disposition_id":  "ANMAT_1206_2002",
+    "title":  "Disposición 1206/2002 — Especialidades medicinales líquidas con alcohol etílico: rotulado y prospectos",
+    "source_type":  "DISPOSICIÓN",
+    "sale_condition":  null,
+    "dosage_form":  "Líquida",
+    "route_of_administration":  "Oral (incluyendo colutorios) o parenteral",
+    "active_substances":  null,
+    "contains_alcohol":  true,
+    "objective":  "Establecer la declaración obligatoria del contenido de alcohol etílico en rótulos/etiquetas y la inclusión de advertencias/precauciones/contraindicaciones específicas en prospectos de especialidades medicinales líquidas (orales o parenterales) que contengan alcohol etílico, y fijar límites máximos de etanol para venta libre oral por grupo etario.",
+    "repealed_regulatory_order":  [
+                                      "Disposición A.N.M.A.T. N° 3429/00"
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Asegurar que los rótulos/etiquetas de especialidades medicinales líquidas (venta libre o bajo receta), orales (incl. colutorios) o parenterales, que contengan alcohol etílico declaren su contenido en % peso/volumen.",
+                      "verification_procedure":  "Confirmar que el producto es una especialidad medicinal líquida destinada a administración oral (incluyendo colutorios) o parenteral y que contiene alcohol etílico. Revisar el texto del rótulo/etiqueta (envase) y verificar que declare el contenido de alcohol etílico expresado como % peso/volumen (% p/v).",
+                      "acceptance_criteria":  "El rótulo/etiqueta declara el contenido de alcohol etílico especificado en % peso/volumen (% p/v) para productos dentro del alcance (líquidos orales/parenterales con alcohol etílico).",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Asegurar que los prospectos de especialidades medicinales líquidas orales (para ingestión) o parenterales que contengan alcohol etílico incluyan la información del ANEXO I según las cantidades especificadas.",
+                      "verification_procedure":  "Confirmar que el producto es una especialidad medicinal líquida destinada a administración oral (para ingestión) o parenteral y que contiene alcohol etílico. Revisar el prospecto y verificar que incluya los ítems/leyendas del ANEXO I aplicables según la cantidad de alcohol indicada en dicho anexo.",
+                      "acceptance_criteria":  "El prospecto incluye la información del ANEXO I aplicable según las cantidades especificadas en el mismo, para productos líquidos orales (ingestión) o parenterales con alcohol etílico.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Incluir en el prospecto la advertencia obligatoria de no administrar en pacientes bajo tratamiento con disulfiram.",
+                      "verification_procedure":  "Revisar el ítem \u0027ADVERTENCIAS\u0027 del prospecto y buscar la frase obligatoria sobre disulfiram.",
+                      "acceptance_criteria":  "El prospecto contiene en \u0027ADVERTENCIAS\u0027 la frase obligatoria: \u0027No debe administrarse en paciente bajo tratamiento con disulfiram.\u0027",
+                      "must_include_phrases":  [
+                                                   "No debe administrarse en paciente bajo tratamiento con disulfiram."
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Incluir en \u0027PRECAUCIONES\u0027 el texto obligatorio cuando la cantidad de alcohol en la dosis diaria exceda 0,5 g/día, siempre que esas condiciones no estén ya incluidas en \u0027Contraindicaciones\u0027.",
+                      "verification_procedure":  "Calcular o verificar (según fórmula/posología) la cantidad de alcohol etílico/etanol por dosis y por dosis diaria máxima recomendada. Si la dosis diaria excede 0,5 g/día, revisar el ítem \u0027PRECAUCIONES\u0027 del prospecto y confirmar la inclusión del texto obligatorio, salvo que las condiciones ya estén contempladas en \u0027Contraindicaciones\u0027.",
+                      "acceptance_criteria":  "Cuando la cantidad de alcohol en la dosis diaria excede 0,5 g/día, el prospecto incluye en \u0027PRECAUCIONES\u0027 el texto obligatorio (salvo que dichas condiciones ya estén incluidas en \u0027Contraindicaciones\u0027).",
+                      "must_include_phrases":  [
+                                                   "Basado en la presencia del alcohol etílico/etanol como excipiente se deberán tener precauciones en cuanto a personas con enfermedad hepática, alcoholismo, epilepsia, embarazadas, niños."
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Incluir en \u0027CONTRAINDICACIONES\u0027 el texto obligatorio cuando la cantidad de alcohol exceda más de 3 g por cada dosis única máxima recomendada.",
+                      "verification_procedure":  "Calcular o verificar (según fórmula/posología) la cantidad de alcohol etílico/etanol en la dosis única máxima recomendada. Si excede más de 3 g por dosis única máxima recomendada, revisar el ítem \u0027CONTRAINDICACIONES\u0027 del prospecto y confirmar la inclusión del texto obligatorio correspondiente.",
+                      "acceptance_criteria":  "Cuando la cantidad de alcohol excede más de 3 g por cada dosis única máxima recomendada, el prospecto incluye en \u0027CONTRAINDICACIONES\u0027 el texto obligatorio indicado.",
+                      "must_include_phrases":  [
+                                                   "Basado en la presencia de alcohol etílico/etanol como excipiente no deberá ser administrado en personas con enfermedad hepática, alcoholismo, epilepsia, embarazadas, niños"
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  6,
+                      "objective":  "Incluir \u0027niños\u0027 en \u0027CONTRAINDICACIONES\u0027 cuando la cantidad de alcohol conlleve a una concentración mayor de 20 mg/dl de alcoholemia en niños para las dosis máximas recomendadas.",
+                      "verification_procedure":  "Determinar (según fórmula/posología) si, para las dosis máximas recomendadas en niños, la cantidad de alcohol conlleva a una concentración mayor de 20 mg/dl de alcoholemia. Si aplica, revisar el ítem \u0027CONTRAINDICACIONES\u0027 del prospecto y verificar que se incluya la mención obligatoria \u0027niños.\u0027",
+                      "acceptance_criteria":  "Cuando la cantidad de alcohol conlleva a una concentración \u003e20 mg/dl de alcoholemia en niños (para dosis máximas recomendadas), el prospecto incluye \u0027niños.\u0027 en el ítem \u0027CONTRAINDICACIONES\u0027.",
+                      "must_include_phrases":  [
+                                                   "niños."
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  7,
+                      "objective":  "Cumplir con los límites máximos de etanol para especialidades medicinales de VENTA LIBRE líquidas de administración oral (para ingestión) según grupo etario, y aplicar correctamente la excepción prevista.",
+                      "verification_procedure":  "Confirmar que el producto es VENTA LIBRE, forma farmacéutica líquida y administración oral (para ingestión). Verificar que la concentración de etanol declarada cumpla el límite máximo según la indicación por grupo etario: 0,5 g% (0,6 ml/100 ml) para menores de 6 años; 5 g% (6 ml/100 ml) para 6 a 12 años; 10 g% (12 ml/100 ml) para adultos y mayores de 12 años. Si supera el límite, verificar si aplica la excepción: (1) el alcohol es condición necesaria e irreemplazable por un problema específico de disolución del principio activo, (2) el producto se dosifica en gotas, (3) se administra con dilución previa a la ingestión, y (4) la presentación es en frasco-gotero o con medidor cuenta gotas y tapa de seguridad. Para cálculos, considerar el parámetro: alcohol etílico entre 94,9% y 96% v/v, 1 ml = 0,8 g.",
+                      "acceptance_criteria":  "Para VENTA LIBRE líquidos orales (ingestión), la concentración de etanol no supera el límite máximo aplicable por grupo etario (0,5 g% \u003c6 años; 5 g% 6-12 años; 10 g% \u003e12 años/adultos), salvo que cumpla simultáneamente todas las condiciones de excepción (necesario/irreemplazable por disolución, dosificación en gotas, dilución previa a la ingestión, y frasco-gotero o cuenta gotas con tapa de seguridad).",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 3.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  8,
+                      "objective":  "Permitir que titulares de certificados de VENTA LIBRE con alcohol etílico \u003e0,5 g% destinados para niños menores de 6 años soliciten cambio de fórmula disminuyendo alcohol etílico, tramitado con preferente despacho.",
+                      "verification_procedure":  "Confirmar si el producto es VENTA LIBRE, contiene alcohol etílico en concentración \u003e0,5 g% y está destinado/indicado para niños menores de 6 años. Verificar en el expediente/registros regulatorios si se presentó solicitud de cambio de fórmula disminuyendo alcohol etílico y si fue ingresada mediante actuaciones administrativas correspondientes con tratamiento de preferente despacho. Considerar que la norma lo formula como facultad/opción cuando corresponda, no como obligación directa.",
+                      "acceptance_criteria":  "Cuando el producto es VENTA LIBRE, contiene alcohol etílico \u003e0,5 g% y está destinado para menores de 6 años, existe solicitud presentada de cambio de fórmula disminuyendo alcohol etílico (según procedimiento administrativo), con preferente despacho. Si la norma lo formula como facultad u opción, no corresponde incumplimiento por no ejercerla.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 4.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  9,
+                      "objective":  "Presentar dentro de 90 días hábiles desde la publicación la Declaración Jurada de cumplimiento para especialidades medicinales comercializadas alcanzadas por la disposición.",
+                      "verification_procedure":  "Identificar si la especialidad medicinal está comercializada y se encuentra alcanzada por la disposición (líquida oral/parenteral con alcohol). Verificar la fecha de publicación en Boletín Oficial y comprobar que dentro de los 90 días hábiles se presentó una Declaración Jurada indicando que incluirán en rótulos y prospectos la información requerida por los Arts. 1, 2 y 3, y que dicha DDJJ fue incorporada al legajo por el Departamento de Registro.",
+                      "acceptance_criteria":  "Para productos comercializados alcanzados, se presentó dentro de 90 días hábiles desde la publicación una Declaración Jurada de que se incluirá la información exigida por los Arts. 1, 2 y 3, y la DDJJ consta incorporada al legajo correspondiente.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 5.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  10,
+                      "objective":  "Presentar nuevos rótulos y prospectos cuando la modificación de los porcentajes de alcohol etílico conlleve un cambio en la condición de venta del producto.",
+                      "verification_procedure":  "Determinar si se efectuó (o se solicita) modificación del porcentaje de alcohol etílico. Evaluar si dicha modificación conlleva un cambio en la condición de venta. Si conlleva cambio, verificar en el expediente la presentación de nuevos rótulos y prospectos.",
+                      "acceptance_criteria":  "Si la modificación de los porcentajes de alcohol etílico conlleva un cambio en la condición de venta del producto, se presentaron nuevos rótulos y prospectos.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 5.",
+                      "attach_reference":  [
+
+                                           ]
+                  }
+              ]
+}

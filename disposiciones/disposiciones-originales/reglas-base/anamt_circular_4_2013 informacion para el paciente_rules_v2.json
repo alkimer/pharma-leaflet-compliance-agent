@@ -1,0 +1,81 @@
+﻿{
+    "disposition_id":  "ANMAT_CIRCULAR_004_2013",
+    "title":  "CIRCULAR N° 004/2013 - PROSPECTO: Información para el paciente",
+    "source_type":  "CIRCULAR",
+    "sale_condition":  null,
+    "dosage_form":  null,
+    "route_of_administration":  null,
+    "active_substances":  null,
+    "contains_alcohol":  null,
+    "objective":  "Establecer lineamientos para incorporar por separado el prospecto de Información para el paciente, mantener el prospecto tradicional para prescribir, incluir una leyenda de notificación a ANMAT y definir el reemplazo del prospecto incluido en el envase secundario luego de 180 días desde la aprobación del prospecto de Información para el paciente.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Verificar que, en los trámites alcanzados, se incorpore por separado un prospecto con Información para el paciente.",
+                      "verification_procedure":  "Identificar el tipo de trámite. Si corresponde a alguno de los trámites alcanzados, verificar que el expediente incluya un documento separado identificado como prospecto, folleto o información para el paciente.",
+                      "acceptance_criteria":  "La regla se considera observada si el trámite contiene un documento separado de Información para el paciente.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Circular 004/2013",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Verificar que la incorporación del prospecto de Información para el paciente no reemplace, en la etapa de evaluación regulatoria, al prospecto tradicional para prescribir.",
+                      "verification_procedure":  "Revisar la documentación presentada y verificar que exista un prospecto tradicional destinado al profesional prescriptor, diferenciado del prospecto de Información para el paciente.",
+                      "acceptance_criteria":  "La regla se considera observada si existen dos documentos diferenciados: el prospecto de Información para el paciente y el prospecto tradicional para prescribir.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Circular 004/2013",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Verificar que el prospecto de Información para el paciente incluya la leyenda de notificación de inconvenientes a ANMAT.",
+                      "verification_procedure":  "Revisar el texto completo del prospecto de Información para el paciente. Verificar la presencia de la leyenda de notificación a ANMAT, incluyendo la referencia a la Página Web de ANMAT, el enlace de farmacovigilancia y el teléfono de ANMAT Responde.",
+                      "acceptance_criteria":  "La regla se considera observada si el prospecto de Información para el paciente incluye la leyenda indicada o una variante sustancialmente equivalente que conserve el sentido, el enlace web y el número telefónico.",
+                      "must_include_phrases":  [
+                                                   "Ante cualquier inconveniente con el producto el paciente puede llenar la ficha que está en la Página Web de la ANMAT: http://www.anmat.gov.ar/farmacovigilancia/Notificar.asp o llamar a ANMAT responde 0800- 333- 1234"
+                                               ],
+                      "article_reference":  "Circular 004/2013",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Verificar que, una vez transcurridos 180 días desde la aprobación del prospecto de Información para el paciente, el envase secundario incluya únicamente ese prospecto.",
+                      "verification_procedure":  "Obtener la fecha de aprobación del prospecto de Información para el paciente. Calcular si transcurrieron al menos 180 días. Si el plazo se cumplió, revisar el contenido del envase secundario y verificar que incluya únicamente el prospecto de Información para el paciente.",
+                      "acceptance_criteria":  "Si transcurrieron 180 días o más desde la aprobación del prospecto de Información para el paciente, el envase secundario debe contener únicamente el prospecto de Información para el paciente.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Circular 004/2013",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Registrar que tanto el prospecto de Información para el paciente como el prospecto para prescribir deben incluirse en LOMAC y Vademecum ANMAT.",
+                      "verification_procedure":  "Verificar, cuando se disponga de acceso a fuentes oficiales o documentación administrativa, que ambos prospectos estén incorporados o previstos para incorporación en el Listado Oficial de Medicamentos actualmente Comercializados (LOMAC) y en Vademecum ANMAT.",
+                      "acceptance_criteria":  "La regla se considera observada si ambos prospectos se encuentran disponibles o identificados para su inclusión en LOMAC y Vademecum ANMAT.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Circular 004/2013",
+                      "attach_reference":  [
+
+                                           ]
+                  }
+              ]
+}

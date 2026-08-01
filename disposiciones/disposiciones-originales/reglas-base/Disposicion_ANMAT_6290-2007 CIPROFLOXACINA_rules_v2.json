@@ -1,0 +1,106 @@
+﻿{
+    "disposition_id":  "ANMAT_6290_2007",
+    "title":  "Actualización de advertencias y precauciones sobre tendinitis y ruptura de tendones para fluoroquinolonas de administración oral",
+    "source_type":  "DISPOSICIÓN",
+    "sale_condition":  null,
+    "dosage_form":  null,
+    "route_of_administration":  "Administración oral",
+    "active_substances":  [
+                              "CIPROFLOXACINA",
+                              "LEVOFLOXACINA",
+                              "MOXIFLOXACINA",
+                              "OFLOXACINA"
+                          ],
+    "contains_alcohol":  null,
+    "objective":  "Incorporar obligatoriamente, en forma resaltada, advertencias y precauciones/uso geriátrico sobre tendinitis y ruptura de tendones en los prospectos de especialidades medicinales con fluoroquinolonas de administración oral, y establecer el trámite y plazo de adecuación. Archivo: sandbox:/mnt/data/Disposicion_ANMAT_6290-2007 CIPROFLOXACINA_rules_2_final.json.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Incorporar en el prospecto autorizado la advertencia sobre tendinitis y ruptura de tendones para fluoroquinolonas de administración oral, conforme al ANEXO I.",
+                      "verification_procedure":  "Confirmar que la especialidad medicinal contiene una fluoroquinolona de administración oral (p. ej., ciprofloxacina, levofloxacina, moxifloxacina u ofloxacina). Revisar el prospecto vigente/autorizado y verificar, en el apartado de ADVERTENCIAS (o sección equivalente), que se haya agregado el texto del ANEXO I relativo a tendinitis/ruptura de tendones (incluyendo factores de riesgo, conducta ante síntomas, reposo y ventana temporal de ocurrencia).",
+                      "acceptance_criteria":  "El prospecto autorizado contiene el texto de ADVERTENCIAS del ANEXO I sobre tendinitis y ruptura de tendones, sin omisiones sustantivas.",
+                      "must_include_phrases":  [
+                                                   "En pacientes que recibían quinolonas, entre ellas Ciprofloxacina, levofloxacina, ofloxacina y Moxifloxacina, se han detectado casos de rupturas de tendón a nivel del hombro, de la mano y especialmente Tendón de Aquiles u otros que requirieron cirugía o trajeron aparejado como resultado una incapacidad prolongada.",
+                                                   "Los informes de Farmacovigilancia post-marketing indican que este riesgo se incrementa en pacientes que reciben o hayan recibido tratamiento con corticosteroides, especialmente en los mayores de 65 años.",
+                                                   "Debe discontinuarse la administración del producto si el paciente presenta síntomas sugestivos de tendinitis (dolor, inflamación) o ruptura de tendón.",
+                                                   "Los pacientes deben descansar y abstenerse de hacer ejercicios hasta haberse descartado el diagnóstico de tendinitis o de ruptura de tendón.",
+                                                   "La ruptura puede ocurrir desde las 48 hs. de iniciado el tratamiento con cualquiera las drogas referidas, hasta luego de haber finalizado el mismo."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Incorporar en el prospecto autorizado las precauciones de USO GERIÁTRICO sobre mayor riesgo de alteraciones severas en tendones en mayores de 65 años tratados con fluoroquinolonas, conforme al ANEXO I.",
+                      "verification_procedure":  "Confirmar que la especialidad medicinal contiene una fluoroquinolona de administración oral. Revisar el prospecto vigente/autorizado y verificar, en el apartado PRECAUCIONES / USO GERIÁTRICO (o sección equivalente), que se haya agregado el texto del ANEXO I (mayor riesgo en \u003e65 años, aumento con corticosteroides, localización típica, posible ocurrencia durante o meses después y conducta de suspensión y aviso al médico).",
+                      "acceptance_criteria":  "El prospecto autorizado contiene el texto de PRECAUCIONES / USO GERIÁTRICO del ANEXO I, sin omisiones sustantivas.",
+                      "must_include_phrases":  [
+                                                   "Pacientes mayores de 65 años tienen mayor riesgo de desarrollar alteraciones severas en los tendones, incluyendo ruptura, con el tratamiento con cualquiera de las quinolonas referidas.",
+                                                   "Este riesgo es mayor en pacientes que reciben o hayan estado en tratamiento con corticosteroides.",
+                                                   "Usualmente la ruptura se observa en el tendón de Aquiles, o tendones de mano u hombro y pueden ocurrir durante o varios meses después de completar la terapia antibiótica.",
+                                                   "Los pacientes deben ser informados de dicho efecto adverso, aconsejándose la suspensión de la ingesta si se presenta alguno de los síntomas mencionados, e informando de inmediato a su médico."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Presentar en forma resaltada en el prospecto el contenido agregado conforme al ANEXO I.",
+                      "verification_procedure":  "Revisar el arte final del prospecto y verificar que el texto incorporado según ANEXO I (ADVERTENCIAS y PRECAUCIONES/USO GERIÁTRICO) se encuentre destacado respecto del resto del texto (p. ej., negrita, recuadro, tipografía diferenciada u otro recurso equivalente).",
+                      "acceptance_criteria":  "El contenido incorporado del ANEXO I figura en el prospecto en forma resaltada respecto del resto del texto.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Adecuar los prospectos mediante el trámite previsto en la Disposición ANMAT N° 3855/98 dentro de 60 días corridos desde la entrada en vigencia.",
+                      "verification_procedure":  "Verificar en el expediente/legajo regulatorio del titular que la adecuación del prospecto se tramitó por el procedimiento de la Disposición ANMAT N° 3855/98. Identificar la fecha de entrada en vigencia (día siguiente a la publicación en Boletín Oficial) y comprobar que la presentación se realizó dentro de los 60 días corridos desde esa fecha.",
+                      "acceptance_criteria":  "Existe presentación de adecuación por trámite ANMAT N° 3855/98 dentro de los 60 (sesenta) días corridos contados desde la entrada en vigencia.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Reconocer el régimen sancionatorio aplicable ante incumplimiento de la disposición.",
+                      "verification_procedure":  "Si se detecta incumplimiento de los Arts. 1 y/o 2, verificar que el caso se encuadre como pasible de las sanciones previstas por la Ley 16.463 y el Decreto N° 341/92.",
+                      "acceptance_criteria":  "El incumplimiento de la disposición se considera pasible de las sanciones previstas en la Ley 16.463 y en el Decreto N° 341/92.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 3.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  6,
+                      "objective":  "Aplicar la fecha de entrada en vigencia para el cómputo de plazos regulatorios establecidos en la disposición.",
+                      "verification_procedure":  "Identificar la fecha de publicación en el Boletín Oficial y establecer como fecha de entrada en vigencia el día siguiente. Utilizar esa fecha como inicio del cómputo del plazo del Art. 2.",
+                      "acceptance_criteria":  "La entrada en vigencia se considera a partir del día siguiente al de su publicación en el Boletín Oficial.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 4.",
+                      "attach_reference":  [
+
+                                           ]
+                  }
+              ]
+}

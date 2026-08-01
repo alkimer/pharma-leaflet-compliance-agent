@@ -1,0 +1,86 @@
+﻿{
+    "disposition_id":  "ANMAT_4525_2006",
+    "title":  "Advertencia en prospectos para inhibidores de la fosfodiesterasa tipo 5 (PDE5)",
+    "source_type":  "DISPOSICIÓN",
+    "sale_condition":  null,
+    "dosage_form":  null,
+    "route_of_administration":  null,
+    "active_substances":  [
+                              "SILDENAFIL",
+                              "TADALAFIL",
+                              "VARDENAFIL"
+                          ],
+    "contains_alcohol":  null,
+    "objective":  "Establecer la incorporación en forma resaltada de una advertencia de seguridad (ANEXO I) en los prospectos de especialidades medicinales que contengan inhibidores tipo 5 de la fosfodiesterasa (PDE5), tales como sildenafil, tadalafil o vardenafil.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Asegurar que los prospectos de especialidades medicinales que contengan inhibidores tipo 5 de la fosfodiesterasa (PDE5) incluyan la advertencia de uso del ANEXO I.",
+                      "verification_procedure":  "Confirmar que el producto contiene como principio activo un inhibidor PDE5 (p. ej., sildenafil, tadalafil o vardenafil). Revisar el prospecto aprobado y verificar que incorpora íntegramente el texto del ANEXO I bajo el apartado de advertencias (mismo contenido textual).",
+                      "acceptance_criteria":  "El prospecto contiene íntegramente la advertencia de uso incluida en el ANEXO I para inhibidores PDE5, sin omisiones del contenido.",
+                      "must_include_phrases":  [
+                                                   "Luego de la comercialización de drogas tales como sildenafil, tadalafil o vardenafil (inhibidores de la fosfodiesterasa tipo 5 - PDE 5) se ha observado muy raramente que pacientes que ingirieron estos medicamentos mostraron una disminución o pérdida de la visión causada por una neuropatía óptica isquémica anterior no arterítica (NOIA-NA). La mayoría de estos pacientes presentaban factores de riesgo tales como bajo índice excavación / disco (\"disco apretado\", en el fondo de ojo), edad por encima de los 50 años, hipertensión arterial, enfermedad coronaria, hiperlipidemia y/o hábito de fumar. No se ha podido aún establecer una relación causal entre el uso de inhibidores de la PDE5 y la NOIA-NA.",
+                                                   "El médico deberá informar a sus pacientes con factores de riesgo sobre la posibilidad de padecer NOIA-NA; y que, en caso de presentar una pérdida repentina de la visión de uno o ambos ojos mientras están tomando inhibidores PDE5 (incluyendo sildenafil, tadalafil o vardenafil, según corresponda), deben suspender la medicación y consultar a un médico especialista."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Asegurar que la advertencia de uso incorporada en el prospecto figure en forma resaltada.",
+                      "verification_procedure":  "Revisar el prospecto y verificar que el bloque de advertencia exigido por el ANEXO I se presenta con un formato resaltado/destacado respecto del resto del texto (por ejemplo: tipografía destacada, recuadro, negrita u otro recurso equivalente).",
+                      "acceptance_criteria":  "La advertencia de uso exigida por el Art. 1 y ANEXO I está incluida en el prospecto y se presenta en forma resaltada respecto del resto del texto.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Asegurar que los laboratorios titulares adecuen los prospectos al contenido exigido mediante el trámite previsto en la Disposición ANMAT N° 3855/98 dentro del plazo establecido.",
+                      "verification_procedure":  "Para especialidades medicinales alcanzadas por el Art. 1, verificar en el expediente regulatorio que la adecuación del prospecto se tramitó mediante el procedimiento previsto en la Disposición ANMAT N° 3855/98 y que la presentación se realizó dentro de 60 días corridos desde la entrada en vigencia.",
+                      "acceptance_criteria":  "La adecuación del prospecto se gestionó por el trámite de la Disposición ANMAT N° 3855/98 y fue presentada dentro de los 60 (sesenta) días corridos contados desde la entrada en vigencia.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Aplicar correctamente la fecha de entrada en vigencia de la disposición para el cómputo de plazos de adecuación.",
+                      "verification_procedure":  "Identificar la fecha de publicación en el Boletín Oficial y fijar como fecha de entrada en vigencia el día siguiente; usar esa fecha para computar el plazo de 60 días corridos del Art. 2.",
+                      "acceptance_criteria":  "La entrada en vigencia se considera el día siguiente al de la publicación en el Boletín Oficial, y el cómputo del plazo del Art. 2 se realiza desde esa fecha.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 4.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Reconocer el régimen sancionatorio aplicable ante el incumplimiento de la disposición.",
+                      "verification_procedure":  "En caso de detectar incumplimiento de las obligaciones de los Arts. 1 y 2, verificar que se encuadre la actuación bajo el régimen sancionatorio previsto por la norma (Ley 16.463 y Decreto 341/92).",
+                      "acceptance_criteria":  "El incumplimiento de la disposición se considera pasible de las sanciones previstas en la Ley 16.463 y en el Decreto 341/92.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 3.",
+                      "attach_reference":  [
+
+                                           ]
+                  }
+              ]
+}

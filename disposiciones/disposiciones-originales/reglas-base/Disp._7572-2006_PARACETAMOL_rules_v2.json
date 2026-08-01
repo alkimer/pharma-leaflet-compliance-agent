@@ -1,0 +1,347 @@
+﻿{
+    "disposition_id":  "ANMAT_7572_2006",
+    "title":  "Disposición ANMAT 7572/2006 - Información obligatoria en prospectos de Venta Libre con Paracetamol",
+    "source_type":  "DISPOSICION",
+    "sale_condition":  "VENTA LIBRE",
+    "dosage_form":  null,
+    "route_of_administration":  null,
+    "active_substances":  [
+                              "PARACETAMOL"
+                          ],
+    "contains_alcohol":  null,
+    "objective":  "Establecer la información que deben incluir los prospectos de especialidades medicinales autorizadas como Venta Libre que contengan Paracetamol como principio activo, solo o en asociaciones, conforme los modelos de los Anexos I y II, y fijar el plazo administrativo de adecuación y presentación de nuevos prospectos por triplicado.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Determinar si la disposición aplica al producto evaluado.",
+                      "verification_procedure":  "Verificar la condición de venta autorizada y la composición cuali-cuantitativa del producto. Confirmar que el producto contiene Paracetamol y que la condición de venta es Venta Libre.",
+                      "acceptance_criteria":  "La matriz aplica si el producto contiene Paracetamol y está autorizado como Venta Libre.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 1",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Asegurar que los prospectos de productos de Venta Libre con Paracetamol incluyan la información contenida en los Anexos I y/o II según corresponda.",
+                      "verification_procedure":  "Identificar la presentación del producto. Determinar si corresponde el modelo de Anexo I, Anexo II o una adaptación por asociación/concentración. Verificar que el prospecto incorpore la información mínima aplicable.",
+                      "acceptance_criteria":  "El prospecto incorpora la información obligatoria del modelo aplicable.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 1",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Verificar la adecuación de prospectos y presentación de proyectos por triplicado dentro del plazo establecido.",
+                      "verification_procedure":  "Determinar la fecha de entrada en vigencia de la disposición. Verificar que dentro de 60 días corridos se hayan presentado los proyectos de nuevos prospectos por triplicado con la información de los Anexos I y II.",
+                      "acceptance_criteria":  "El titular presentó proyectos de prospectos por triplicado dentro de los 60 días corridos desde la entrada en vigencia.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 2",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Verificar que el prospecto incluya datos básicos de identificación del producto conforme al modelo.",
+                      "verification_procedure":  "Revisar encabezado o sección inicial. Verificar nombre comercial real, principio activo Paracetamol, forma farmacéutica, concentración, condición de venta e industria/origen.",
+                      "acceptance_criteria":  "El prospecto identifica claramente producto, concentración, forma farmacéutica, condición de Venta Libre e industria/origen.",
+                      "must_include_phrases":  [
+                                                   "Venta Libre"
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Incluir la fórmula cualicuantitativa del producto.",
+                      "verification_procedure":  "Revisar el prospecto y verificar la presencia de la sección Fórmula cualicuantitativa o equivalente.",
+                      "acceptance_criteria":  "El prospecto contiene fórmula cualicuantitativa o sección equivalente.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  6,
+                      "objective":  "Incluir la acción terapéutica del producto como analgésico-antifebril.",
+                      "verification_procedure":  "Revisar la sección Acción terapéutica y verificar que indique acción analgésica y antifebril.",
+                      "acceptance_criteria":  "El prospecto incluye Acción terapéutica e indica Analgésico-Antifebril o formulación equivalente.",
+                      "must_include_phrases":  [
+                                                   "Analgésico-Antifebril"
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  7,
+                      "objective":  "Incluir la sección de uso del medicamento y la instrucción de lectura previa.",
+                      "verification_procedure":  "Verificar presencia de la sección Uso del Medicamento y la frase de lectura detenida.",
+                      "acceptance_criteria":  "El prospecto contiene la sección de uso y la instrucción al paciente para leer detenidamente la información.",
+                      "must_include_phrases":  [
+                                                   "Lea detenidamente esta información."
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  8,
+                      "objective":  "Incluir las indicaciones terapéuticas previstas en el modelo.",
+                      "verification_procedure":  "Revisar el texto de indicaciones y verificar que incluya alivio sintomático de dolores leves a moderados, estados gripales y/o resfríos, y reducción de la fiebre.",
+                      "acceptance_criteria":  "El prospecto incluye las indicaciones terapéuticas del modelo o formulación equivalente.",
+                      "must_include_phrases":  [
+                                                   "alivio sintomático de dolores",
+                                                   "leves a moderados",
+                                                   "estados gripales",
+                                                   "resfríos",
+                                                   "reducir la fiebre"
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  9,
+                      "objective":  "Incluir la posología del modelo para comprimidos de 500 mg o 650 mg.",
+                      "verification_procedure":  "Verificar que el prospecto indique dosis para adultos y niños mayores de 12 años, intervalo cada 6 u 8 horas, dosis máxima de 4 g/día y consulta médica para menores de 12 años.",
+                      "acceptance_criteria":  "El prospecto incluye la posología modelo para comprimidos 500 mg/650 mg.",
+                      "must_include_phrases":  [
+                                                   "Adultos y Niños mayores de 12 años: 1 comprimido cada 6 u 8 horas.",
+                                                   "Dosis máxima: 4 g/día",
+                                                   "Niños menores de 12 años: consulte con su médico."
+                                               ],
+                      "article_reference":  "Anexo I",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  10,
+                      "objective":  "Incluir la posología pediátrica del modelo para comprimidos masticables de Paracetamol 80 mg.",
+                      "verification_procedure":  "Verificar que el prospecto incluya uso a partir de 4 años, administración cada 6 u 8 horas, dosis máxima 50 mg/kg/día, tabla por edad/peso/cantidad de comprimidos y consulta médica para menores de 4 años.",
+                      "acceptance_criteria":  "El prospecto incluye la posología pediátrica del modelo, con tabla por edad y peso.",
+                      "must_include_phrases":  [
+                                                   "Niños a partir de 4 años",
+                                                   "cada 6 u 8 horas",
+                                                   "Dosis máxima: 50 mg/ kg/día",
+                                                   "Niños menores de 4 años: consulte con su médico."
+                                               ],
+                      "article_reference":  "Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  11,
+                      "objective":  "Incluir instrucciones de administración para comprimidos masticables.",
+                      "verification_procedure":  "Verificar que el prospecto indique que los comprimidos pueden masticarse, deshacerse sobre la lengua o disolverse con líquido.",
+                      "acceptance_criteria":  "El prospecto incluye instrucciones claras de administración para el niño.",
+                      "must_include_phrases":  [
+                                                   "Los comprimidos pueden masticarse o deshacerse sobre la lengua del niño.",
+                                                   "También puede ser disueltos con líquido"
+                                               ],
+                      "article_reference":  "Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  12,
+                      "objective":  "Incluir las contraindicaciones previstas en los anexos.",
+                      "verification_procedure":  "Revisar la sección Contraindicaciones y verificar hipersensibilidad al paracetamol, reacciones severas a aspirina u otros analgésicos antiinflamatorios, úlcera péptica activa, antecedentes de úlcera recurrente, enfermedad hepática, hepatitis virales, trastornos renales y alcoholismo.",
+                      "acceptance_criteria":  "El prospecto contiene las contraindicaciones sustantivas del modelo.",
+                      "must_include_phrases":  [
+                                                   "Hipersensibilidad conocida al paracetamol.",
+                                                   "asma, rinitis, urticaria o reacciones alérgicas severas",
+                                                   "Ulcera péptica activa.",
+                                                   "Antecedentes de úlcera recurrente.",
+                                                   "enfermedad hepática",
+                                                   "hepatitis virales",
+                                                   "trastornos renales",
+                                                   "alcoholismo"
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  13,
+                      "objective":  "Incluir advertencias y precauciones comunes sobre riesgo digestivo, hepatotoxicidad, pruebas de laboratorio, coadministración con paracetamol y duración máxima de uso.",
+                      "verification_procedure":  "Revisar la sección Advertencias y precauciones. Verificar que incluya antecedentes digestivos, daño hepático por sobredosis, alteración de pruebas de laboratorio, no coadministración con otro producto con paracetamol y límites de uso por dolor o fiebre.",
+                      "acceptance_criteria":  "El prospecto incluye las advertencias y precauciones comunes del modelo.",
+                      "must_include_phrases":  [
+                                                   "El paracetamol puede producir daño hepático cuando se ingiere en sobredosis.",
+                                                   "La ingesta del paracetamol puede alterar ciertas pruebas de laboratorio",
+                                                   "No ingiera otra especialidad medicinal que contenga paracetamol conjuntamente con este producto.",
+                                                   "No tomar por más de 5 días si el dolor persiste o más de 3 días para la fiebre. Consulte a su médico."
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  14,
+                      "objective":  "Incluir advertencia de consulta médica previa en consumidores de tres o más vasos diarios de bebida alcohólica.",
+                      "verification_procedure":  "Revisar Advertencias y precauciones y verificar la presencia de la advertencia sobre consumo de tres o más vasos diarios de bebida alcohólica.",
+                      "acceptance_criteria":  "El prospecto bajo Anexo I incluye la advertencia de alcohol.",
+                      "must_include_phrases":  [
+                                                   "Si usted consume 3 (tres) o más vasos diarios de bebida alcohólica consulte a su médico antes de tomar este medicamento."
+                                               ],
+                      "article_reference":  "Anexo I",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  15,
+                      "objective":  "Incluir advertencias de consulta médica previa en pacientes con medicación crónica, embarazo, lactancia o uso de otros medicamentos.",
+                      "verification_procedure":  "Verificar que el prospecto incluya consulta médica previa si el paciente toma medicación crónica, toma otros medicamentos, está embarazada o dando de mamar.",
+                      "acceptance_criteria":  "El prospecto incluye advertencias de consulta médica para esas situaciones.",
+                      "must_include_phrases":  [
+                                                   "Si usted está tomando algún medicamento por alguna enfermedad crónica, consulte a su médico antes de ingerir este producto.",
+                                                   "Si usted está tomando algún medicamento, o está embarazada o dando de mamar consulte a su médico antes de ingerir este medicamento."
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  16,
+                      "objective":  "Incluir advertencia de consulta médica ante uso de anticoagulantes, anticonvulsivantes u otro antiinflamatorio.",
+                      "verification_procedure":  "Revisar la sección Interacciones Medicamentosas y verificar la advertencia indicada.",
+                      "acceptance_criteria":  "El prospecto incluye la sección Interacciones Medicamentosas y la advertencia de consulta médica del modelo.",
+                      "must_include_phrases":  [
+                                                   "Si usted toma anticoagulantes, anticonvulsivantes u otro antiinflamatorio consulte con su médico antes de ingerir este producto."
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  17,
+                      "objective":  "Incluir la sección Reacciones Adversas con el listado modelo.",
+                      "verification_procedure":  "Revisar la sección Reacciones Adversas y verificar erupciones cutáneas, alteraciones en sangre/disminución de plaquetas, náuseas, vómitos y malestar gástrico.",
+                      "acceptance_criteria":  "El prospecto incluye la sección y los eventos adversos sustantivos del modelo.",
+                      "must_include_phrases":  [
+                                                   "Erupciones cutáneas",
+                                                   "alteraciones en la sangre",
+                                                   "disminución de plaquetas",
+                                                   "náuseas",
+                                                   "vómitos",
+                                                   "malestar gástrico"
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  18,
+                      "objective":  "Incluir sección Sobredosis con instrucción de comunicación inmediata y dato/canal correspondiente.",
+                      "verification_procedure":  "Revisar la sección Sobredosis. Verificar que indique comunicarse inmediatamente y que el prospecto aprobado complete el dato o canal de contacto correspondiente.",
+                      "acceptance_criteria":  "El prospecto incluye Sobredosis, instrucción de comunicación inmediata y dato/canal completado.",
+                      "must_include_phrases":  [
+                                                   "En caso de sobredosis, comunicarse inmediatamente al:"
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  19,
+                      "objective":  "Incluir secciones Presentaciones y Conservación con la información correspondiente del producto.",
+                      "verification_procedure":  "Verificar presencia de secciones Presentaciones y Conservación y que no estén vacías ni con placeholders.",
+                      "acceptance_criteria":  "El prospecto incluye presentaciones autorizadas y condiciones de conservación.",
+                      "must_include_phrases":  [
+                                                   "Presentaciones:",
+                                                   "Conservación:"
+                                               ],
+                      "article_reference":  "Anexo I y Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO I",
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  20,
+                      "objective":  "Incluir la frase legal y los campos regulatorios de certificado y revisión cuando correspondan al modelo aprobado.",
+                      "verification_procedure":  "Revisar el pie o sección legal del prospecto. Verificar frase legal, número de certificado y revisión del prospecto.",
+                      "acceptance_criteria":  "El prospecto incluye autorización como especialidad medicinal, número de certificado y revisión, con datos completados.",
+                      "must_include_phrases":  [
+                                                   "Especialidad Medicinal autorizada por el Ministerio de Salud.",
+                                                   "Certificado Nro:",
+                                                   "Revisión:"
+                                               ],
+                      "article_reference":  "Anexo I",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  21,
+                      "objective":  "Registrar que el incumplimiento de la disposición puede generar sanciones.",
+                      "verification_procedure":  "No se audita contra el prospecto. Registrar como consecuencia regulatoria asociada a incumplimientos detectados.",
+                      "acceptance_criteria":  "La matriz reconoce la consecuencia sancionatoria prevista.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 3",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  22,
+                      "objective":  "Determinar la fecha desde la cual comienza a correr el plazo de adecuación.",
+                      "verification_procedure":  "Identificar la fecha de publicación en Boletín Oficial. Calcular entrada en vigencia desde el día siguiente a dicha publicación.",
+                      "acceptance_criteria":  "El plazo de adecuación se computa desde el día siguiente al de publicación.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 4",
+                      "attach_reference":  [
+
+                                           ]
+                  }
+              ]
+}

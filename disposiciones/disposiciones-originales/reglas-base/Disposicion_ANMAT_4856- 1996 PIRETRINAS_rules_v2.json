@@ -1,0 +1,247 @@
+﻿{
+    "disposition_id":  "ANMAT_4856_1996",
+    "title":  "Modelo de prospecto para especialidades medicinales que contengan Piretrinas",
+    "source_type":  "DISPOSICIÓN",
+    "sale_condition":  null,
+    "dosage_form":  "Crema enjuague o loción",
+    "route_of_administration":  "Uso externo (tópico en cuero cabelludo)",
+    "active_substances":  [
+                              "PIRETRINAS"
+                          ],
+    "contains_alcohol":  null,
+    "objective":  "Aprobar el modelo obligatorio de prospecto (Anexo I) para especialidades medicinales de acción pediculicida que contengan PIRETRINAS, normalizando su contenido y advertencias.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Asegurar que las especialidades medicinales que contengan PIRETRINAS utilicen el modelo de prospecto aprobado por la disposición.",
+                      "verification_procedure":  "Confirmar que el producto contiene PIRETRINAS. Revisar el prospecto aprobado/vigente y compararlo contra el modelo del ANEXO I, verificando que reproduzca sus secciones y contenidos obligatorios (encabezados, textos y leyendas).",
+                      "acceptance_criteria":  "Para productos con PIRETRINAS, el prospecto coincide con el modelo del ANEXO I en estructura (secciones) y contenido obligatorio, sin omisiones de leyendas requeridas.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Incluir la sección \u00271 - FÓRMULA\u0027 en el prospecto, destinada a consignar la composición del producto.",
+                      "verification_procedure":  "Revisar el prospecto y verificar la presencia del encabezado/sección \u00271 - FÓRMULA\u0027.",
+                      "acceptance_criteria":  "El prospecto contiene una sección titulada \u00271 - FÓRMULA\u0027.",
+                      "must_include_phrases":  [
+                                                   "1 - FÓRMULA"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Incluir la sección \u00272- INDICACIONES\u0027 con la indicación terapéutica pediculicida de uso externo para pediculosis del cuero cabelludo.",
+                      "verification_procedure":  "Revisar el prospecto y localizar la sección \u00272- INDICACIONES\u0027. Verificar que el texto de indicación coincida con el modelo.",
+                      "acceptance_criteria":  "La sección \u00272- INDICACIONES\u0027 incluye exactamente la indicación del modelo para pediculosis del cuero cabelludo (uso externo).",
+                      "must_include_phrases":  [
+                                                   "2- INDICACIONES: Ectoparasiticida de uso externo para el tratamiento de la pediculosis del cuero cabelludo."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Incluir la sección \u00273- REACCIONES ADVERSAS\u0027 con las reacciones cutáneas locales y el riesgo respiratorio en personas predispuestas.",
+                      "verification_procedure":  "Revisar la sección \u00273- REACCIONES ADVERSAS\u0027 del prospecto y verificar que incluya las reacciones listadas en el modelo.",
+                      "acceptance_criteria":  "La sección \u00273- REACCIONES ADVERSAS\u0027 incluye las reacciones adversas del modelo (prurito/enrojecimiento/edema del cuero cabelludo y dificultad respiratoria o crisis asmática en predispuestos).",
+                      "must_include_phrases":  [
+                                                   "3- REACCIONES ADVERSAS: Prurito, enrojecimiento o edema del cuero cabelludo. Dificultad respiratoria o crisis asmática en personas predispuestas."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Incluir la sección \u00274- PRECAUCIONES Y ADVERTENCIAS\u0027 con advertencias de uso externo exclusivo y precauciones por irritación/infección y contacto con ojos/mucosas.",
+                      "verification_procedure":  "Revisar la sección \u00274- PRECAUCIONES Y ADVERTENCIAS\u0027 del prospecto y comprobar la presencia de las advertencias y conductas indicadas en el modelo.",
+                      "acceptance_criteria":  "La sección \u00274- PRECAUCIONES Y ADVERTENCIAS\u0027 contiene todas las advertencias del modelo sobre uso externo exclusivo, consulta médica ante irritación/infección, evitar ojos/mucosas y lavado con agua ante contacto ocular.",
+                      "must_include_phrases":  [
+                                                   "4- PRECAUCIONES Y ADVERTENCIAS: Este medicamento es de uso externo exclusivo. Si se presenta irritación cutánea y/o infección del cuero cabelludo, consultar al médico. No utilizar cerca de los ojos o mucosas. Si se produce contacto con los ojos, lavar con abundante agua."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  6,
+                      "objective":  "Incluir en \u0027PRECAUCIONES Y ADVERTENCIAS\u0027 las leyendas obligatorias sobre no uso preventivo, consulta médica para tratamientos repetidos y recomendación de no tratar en lugares muy cerrados.",
+                      "verification_procedure":  "Revisar la sección de precauciones/advertencias del prospecto y verificar la presencia literal de las leyendas destacadas del modelo.",
+                      "acceptance_criteria":  "El prospecto incluye las tres leyendas obligatorias del modelo: no uso preventivo, consulta médica para tratamientos repetidos y recomendación de evitar lugares poco aireados.",
+                      "must_include_phrases":  [
+                                                   "NO UTILIZAR COMO PREVENTIVO. PARA TRATAMIENTOS REPETIDOS, CONSULTAR AL MÉDICO.",
+                                                   "Es recomendable no realizar el tratamiento en lugares muy cerrados (poco aireado)."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  7,
+                      "objective":  "Incluir la sección \u00275- CONTRAINDICACIONES\u0027 con la prohibición de uso en menores de 2 años, embarazadas o lactantes y pacientes hipersensibles a componentes de la fórmula.",
+                      "verification_procedure":  "Revisar la sección \u00275- CONTRAINDICACIONES\u0027 del prospecto y verificar que contenga la contraindicación completa según el modelo.",
+                      "acceptance_criteria":  "La sección \u00275- CONTRAINDICACIONES\u0027 contraindica el uso en: menores de 2 años, mujeres embarazadas o amamantando, y pacientes hipersensibles a cualquiera de los componentes de la fórmula.",
+                      "must_include_phrases":  [
+                                                   "5- CONTRAINDICACIONES: No emplear este medicamento en: menores de 2 (dos) años de edad, mujeres embarazadas o que se encuentren amamantando, ni en pacientes hipersensibles (alérgicos) a cualquiera de los componentes de la fórmula."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  8,
+                      "objective":  "Incluir la sección \u00276- MODO DE EMPLEO\u0027 con los pasos de aplicación, tiempo de contacto y enjuague del producto.",
+                      "verification_procedure":  "Revisar la sección \u00276- MODO DE EMPLEO\u0027 del prospecto y verificar que contenga los pasos listados en el modelo (lavado previo, aplicación, 10 minutos, enjuague, peine fino).",
+                      "acceptance_criteria":  "La sección \u00276- MODO DE EMPLEO\u0027 incluye todos los pasos del modelo, incluyendo el tiempo de contacto de 10 minutos y el peinado con peine fino.",
+                      "must_include_phrases":  [
+                                                   "Luego de lavar el cabello con champú habitual, enjuagar y secar con toalla.",
+                                                   "Colocar la crema enjuague o la loción, impregnando el cabello y el cuero cabelludo en toda su superficie.",
+                                                   "Dejar actuar durante 10 minutos.",
+                                                   "Enjuagar con abundante agua hasta eliminar toda la crema enjuague o la loción.",
+                                                   "Peinar con peine fino, para remover de este modo piojos y liendres."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  9,
+                      "objective":  "Incluir en \u0027MODO DE EMPLEO\u0027 la pauta de repetición del tratamiento (a la semana o a los 14 días) si se observan piojos o liendres.",
+                      "verification_procedure":  "Revisar la sección \u00276- MODO DE EMPLEO\u0027 y verificar la presencia de la frase del modelo sobre eficacia de una sola aplicación y repetición a los 7 o 14 días.",
+                      "acceptance_criteria":  "El prospecto indica que una sola aplicación suele ser efectiva y que puede repetirse a la semana o a los 14 días si se observan piojos o liendres.",
+                      "must_include_phrases":  [
+                                                   "Una sola aplicación suele ser efectiva; sin embargo, si se observan piojos o liendres puede volver a repetirse el tratamiento a la semana o a los 14 días."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  10,
+                      "objective":  "Incluir la sección \u00277- INFORMACIÓN PARA EL PACIENTE\u0027 con explicación sobre piojos/liendres y recomendaciones higiénicas complementarias.",
+                      "verification_procedure":  "Revisar el prospecto y verificar la presencia de la sección \u00277- INFORMACIÓN PARA EL PACIENTE\u0027 y que incluya los párrafos informativos y recomendaciones del modelo.",
+                      "acceptance_criteria":  "El prospecto contiene la sección \u00277- INFORMACIÓN PARA EL PACIENTE\u0027 e incluye la explicación de piojos/liendres y las recomendaciones complementarias del modelo.",
+                      "must_include_phrases":  [
+                                                   "7- INFORMACIÓN PARA EL PACIENTE:"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  11,
+                      "objective":  "En \u0027INFORMACIÓN PARA EL PACIENTE\u0027, indicar medidas sobre prendas en contacto (lavado con agua caliente o lavarropas durante 20 minutos; alternativa de bolsa cerrada 2 semanas).",
+                      "verification_procedure":  "Revisar la sección \u00277- INFORMACIÓN PARA EL PACIENTE\u0027 y verificar la inclusión literal de las indicaciones sobre lavado y aislamiento de prendas.",
+                      "acceptance_criteria":  "La sección \u00277- INFORMACIÓN PARA EL PACIENTE\u0027 incluye las instrucciones de lavado de prendas durante 20 minutos y, para prendas no lavables, bolsa plástica cerrada durante 2 semanas.",
+                      "must_include_phrases":  [
+                                                   "Todas las prendas en contacto con el paciente deben ser lavadas con agua caliente o en lavarropas durante 20 minutos.",
+                                                   "Aquellas prendas que no puedan ser lavadas deben dejarse en bolsa de plástico cerrada durante 2 (dos) semanas."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  12,
+                      "objective":  "En \u0027INFORMACIÓN PARA EL PACIENTE\u0027, indicar desinfección de peines y cepillos en agua hirviendo por al menos 5 minutos y la explicación asociada (no total ovicida, remoción mecánica y posible repetición a 7 o 14 días).",
+                      "verification_procedure":  "Revisar la sección \u00277- INFORMACIÓN PARA EL PACIENTE\u0027 y verificar que incluya la recomendación de desinfectar peines/cepillos por 5 minutos y el fundamento del modelo (ovicidez incompleta, remoción mecánica y eventual repetición a 7/14 días).",
+                      "acceptance_criteria":  "La sección \u00277- INFORMACIÓN PARA EL PACIENTE\u0027 incluye la desinfección de peines/cepillos por al menos 5 minutos y el texto del modelo que explica la necesidad de remover liendres mecánicamente y, en ocasiones, repetir el tratamiento a los 7 o 14 días.",
+                      "must_include_phrases":  [
+                                                   "Los peines y cepillos deben ser desinfectados en agua hirviendo durante por lo menos 5 (cinco) minutos"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  13,
+                      "objective":  "En \u0027INFORMACIÓN PARA EL PACIENTE\u0027, indicar que el producto no debe emplearse como cosmético ni en forma preventiva.",
+                      "verification_procedure":  "Revisar la sección \u00277- INFORMACIÓN PARA EL PACIENTE\u0027 y verificar la presencia literal de la advertencia del modelo sobre no uso cosmético ni preventivo.",
+                      "acceptance_criteria":  "La sección \u00277- INFORMACIÓN PARA EL PACIENTE\u0027 incluye la advertencia de no uso cosmético ni preventivo.",
+                      "must_include_phrases":  [
+                                                   "No debe emplearse este producto como cosmético ni en forma preventiva ya que la acción del medicamento se produce sobre piojos y liendres más expuestas."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  14,
+                      "objective":  "En \u0027INFORMACIÓN PARA EL PACIENTE\u0027, recomendar evaluar al grupo de convivencia y realizar tratamiento simultáneo de personas afectadas/infestadas.",
+                      "verification_procedure":  "Revisar la sección \u00277- INFORMACIÓN PARA EL PACIENTE\u0027 y verificar la presencia literal de la recomendación sobre evaluación del grupo conviviente y tratamiento simultáneo.",
+                      "acceptance_criteria":  "La sección \u00277- INFORMACIÓN PARA EL PACIENTE\u0027 recomienda evaluar el grupo de convivencia y realizar tratamiento simultáneo en todas las personas afectadas o infestadas.",
+                      "must_include_phrases":  [
+                                                   "El grupo de convivencia del paciente debe ser evaluado ya que es más efectivo el tratamiento cuando se realiza simultáneamente en todos las personas afectadas o infestadas por la pediculosis."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  15,
+                      "objective":  "Incluir la leyenda \u0027MANTENER FUERA DEL ALCANCE DE LOS NIÑOS.\u0027",
+                      "verification_procedure":  "Revisar el prospecto y verificar la presencia literal de la leyenda del modelo.",
+                      "acceptance_criteria":  "El prospecto contiene la leyenda exacta \u0027MANTENER FUERA DEL ALCANCE DE LOS NIÑOS.\u0027.",
+                      "must_include_phrases":  [
+                                                   "MANTENER FUERA DEL ALCANCE DE LOS NIÑOS."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  16,
+                      "objective":  "Incluir la advertencia por ingestión accidental y los teléfonos de los centros toxicológicos indicados en el modelo.",
+                      "verification_procedure":  "Revisar el prospecto y verificar que incluya el texto sobre ingestión accidental y los teléfonos de los centros toxicológicos especificados.",
+                      "acceptance_criteria":  "El prospecto incluye la recomendación de consulta ante ingestión accidental y consigna los teléfonos de Hospital de Niños Ricardo Gutiérrez y Hospital Posadas tal como en el modelo.",
+                      "must_include_phrases":  [
+                                                   "Ante la ingestión accidental, se recomienda consultar con un centro toxicológico:",
+                                                   "Hospital de Niños Ricardo Gutiérrez: Tel. 962-6666",
+                                                   "Hospital Posadas: Tel. 658-7777"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  17,
+                      "objective":  "Incluir la sección \u00278- PRESENTACIÓN.\u0027 destinada a consignar la presentación del producto.",
+                      "verification_procedure":  "Revisar el prospecto y verificar la presencia del encabezado \u00278- PRESENTACIÓN.\u0027.",
+                      "acceptance_criteria":  "El prospecto contiene una sección titulada \u00278- PRESENTACIÓN.\u0027.",
+                      "must_include_phrases":  [
+                                                   "8- PRESENTACIÓN."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  }
+              ]
+}

@@ -1,0 +1,28 @@
+# ============================================================================
+# Pipeline dependencies (steps 0 to 5)
+#   pip install -r requirements.txt
+# ============================================================================
+
+# LLM: Responses API (requires 2.x)
+openai>=2.0.0
+
+# Step 5: final verification (optional; only imported if the step is enabled)
+anthropic>=0.60.0
+
+# Orchestration of step 3
+langgraph>=1.0.0
+
+# Configuration from .env
+python-dotenv>=1.0.0
+
+# Documents: reading DOCX and writing the adequated leaflet
+python-docx>=1.0.0
+
+# Input PDF: extraction of the native text layer (step 2)
+PyMuPDF>=1.24.0
+
+# Output PDF: the report's primary engine
+reportlab>=4.0.0
+
+# Output PDF: fallback engine if ReportLab fails
+xhtml2pdf>=0.2.11

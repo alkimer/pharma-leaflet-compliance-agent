@@ -1,0 +1,14 @@
+# ============================================================================
+# OPTIONAL dependencies for the local OCR (DeepSeek-OCR).
+#
+# Only needed to process scanned PDFs, i.e. those without a text layer: step 2
+# uses PyMuPDF by default and needs none of this.
+#
+#   pip install -r requirements-ocr.txt
+#
+# You also have to download the model and point OCR_MODEL_DIR at it in .env.
+# ============================================================================
+
+torch>=2.2.0
+transformers>=4.40.0
+pillow>=10.0.0

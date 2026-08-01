@@ -1,0 +1,36 @@
+{
+  "disposition_id": "ANMAT_TEST_9001_2026",
+  "title": "Disposición de prueba — leyenda de consulta médica",
+  "source_type": "DISPOSICIÓN",
+  "sale_condition": "VENTA BAJO RECETA",
+  "dosage_form": null,
+  "route_of_administration": null,
+  "active_substances": [],
+  "contains_alcohol": false,
+  "objective": "Caso mínimo para las pruebas de integración del pipeline.",
+  "repealed_regulatory_order": null,
+  "rules": [
+    {
+      "rule_id": 1,
+      "objective": "Incluir la leyenda textual de consulta médica ante la duda.",
+      "verification_procedure": "Buscar en la sección de advertencias la frase exacta 'ANTE LA MENOR DUDA CONSULTE A SU MÉDICO.'",
+      "acceptance_criteria": "La frase aparece textualmente en el prospecto.",
+      "must_include_phrases": [
+        "ANTE LA MENOR DUDA CONSULTE A SU MÉDICO"
+      ],
+      "article_reference": "Art. 1º",
+      "attach_reference": []
+    },
+    {
+      "rule_id": 2,
+      "objective": "Consignar el número de certificado ANMAT del producto.",
+      "verification_procedure": "Buscar en la sección de presentación el número de certificado ANMAT.",
+      "acceptance_criteria": "El prospecto consigna el número de certificado ANMAT del producto.",
+      "must_include_phrases": [
+        "Certificado ANMAT"
+      ],
+      "article_reference": "Art. 1º",
+      "attach_reference": []
+    }
+  ]
+}

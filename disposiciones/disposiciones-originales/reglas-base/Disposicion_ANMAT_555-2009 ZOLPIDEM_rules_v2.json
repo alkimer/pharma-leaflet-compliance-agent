@@ -1,0 +1,432 @@
+﻿{
+    "disposition_id":  "ANMAT_555_2009",
+    "title":  "Establécese la información que deberán contener los prospectos de las especialidades medicinales que contengan como principio activo Zolpidem",
+    "source_type":  "DISPOSICIÓN",
+    "sale_condition":  "VENTA BAJO RECETA",
+    "dosage_form":  null,
+    "route_of_administration":  "Oral",
+    "active_substances":  [
+                              "ZOLPIDEM"
+                          ],
+    "contains_alcohol":  null,
+    "objective":  "Establecer la actualización obligatoria del contenido de los prospectos de especialidades medicinales que contengan ZOLPIDEM, conforme el modelo de información del Anexo I, y fijar el procedimiento y plazo de adecuación. Archivo: sandbox:/mnt/data/Disposicion_ANMAT_555-2009 ZOLPIDEM_rules_2_final.json.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Actualizar los prospectos de especialidades medicinales que contengan como principio activo ZOLPIDEM conforme a la información del ANEXO I.",
+                      "verification_procedure":  "Confirmar que el producto contiene ZOLPIDEM como principio activo. Comparar el prospecto vigente contra el contenido del ANEXO I de la disposición y verificar que se incorporen las secciones y la información allí consignada.",
+                      "acceptance_criteria":  "Para productos con ZOLPIDEM, el prospecto actualizado incluye la información consignada en el ANEXO I (modelo/proyecto de prospecto) sin omitir secciones requeridas.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Adecuar los prospectos mediante el trámite previsto en la Disposición ANMAT N° 3855/98 dentro del plazo de 60 días corridos desde la entrada en vigencia.",
+                      "verification_procedure":  "Verificar en el expediente regulatorio del titular que la adecuación del prospecto se tramitó por el procedimiento de la Disposición ANMAT N° 3855/98 y registrar fecha de entrada en vigencia y fecha de presentación. Calcular el plazo en días corridos.",
+                      "acceptance_criteria":  "La adecuación del prospecto se presenta por el trámite de la Disposición ANMAT N° 3855/98 dentro de los 60 (sesenta) días corridos contados desde la entrada en vigencia.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Aplicar correctamente la entrada en vigencia para el cómputo de plazos.",
+                      "verification_procedure":  "Identificar la fecha de publicación en el Boletín Oficial. Establecer como fecha de entrada en vigencia el día siguiente y usarla como fecha inicial para el cómputo del plazo del Art. 2.",
+                      "acceptance_criteria":  "La entrada en vigencia se considera el día siguiente al de la publicación en el Boletín Oficial.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 4.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Reconocer el régimen sancionatorio aplicable ante incumplimiento de la disposición.",
+                      "verification_procedure":  "Ante detección de incumplimiento de los Arts. 1 y 2, verificar que el encuadre sancionatorio se corresponda con la Ley 16.463 y el Decreto 341/92.",
+                      "acceptance_criteria":  "El incumplimiento se considera pasible de sanciones conforme Ley 16.463 y Decreto 341/92.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 3.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Incluir en el prospecto los datos de identificación del producto según el modelo del ANEXO I.",
+                      "verification_procedure":  "Revisar el encabezado del prospecto y verificar que incluya: NOMBRE COMERCIAL, ZOLPIDEM, Forma farmacéutica, Industria (la que corresponda) y la condición de expendio indicada.",
+                      "acceptance_criteria":  "El prospecto contiene los ítems de identificación del modelo (incluye condición de venta: \u0027Venta Bajo Receta Archivada – PSI IV\u0027).",
+                      "must_include_phrases":  [
+                                                   "Venta Bajo Receta Archivada – PSI IV"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  6,
+                      "objective":  "Incluir en el prospecto la sección de acción terapéutica con la clasificación ATC indicada en el modelo.",
+                      "verification_procedure":  "Localizar la sección \u0027ACCION TERAPEUTICA\u0027 del prospecto y verificar que declare el tipo de acción y la clasificación ATC indicada.",
+                      "acceptance_criteria":  "El prospecto incluye \u0027ACCION TERAPEUTICA: Hipnótico- (Clasificación ATC N05C F02)\u0027.",
+                      "must_include_phrases":  [
+                                                   "ACCION TERAPEUTICA: Hipnótico- (Clasificación ATC N05C F02)"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  7,
+                      "objective":  "Incluir en el prospecto las indicaciones y uso según el modelo, incluyendo el carácter de tratamiento a corto plazo del insomnio primario.",
+                      "verification_procedure":  "Revisar la sección \u0027INDICACIONES Y USO\u0027 del prospecto y verificar que indique el tratamiento a corto plazo del insomnio primario (DSM IV) y el texto de respaldo de eficacia señalado en el modelo.",
+                      "acceptance_criteria":  "La sección \u0027INDICACIONES Y USO\u0027 incluye la indicación para tratamiento a corto plazo del insomnio primario (DSM IV) y la información de respaldo del modelo.",
+                      "must_include_phrases":  [
+                                                   "Está indicado para el tratamiento a corto plazo del insomnio primario (DSM IV)."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  8,
+                      "objective":  "Incluir en el prospecto las limitaciones de duración del tratamiento con hipnóticos y la restricción de prescripción máxima.",
+                      "verification_procedure":  "Revisar la sección \u0027POSOLOGIA Y FORMA DE ADMINISTRACION\u0027 y verificar que incluya la limitación a 7-10 días, la reevaluación si se prolonga, y la restricción de no prescribir por períodos mayores a 1 mes.",
+                      "acceptance_criteria":  "La sección de posología incluye la limitación de 7 a 10 días y la restricción \u0027Zolpidem no debe prescribirse por períodos mayores a 1 mes.\u0027.",
+                      "must_include_phrases":  [
+                                                   "El uso de hipnóticos debe ser limitado a períodos de 7 a 10 días",
+                                                   "Zolpidem no debe prescribirse por períodos mayores a 1 mes."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  9,
+                      "objective":  "Indicar en el prospecto el momento de administración recomendado (inmediatamente antes de acostarse).",
+                      "verification_procedure":  "Revisar la sección de posología y advertencias y verificar que se indique que Zolpidem debe ingerirse inmediatamente antes de acostarse.",
+                      "acceptance_criteria":  "El prospecto incluye la indicación de ingesta inmediatamente antes de acostarse.",
+                      "must_include_phrases":  [
+                                                   "Zolpidem debe ingerirse inmediatamente antes de acostarse."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  10,
+                      "objective":  "Incluir en el prospecto la posología en adultos según el modelo (dosis recomendada).",
+                      "verification_procedure":  "Revisar el apartado \u0027Posología en adultos\u0027 y verificar que indique que la dosis recomendada para adultos es 10 mg inmediatamente antes de acostarse.",
+                      "acceptance_criteria":  "El prospecto incluye: \u0027La dosis recomendada para adultos es 10 mg, inmediatamente antes de acostarse.\u0027.",
+                      "must_include_phrases":  [
+                                                   "La dosis recomendada para adultos es 10 mg, inmediatamente antes de acostarse."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  11,
+                      "objective":  "Incluir en el prospecto la recomendación de dosis inicial en pacientes con insuficiencia hepática según el modelo.",
+                      "verification_procedure":  "Revisar la sección \u0027Poblaciones especiales\u0027 y verificar que indique que en insuficiencia hepática se recomienda dosis inicial de 5 mg y monitoreo.",
+                      "acceptance_criteria":  "El prospecto incluye la recomendación: \u0027En estos pacientes se recomienda una dosis inicial de 5 mg.\u0027.",
+                      "must_include_phrases":  [
+                                                   "En estos pacientes se recomienda una dosis inicial de 5 mg."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  12,
+                      "objective":  "Incluir en el prospecto la advertencia de ajuste de dosis cuando se administra con depresores del SNC.",
+                      "verification_procedure":  "Revisar la sección de \u0027Administración con depresores del SNC\u0027 y verificar que indique necesidad potencial de ajuste descendente de la dosis.",
+                      "acceptance_criteria":  "El prospecto incluye el apartado que indica que, al administrarse con depresores del SNC, puede ser necesario ajuste descendente de la dosis.",
+                      "must_include_phrases":  [
+                                                   "Cuando Zolpidem se administra con agentes que tienen efectos conocidos depresores del SNC, puede ser necesario el ajuste descendente de la dosis del mismo."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  13,
+                      "objective":  "Incluir en el prospecto la dosis diaria máxima según el modelo.",
+                      "verification_procedure":  "Revisar la sección \u0027Dosis diaria máxima\u0027 y verificar que establezca que la dosis total no debe exceder 10 mg por día.",
+                      "acceptance_criteria":  "El prospecto incluye: \u0027La dosis total de Zolpidem no debe exceder los 10 mg por día.\u0027.",
+                      "must_include_phrases":  [
+                                                   "La dosis total de Zolpidem no debe exceder los 10 mg por día."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  14,
+                      "objective":  "Incluir en el prospecto la contraindicación por hipersensibilidad a Zolpidem o excipientes.",
+                      "verification_procedure":  "Revisar la sección \u0027CONTRAINDICACIONES\u0027 y verificar que declare la contraindicación por hipersensibilidad conocida a Zolpidem o a excipientes.",
+                      "acceptance_criteria":  "La sección \u0027CONTRAINDICACIONES\u0027 incluye la hipersensibilidad a Zolpidem o a excipientes como contraindicación.",
+                      "must_include_phrases":  [
+                                                   "Está contraindicado en pacientes con hipersensibilidad conocida al Zolpidem o a alguno de los excipientes de la formulación."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  15,
+                      "objective":  "Incluir advertencias sobre reacciones anafilácticas/anafilactoides severas y angioedema, incluyendo la prohibición de reexposición tras angioedema.",
+                      "verification_procedure":  "Revisar la sección \u0027ADVERTENCIAS Y PRECAUCIONES\u0027 y verificar que incluya el apartado de \u0027Reacciones anafilácticas y anafilactoides severas\u0027 con mención de angioedema (lengua, glotis o laringe) y la indicación de no readministrar en pacientes que desarrollan angioedema.",
+                      "acceptance_criteria":  "El prospecto contiene el apartado de reacciones anafilácticas/angioedema y establece que los pacientes que desarrollan angioedema no deben recibir nuevamente el fármaco.",
+                      "must_include_phrases":  [
+                                                   "Se han reportado casos raros de angioedema que involucraron lengua, glotis o laringe",
+                                                   "Los pacientes que desarrollan angioedema luego del tratamiento con Zolpidem no deben recibir nuevamente el fármaco."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  16,
+                      "objective":  "Incluir advertencias sobre pensamiento anormal y cambios conductuales, incluyendo comportamientos complejos y la consideración de discontinuación.",
+                      "verification_procedure":  "Revisar la sección \u0027Pensamiento anormal y cambios conductuales\u0027 y verificar que incluya la descripción de pensamientos/cambios conductuales, comportamientos complejos (conducir no completamente despierto, etc.) y la indicación al médico de considerar discontinuación ante un episodio reportado.",
+                      "acceptance_criteria":  "El prospecto describe los pensamientos/cambios conductuales y comportamientos complejos y contiene la indicación de considerar discontinuación ante episodio informado.",
+                      "must_include_phrases":  [
+                                                   "Comportamientos complejos como: conducir “no completamente despierto”",
+                                                   "el médico deberá considerar, la discontinuación de Zolpidem"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  17,
+                      "objective":  "Incluir advertencias sobre efectos depresores del SNC y precauciones para evitar actividades riesgosas (conducir/maquinarias) tras la ingesta.",
+                      "verification_procedure":  "Revisar el apartado \u0027Efectos depresores del SNC\u0027 y verificar que se advierta evitar ocupaciones riesgosas como operar maquinarias o conducir luego de ingerir el fármaco, incluyendo potencial deterioro al día siguiente.",
+                      "acceptance_criteria":  "El prospecto advierte evitar operar maquinarias o conducir después de ingerir Zolpidem.",
+                      "must_include_phrases":  [
+                                                   "Los pacientes deben ser advertidos, para evitar ocupaciones riesgosas que requieran atención mental completa o coordinación motora, como operar maquinarias o conducir un automóvil"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  18,
+                      "objective":  "Incluir la advertencia de no ingerir Zolpidem simultáneamente con alcohol y advertencias sobre efectos aditivos con otros depresores del SNC.",
+                      "verification_procedure":  "Revisar el apartado de efectos depresores del SNC y verificar la inclusión de la prohibición de ingesta simultánea con alcohol y la advertencia sobre efectos combinados con otros depresores del SNC, incluyendo la posibilidad de ajustes de dosis.",
+                      "acceptance_criteria":  "El prospecto establece que no debe ingerirse simultáneamente con alcohol y advierte sobre efectos combinados con otros depresores del SNC.",
+                      "must_include_phrases":  [
+                                                   "Zolpidem mostró efectos aditivos cuando se combinó con alcohol, por lo que no debe ingerirse simultáneamente."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  19,
+                      "objective":  "Incluir precauciones de uso en pacientes con enfermedades concomitantes, incluyendo función respiratoria comprometida, renal y hepática, según el modelo.",
+                      "verification_procedure":  "Revisar la sección \u0027Uso en pacientes con enfermedades concomitantes\u0027 y verificar que contemple: precaución en condiciones que afecten metabolismo/respuesta hemodinámica, precauciones en función respiratoria comprometida, monitoreo estrecho en deterioro renal, e inicio con 5 mg y monitoreo en deterioro hepático.",
+                      "acceptance_criteria":  "El prospecto incluye las precauciones para enfermedad/función respiratoria comprometida, deterioro renal (monitoreo) y deterioro hepático (inicio 5 mg y monitoreo).",
+                      "must_include_phrases":  [
+                                                   "el tratamiento debe iniciarse con 5 mg en los pacientes con compromiso hepático"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  20,
+                      "objective":  "Incluir advertencias y precauciones de uso en pacientes con depresión, incluyendo riesgo de ideación suicida y recomendación de prescribir la menor cantidad posible.",
+                      "verification_procedure":  "Revisar la sección \u0027Uso en depresión\u0027 y verificar que incluya precaución en pacientes con síntomas de depresión, mención de ideación suicida y la recomendación de prescribir la menor cantidad posible.",
+                      "acceptance_criteria":  "El prospecto incluye precauciones en depresión, menciona ideación suicida y recomienda prescribir la menor cantidad de fármaco posible.",
+                      "must_include_phrases":  [
+                                                   "para estos pacientes debe prescribirse cada vez, la menor cantidad de fármaco posible."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  21,
+                      "objective":  "Indicar que la seguridad y eficacia no se han establecido en pacientes menores de 18 años.",
+                      "verification_procedure":  "Revisar la sección \u0027Pacientes pediátricos\u0027 del prospecto y verificar que incluya la declaración de falta de establecimiento de seguridad/eficacia en menores de 18 años.",
+                      "acceptance_criteria":  "El prospecto incluye la declaración de que la seguridad y eficacia no se han establecido en menores de 18 años.",
+                      "must_include_phrases":  [
+                                                   "La seguridad y eficacia de Zolpidem no se han establecido en pacientes menores de 18 años."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  22,
+                      "objective":  "Incluir la información sobre pruebas de laboratorio (sin pruebas específicas de monitoreo y sin interferencia conocida) según el modelo.",
+                      "verification_procedure":  "Revisar la sección \u0027Pruebas de laboratorio\u0027 y verificar que incluya: inexistencia de pruebas específicas recomendadas para monitoreo y ausencia de interferencia conocida con pruebas de laboratorio empleadas comúnmente.",
+                      "acceptance_criteria":  "El prospecto incluye que no hay pruebas específicas recomendadas para monitoreo de niveles y que no se conoce interferencia con pruebas comunes.",
+                      "must_include_phrases":  [
+                                                   "No hay pruebas de laboratorio específicas recomendadas para monitorear los niveles de Zolpidem.",
+                                                   "No se conoce ninguna interferencia de Zolpidem con las pruebas de laboratorio empleadas comúnmente."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  23,
+                      "objective":  "Incluir la sección de interacciones farmacológicas y la advertencia de precaución con fármacos con acción en el SNC conjuntamente con Zolpidem.",
+                      "verification_procedure":  "Revisar la sección \u0027INTERACCIONES FARMACOLOGICAS\u0027 y verificar que incluya el apartado de fármacos con acción en el SNC y el texto de precaución por limitada evaluación sistemática y potencial de potenciación depresora.",
+                      "acceptance_criteria":  "El prospecto contiene la sección de interacciones y advierte precaución con el uso concomitante de fármacos con acción en el SNC.",
+                      "must_include_phrases":  [
+                                                   "debe tenerse precaución con el uso de cualquier fármaco con acción sobre el SNC conjuntamente con Zolpidem."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  24,
+                      "objective":  "Incluir precauciones de uso en embarazo y lactancia según el modelo (no administrar durante embarazo y no administrar durante lactancia/suspender lactancia si se considera necesaria su utilización).",
+                      "verification_procedure":  "Revisar las secciones \u0027Embarazo\u0027 y \u0027Lactancia\u0027 del prospecto y verificar que incluyan las restricciones indicadas en el modelo.",
+                      "acceptance_criteria":  "El prospecto incluye que no debe administrarse durante el embarazo (como medida de precaución) y que no deberá ser administrado durante la lactancia, con instrucción de suspender lactancia si el médico considera necesaria su utilización.",
+                      "must_include_phrases":  [
+                                                   "Como medida de precaución, este medicamento no debe administrarse durante el embarazo.",
+                                                   "no deberá ser administrado durante la misma. Si el médico considera necesaria su utilización, suspenderá la lactancia."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  25,
+                      "objective":  "Incluir la advertencia sobre efectos en la capacidad de conducir y utilizar maquinarias, incluyendo el riesgo de somnolencia y potenciación con sedantes.",
+                      "verification_procedure":  "Revisar la sección \u0027EFECTOS SOBRE LA CAPACIDAD DE CONDUCIR Y UTILIZAR MAQUINARIAS\u0027 y verificar que incluya la advertencia a conductores/uso de maquinarias de precisión por riesgo de somnolencia y la potenciación con otros medicamentos sedantes.",
+                      "acceptance_criteria":  "El prospecto contiene la sección de efectos sobre conducción/maquinarias e incluye la advertencia por somnolencia y la potenciación con sedantes.",
+                      "must_include_phrases":  [
+                                                   "EFECTOS SOBRE LA CAPACIDAD DE CONDUCIR Y UTILIZAR MAQUINARIAS:"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  26,
+                      "objective":  "Incluir la sección de reacciones adversas con el criterio de clasificación por frecuencia (frecuentes/infrecuentes/raros) y sus definiciones.",
+                      "verification_procedure":  "Revisar la sección \u0027REACCIONES ADVERSAS\u0027 y verificar que incluya las definiciones de frecuencia (frecuentes \u003e1/100; infrecuentes 1/100 a 1/1000; raros \u003c1/1000) y que el listado de eventos se presente conforme al modelo.",
+                      "acceptance_criteria":  "El prospecto define frecuencias (frecuentes/infrecuentes/raros) con los umbrales del modelo e incluye el listado de reacciones adversas conforme ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "los eventos adversos frecuentes se definen como aquellos que ocurren en más de 1/100 sujetos",
+                                                   "los eventos adversos infrecuentes son aquellos que ocurren en 1/100 a 1/1000 pacientes",
+                                                   "los eventos raros son aquellos que ocurren en menos de 1/1000 pacientes."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  27,
+                      "objective":  "Incluir la sección de abuso y dependencia con advertencias sobre abstinencia, riesgo de dependencia y necesidad de supervisión en personas con antecedentes de adicción o abuso.",
+                      "verification_procedure":  "Revisar la sección \u0027ABUSO Y DEPENDENCIA\u0027 y verificar que describa signos/síntomas de abstinencia, reporte post-comercialización de abuso/dependencia/abstinencia, y la recomendación de supervisión cuidadosa en personas con antecedentes de adicción/abuso a drogas o alcohol.",
+                      "acceptance_criteria":  "El prospecto contiene la sección \u0027ABUSO Y DEPENDENCIA\u0027 y contempla la supervisión cuidadosa en personas con antecedentes de adicción o abuso.",
+                      "must_include_phrases":  [
+                                                   "deben estar bajo supervisión cuidadosa cuando reciben Zolpidem o cualquier otro hipnótico."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  28,
+                      "objective":  "Incluir la sección de sobredosis con signos y síntomas, tratamiento orientativo, no dializabilidad y teléfonos de Centros de Toxicología según el modelo.",
+                      "verification_procedure":  "Revisar la sección \u0027SOBREDOSIS\u0027 y verificar que incluya: signos y síntomas, tratamiento orientativo (medidas sintomáticas/soporte, lavado gástrico cuando corresponda, líquidos IV, potencial utilidad de flumazenil, monitoreo), la mención de que Zolpidem no es dializable y la lista de Centros de Toxicología con teléfonos indicados (incluyendo Gutiérrez, Posadas y Fernández) y la mención \u0027Optativamente, otros Centros de Intoxicaciones.\u0027.",
+                      "acceptance_criteria":  "El prospecto incluye sección \u0027SOBREDOSIS\u0027 con los componentes del modelo y consigna los teléfonos de Centros de Toxicología, incluyendo Hospital de Pediatría Ricardo Gutiérrez, Hospital A. Posadas y Hospital Fernández.",
+                      "must_include_phrases":  [
+                                                   "Ante la eventualidad de una sobredosificación, concurrir al hospital más cercano o comunicarse con los Centros de Toxicología:",
+                                                   "Hospital de Pediatría Ricardo Gutiérrez: (01)4962-6666/2247",
+                                                   "Hospital A. Posadas: (01) 4654-6648/4658-7777",
+                                                   "Hospital Fernández: (01) 4801-7767",
+                                                   "Optativamente, otros Centros de Intoxicaciones."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  29,
+                      "objective":  "Incluir en el prospecto la sección Farmacología clínica con el mecanismo de acción de Zolpidem según el modelo del Anexo I.",
+                      "verification_procedure":  "Verificar que el prospecto incluya una sección de Farmacología clínica/Mecanismo de acción con la explicación del complejo receptor GABAA/BZ y la selectividad relativa indicada en el modelo.",
+                      "acceptance_criteria":  "La sección está presente y conserva el contenido sustantivo del mecanismo de acción del Anexo I.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1. / ANEXO I",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  30,
+                      "objective":  "Incluir la sección Farmacocinética con absorción, vida media, metabolismo/eliminación, efecto de alimentos y consideraciones en añosos, insuficiencia hepática e insuficiencia renal.",
+                      "verification_procedure":  "Revisar la sección Farmacocinética y confirmar que cubre perfil farmacocinético general, administración con alimentos y poblaciones especiales indicadas.",
+                      "acceptance_criteria":  "El prospecto incluye la sección Farmacocinética con los contenidos sustantivos del modelo.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1. / ANEXO I",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  31,
+                      "objective":  "Incluir la sección Uso en geriatría con los eventos adversos y la advertencia de otros síntomas reportados conforme al Anexo I.",
+                      "verification_procedure":  "Verificar que el prospecto incluya Uso en geriatría y mencione mareos, somnolencia, diarrea y otros síntomas reportados según el modelo.",
+                      "acceptance_criteria":  "La sección Uso en geriatría está presente y conserva la información sustantiva de eventos adversos del Anexo I.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1. / ANEXO I",
+                      "attach_reference":  [
+
+                                           ]
+                  }
+              ]
+}

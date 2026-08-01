@@ -1,0 +1,1113 @@
+﻿{
+    "disposition_id":  "ANMAT_5904_96",
+    "title":  "Disposición ANMAT 5904/96 - Prospectos de especialidades medicinales de venta bajo receta",
+    "source_type":  "DISPOSICION",
+    "sale_condition":  "VENTA BAJO RECETA",
+    "dosage_form":  null,
+    "route_of_administration":  null,
+    "active_substances":  null,
+    "contains_alcohol":  null,
+    "objective":  "Aprobar y establecer definiciones, lineamientos generales, estructura mínima de información, requisitos de adecuación y requisitos administrativos para prospectos de especialidades medicinales cuya condición de expendio sea venta bajo receta en sus tres categorías.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Asegurar que el prospecto esté escrito en español.",
+                      "verification_procedure":  "Revisar el texto completo del prospecto y verificar que la información esté escrita en español. Si se incluyen otros idiomas, confirmar que no reemplacen a la versión en español.",
+                      "acceptance_criteria":  "El prospecto contiene la información en español. Puede incluir además otros idiomas.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 1.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Asegurar que el cuerpo de letra sea tipografía 6 o mayor y legible sin instrumentos ópticos auxiliares.",
+                      "verification_procedure":  "Inspeccionar el arte final del prospecto. Verificar tamaño tipográfico igual o mayor a 6 y legibilidad a simple vista por personas con visión normal o corregida.",
+                      "acceptance_criteria":  "El prospecto utiliza tipografía 6 o mayor y puede leerse sin instrumentos ópticos auxiliares.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 1.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Evitar repeticiones innecesarias en el prospecto.",
+                      "verification_procedure":  "Detectar repeticiones de información dentro del prospecto y evaluar si generan redundancia, confusión o contradicción.",
+                      "acceptance_criteria":  "El prospecto evita repeticiones innecesarias o, si las contiene, no generan contradicciones ni afectan la claridad.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 1.3",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Asegurar que, cuando un mismo prospecto incluya varias formas farmacéuticas, la información específica de cada forma esté claramente diferenciada.",
+                      "verification_procedure":  "Identificar si el prospecto abarca varias formas farmacéuticas. Verificar que dosificaciones, efectos adversos y otra información específica estén discriminadas por forma.",
+                      "acceptance_criteria":  "Cada forma farmacéutica incluida en el prospecto tiene claramente diferenciada su información específica.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 1.4",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Impedir que el prospecto incluya características promocionales o frases que induzcan a la automedicación.",
+                      "verification_procedure":  "Revisar el prospecto para detectar afirmaciones promocionales, comparaciones publicitarias, claims de superioridad comercial o frases que incentiven el uso sin intervención profesional.",
+                      "acceptance_criteria":  "El prospecto no contiene características interpretables como propaganda ni frases que induzcan a la automedicación.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 1.5",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  6,
+                      "objective":  "Asegurar que, si la información aprobada para el prospecto se coloca alternativamente en el envase, se incluya la totalidad de la información aprobada.",
+                      "verification_procedure":  "Determinar si la información del prospecto fue trasladada al envase. Comparar el contenido del envase contra el prospecto aprobado y verificar que no falte información.",
+                      "acceptance_criteria":  "El envase contiene la totalidad de la información aprobada para el prospecto.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 1.6",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  7,
+                      "objective":  "Indicar en el prospecto cuando el producto sea de origen biotecnológico.",
+                      "verification_procedure":  "Determinar si el producto es biotecnológico según registro o documentación técnica. Si lo es, verificar que el prospecto indique tal característica.",
+                      "acceptance_criteria":  "El prospecto declara explícitamente el origen biotecnológico cuando corresponde.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 1.7",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  8,
+                      "objective":  "Para antiinfecciosos, enumerar gérmenes sensibles, grado de sensibilidad, evidencia in vitro y/o in vivo, y enfermedades estudiadas y aprobadas.",
+                      "verification_procedure":  "Identificar si el producto es antiinfeccioso. Revisar acción terapéutica, espectro de acción o indicaciones y verificar gérmenes sensibles, grado de sensibilidad, tipo de evidencia y enfermedades aprobadas.",
+                      "acceptance_criteria":  "El prospecto enumera gérmenes sensibles con grado de sensibilidad, explicita in vitro y/o in vivo y vincula las enfermedades estudiadas y aprobadas.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 1.8",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  9,
+                      "objective":  "Incluir antagonismos y antidotismos únicamente cuando existan datos precisos.",
+                      "verification_procedure":  "Revisar si el prospecto incluye información de antagonismo o antidotismo. Si existe, verificar que esté respaldada por datos precisos.",
+                      "acceptance_criteria":  "El prospecto solo incluye antagonismos o antidotismos cuando existen datos precisos al respecto.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 1.9",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  10,
+                      "objective":  "Evitar el uso de la frase \u0027No posee\u0027 en el prospecto.",
+                      "verification_procedure":  "Buscar la frase exacta \u0027No posee\u0027 en todo el prospecto. Verificar que, cuando se indique ausencia de información, se utilicen expresiones como \u0027No se ha descripto hasta el momento...\u0027 o \u0027No se conoce\u0027.",
+                      "acceptance_criteria":  "El prospecto no contiene la frase \u0027No posee\u0027.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 1.10",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  11,
+                      "objective":  "Incluir la fecha de la última revisión autorizada del prospecto.",
+                      "verification_procedure":  "Revisar el prospecto y verificar que consigne fecha de última revisión autorizada.",
+                      "acceptance_criteria":  "El prospecto incluye la fecha de última revisión autorizada.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 1.11",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  12,
+                      "objective":  "Incluir el nombre comercial o de marca del producto.",
+                      "verification_procedure":  "Revisar la sección inicial o identificatoria del prospecto y verificar la presencia del nombre comercial o de marca.",
+                      "acceptance_criteria":  "El prospecto consigna el nombre comercial o de marca.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  13,
+                      "objective":  "Incluir la Denominación Común Internacional o nombre genérico del principio activo.",
+                      "verification_procedure":  "Revisar la sección inicial o identificatoria y verificar que se consigne la DCI o nombre genérico conforme corresponda.",
+                      "acceptance_criteria":  "El prospecto consigna la DCI o el nombre genérico del principio activo.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.1.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  14,
+                      "objective":  "Incluir la forma farmacéutica del producto.",
+                      "verification_procedure":  "Revisar la sección identificatoria y verificar que se indique la forma farmacéutica.",
+                      "acceptance_criteria":  "El prospecto indica la forma farmacéutica.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  15,
+                      "objective":  "Incluir la industria u origen industrial del producto.",
+                      "verification_procedure":  "Revisar el prospecto y verificar que se indique la industria.",
+                      "acceptance_criteria":  "El prospecto indica la industria.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.3",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  16,
+                      "objective":  "Incluir la condición de venta autorizada.",
+                      "verification_procedure":  "Revisar la sección identificatoria y confirmar que se indique la condición de venta autorizada.",
+                      "acceptance_criteria":  "El prospecto indica la condición de venta autorizada.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.4",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  17,
+                      "objective":  "Incluir la fórmula cuali-cuantitativa del producto, identificando principios activos y excipientes.",
+                      "verification_procedure":  "Revisar la sección Fórmula o equivalente. Verificar que se identifiquen principios activos y excipientes. Para principios activos, verificar cantidades. Para excipientes, verificar identificación por nombre genérico u oficial; no marcar incumplimiento por ausencia de cantidades de excipientes si están declarados.",
+                      "acceptance_criteria":  "El prospecto incluye fórmula con principios activos cuantificados y excipientes identificados. Las cantidades de excipientes pueden estar detalladas u omitidas conforme criterio posterior de Circular 005/2012.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, puntos 2.5, 2.5.1 y 2.5.2; criterio complementario Circular 005/2012",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  18,
+                      "objective":  "Expresar el contenido de cada principio activo e indicar equivalencia respecto de la parte terapéuticamente activa cuando corresponda.",
+                      "verification_procedure":  "Revisar la fórmula y verificar contenido de cada principio activo. Si el principio activo requiere expresar equivalencia con la fracción terapéuticamente activa, verificar que se consigne.",
+                      "acceptance_criteria":  "Cada principio activo tiene contenido declarado y, cuando corresponde, equivalencia respecto de la parte terapéuticamente activa.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.5.1.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  19,
+                      "objective":  "Expresar cantidades de principios activos en g, mg o µg según los umbrales establecidos.",
+                      "verification_procedure":  "Revisar cantidades declaradas. Verificar que cantidades mayores a 1 g se expresen en g, menores a 1 g en mg y menores a 1 mg preferentemente en µg.",
+                      "acceptance_criteria":  "Las cantidades respetan las unidades previstas: mayores a 1 g en g, menores a 1 g en mg y menores a 1 mg preferentemente en µg.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.5.1.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  20,
+                      "objective":  "Aclarar equivalencia o potencia cuando se utilicen Unidades Internacionales.",
+                      "verification_procedure":  "Detectar uso de UI en la fórmula. Verificar que se aclare equivalencia o potencia conforme códigos oficiales.",
+                      "acceptance_criteria":  "Si se declaran UI, se aclara equivalencia o potencia.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.5.1.3",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  21,
+                      "objective":  "Denominar los excipientes por nombre genérico u oficial.",
+                      "verification_procedure":  "Revisar el listado de excipientes y verificar que estén denominados por nombre genérico o el que figura en códigos oficiales.",
+                      "acceptance_criteria":  "Los excipientes se denominan por nombre genérico u oficial.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.5.2.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  22,
+                      "objective":  "Impedir el uso de marcas comerciales para denominar excipientes.",
+                      "verification_procedure":  "Revisar denominaciones de excipientes y detectar marcas comerciales.",
+                      "acceptance_criteria":  "No se utilizan marcas comerciales para denominar excipientes.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.5.2.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  23,
+                      "objective":  "Expresar el contenido de principio activo por unidad de forma farmacéutica en las formas indicadas.",
+                      "verification_procedure":  "Identificar la forma farmacéutica. Si corresponde a las listadas, verificar que el contenido del principio activo se exprese por unidad.",
+                      "acceptance_criteria":  "El contenido del principio activo se expresa por unidad de forma farmacéutica.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.6.1.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  24,
+                      "objective":  "Expresar el contenido de principio activo en porcentaje p/p para formas semisólidas o sólidas indicadas.",
+                      "verification_procedure":  "Identificar la forma farmacéutica. Si corresponde, verificar que el contenido del principio activo esté expresado en porcentaje p/p.",
+                      "acceptance_criteria":  "El contenido del principio activo se expresa en % p/p.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.6.1.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  25,
+                      "objective":  "Expresar el contenido de principio activo en porcentaje p/v para formas líquidas indicadas.",
+                      "verification_procedure":  "Identificar la forma farmacéutica. Si corresponde, verificar que el contenido del principio activo esté expresado en porcentaje p/v.",
+                      "acceptance_criteria":  "El contenido del principio activo se expresa en % p/v.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.6.1.3",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  26,
+                      "objective":  "Expresar el contenido del principio activo por ml en inyectables de pequeño volumen.",
+                      "verification_procedure":  "Identificar si el producto es inyectable de pequeño volumen. Verificar que el contenido del principio activo se exprese por ml.",
+                      "acceptance_criteria":  "El contenido del principio activo se expresa por ml.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.6.1.4",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  27,
+                      "objective":  "Expresar el contenido por dosis en aerosoles o atomizadores con válvula dosificadora.",
+                      "verification_procedure":  "Identificar si el producto es aerosol o atomizador con válvula dosificadora. Verificar que el contenido se exprese por dosis.",
+                      "acceptance_criteria":  "El contenido del principio activo se expresa por dosis.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.6.2.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  28,
+                      "objective":  "Expresar cantidad por unidad de superficie y cantidad liberada por unidad de tiempo en sistemas transdérmicos.",
+                      "verification_procedure":  "Identificar si el producto es un sistema transdérmico. Verificar que el prospecto exprese cantidad por unidad de superficie y cantidad liberada por unidad de tiempo.",
+                      "acceptance_criteria":  "El prospecto expresa ambas magnitudes: cantidad por unidad de superficie y cantidad liberada por unidad de tiempo.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.6.2.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  29,
+                      "objective":  "Incluir el ítem Acción terapéutica.",
+                      "verification_procedure":  "Revisar el prospecto y verificar la presencia de la sección ACCIÓN TERAPÉUTICA o equivalente, con descripción de la acción farmacológica destinada a prevención, diagnóstico y/o tratamiento.",
+                      "acceptance_criteria":  "El prospecto incluye Acción terapéutica o equivalente, coherente con el producto y sus indicaciones.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.7",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  30,
+                      "objective":  "Incluir el ítem Indicaciones con aplicaciones terapéuticas validadas.",
+                      "verification_procedure":  "Revisar la sección INDICACIONES y verificar que describa aplicaciones terapéuticas autorizadas y sustentadas.",
+                      "acceptance_criteria":  "El prospecto incluye INDICACIONES coherentes con las autorizadas.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.8",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  31,
+                      "objective":  "Enumerar síntomas con precisión cuando se trate de medicación sintomática.",
+                      "verification_procedure":  "Determinar si el producto es de uso sintomático. Si lo es, verificar que enumere los síntomas para los que se indica con la mayor precisión posible.",
+                      "acceptance_criteria":  "El prospecto enumera con precisión los síntomas para los que se indica el medicamento.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.8",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  32,
+                      "objective":  "Incluir la sección Características farmacológicas / propiedades.",
+                      "verification_procedure":  "Verificar la presencia de la sección CARACTERÍSTICAS FARMACOLÓGICAS/PROPIEDADES o equivalente.",
+                      "acceptance_criteria":  "El prospecto incluye la sección indicada o equivalente.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.9",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  33,
+                      "objective":  "Describir la acción farmacológica que fundamenta las acciones terapéuticas.",
+                      "verification_procedure":  "Revisar la sección y verificar que describa la acción farmacológica de los principios activos.",
+                      "acceptance_criteria":  "El prospecto describe la acción farmacológica que fundamenta la acción terapéutica.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.9.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  34,
+                      "objective":  "Incluir datos farmacocinéticos de relevancia clínica.",
+                      "verification_procedure":  "Revisar la sección FARMACOCINÉTICA y verificar datos relevantes: absorción, biodisponibilidad, unión a proteínas, vida media, Cmax, Tmax, eliminación y diálisis, según aplique.",
+                      "acceptance_criteria":  "El prospecto incluye información farmacocinética relevante y proporcional a su importancia terapéutica.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.9.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  35,
+                      "objective":  "Referir la posología exclusivamente a indicaciones autorizadas.",
+                      "verification_procedure":  "Comparar las indicaciones y esquemas posológicos del prospecto contra las indicaciones autorizadas. Verificar discriminación por patología cuando sea necesario.",
+                      "acceptance_criteria":  "La posología se refiere solo a indicaciones autorizadas y discrimina por patología cuando corresponde.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.10.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  36,
+                      "objective":  "Incluir dosis habituales e intervalo entre dosis en unidad de tiempo.",
+                      "verification_procedure":  "Revisar que se indiquen dosis habituales y el intervalo entre dosis.",
+                      "acceptance_criteria":  "El prospecto incluye dosis habitual e intervalo expresado en unidad de tiempo.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.10.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  37,
+                      "objective":  "Incluir duración del tratamiento y vía de administración.",
+                      "verification_procedure":  "Revisar que la sección indique duración del tratamiento y vía de administración.",
+                      "acceptance_criteria":  "El prospecto indica duración del tratamiento y vía de administración.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.10.3",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  38,
+                      "objective":  "Aclarar la conducta a seguir si se omitiera una dosis cuando corresponda.",
+                      "verification_procedure":  "Revisar si el prospecto incluye instrucciones ante olvido u omisión de dosis cuando corresponda.",
+                      "acceptance_criteria":  "El prospecto aclara conducta ante omisión de dosis cuando corresponde.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.10.4",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  39,
+                      "objective":  "Para uso en niños, incluir mg/kg/día, mg/kg/dosis y cantidad por toma.",
+                      "verification_procedure":  "Identificar si existe indicación pediátrica. Verificar que la posología pediátrica incluya mg/kg/día, mg/kg/dosis y cantidad por toma.",
+                      "acceptance_criteria":  "La posología pediátrica incluye mg/kg/día, mg/kg/dosis y cantidad por toma.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.10.5",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  40,
+                      "objective":  "Aclarar diferencias posológicas según condiciones fisiológicas y/o patológicas.",
+                      "verification_procedure":  "Revisar la sección Posología y verificar ajustes por edad, insuficiencia renal/hepática, estado fisiológico u otras condiciones relevantes.",
+                      "acceptance_criteria":  "El prospecto aclara diferencias posológicas cuando corresponden.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.10.6",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  41,
+                      "objective":  "Para aerosoles, aclarar cantidad de droga activa que proporciona cada dosis.",
+                      "verification_procedure":  "Identificar si el producto es aerosol. Verificar en Posología o Modo de administración la cantidad de droga activa por dosis.",
+                      "acceptance_criteria":  "El prospecto indica la cantidad de droga activa por dosis.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.10.7",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  42,
+                      "objective":  "Incluir dosis mínima y máxima o rango terapéutico.",
+                      "verification_procedure":  "Revisar Posología y verificar dosis mínima y máxima.",
+                      "acceptance_criteria":  "El prospecto incluye dosis mínima y máxima o rango terapéutico.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.10.8",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  43,
+                      "objective":  "Incluir instrucciones de empleo relevantes para el uso correcto del medicamento.",
+                      "verification_procedure":  "Revisar Modo de administración e identificar instrucciones sobre agua, masticación, comidas, preparación y conservación luego de preparado.",
+                      "acceptance_criteria":  "El prospecto incluye las instrucciones de empleo relevantes para el producto.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.10.9",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  44,
+                      "objective":  "Incluir explicaciones de uso detalladas para determinadas formas farmacéuticas.",
+                      "verification_procedure":  "Identificar la forma farmacéutica. Si corresponde, verificar instrucciones de uso detalladas.",
+                      "acceptance_criteria":  "El prospecto contiene explicaciones de uso detalladas para la forma farmacéutica.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.10.10",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  45,
+                      "objective":  "Incluir sección Contraindicaciones con situaciones en las que el medicamento no debe utilizarse.",
+                      "verification_procedure":  "Revisar la sección CONTRAINDICACIONES y verificar que cubra hipersensibilidad, condiciones de riesgo sustancial, uso continuado pese a reacción adversa peligrosa y riesgos conocidos.",
+                      "acceptance_criteria":  "La sección Contraindicaciones contiene la información relevante o declara adecuadamente ausencia de contraindicaciones conocidas.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.11",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  46,
+                      "objective":  "Si no se conocen contraindicaciones, usar expresiones permitidas y no afirmar \u0027No posee\u0027.",
+                      "verification_procedure":  "Revisar la sección Contraindicaciones. Si no hay contraindicaciones conocidas, verificar que se exprese como \u0027no se han descripto hasta el momento\u0027 o \u0027no se conocen\u0027 y que no se use \u0027No posee\u0027.",
+                      "acceptance_criteria":  "Ante ausencia de contraindicaciones conocidas, el prospecto usa una de las expresiones permitidas y no usa \u0027No posee\u0027.",
+                      "must_include_phrases":  [
+                                                   "no se han descripto hasta el momento",
+                                                   "no se conocen"
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.11.5",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  47,
+                      "objective":  "Incluir advertencias sobre reacciones adversas serias y potencialmente peligrosas.",
+                      "verification_procedure":  "Revisar la sección ADVERTENCIAS y verificar inclusión de riesgos serios relevantes. Evaluar si el prospecto está actualizado ante evidencia razonable de peligro serio.",
+                      "acceptance_criteria":  "El prospecto incluye advertencias relevantes y actualizadas sobre riesgos serios.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.12",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  48,
+                      "objective":  "Incorporar recuadro destacado cuando ANMAT lo requiera para riesgos serios o problemas especiales.",
+                      "verification_procedure":  "Revisar comunicaciones, disposiciones o requerimientos regulatorios. Si existe requerimiento de recuadro, verificar su inclusión en el prospecto.",
+                      "acceptance_criteria":  "Cuando ANMAT lo requiere, el prospecto incluye advertencia recuadrada destacada.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.12",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  49,
+                      "objective":  "Incluir cuidados especiales necesarios para evitar consecuencias indeseables y favorecer uso seguro y eficaz.",
+                      "verification_procedure":  "Verificar la existencia de sección PRECAUCIONES y su contenido relevante.",
+                      "acceptance_criteria":  "El prospecto contiene Precauciones adecuadas al producto.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  50,
+                      "objective":  "Incluir pruebas de laboratorio útiles para seguimiento o diferenciación de reacciones adversas, y frecuencia cuando corresponda.",
+                      "verification_procedure":  "Revisar Precauciones y verificar pruebas de laboratorio, utilidad clínica y frecuencia antes/durante/después del tratamiento cuando corresponda.",
+                      "acceptance_criteria":  "El prospecto identifica pruebas de laboratorio relevantes y frecuencia cuando aplica.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  51,
+                      "objective":  "Incluir interacciones clínicas significativas in vivo con drogas y/o alimentos.",
+                      "verification_procedure":  "Revisar Precauciones/Interacciones y verificar descripción de interacciones in vivo, mecanismos y orientación preventiva.",
+                      "acceptance_criteria":  "El prospecto identifica interacciones significativas, describe brevemente mecanismos y orienta al profesional.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  52,
+                      "objective":  "Enumerar interferencias conocidas entre la droga y pruebas de laboratorio.",
+                      "verification_procedure":  "Revisar Precauciones/Interacciones y verificar enumeración de interferencias conocidas.",
+                      "acceptance_criteria":  "El prospecto enumera interferencias conocidas con pruebas de laboratorio.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13.3",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  53,
+                      "objective":  "Incluir información sobre carcinogénesis, mutagénesis y trastornos de fertilidad cuando existan datos positivos.",
+                      "verification_procedure":  "Determinar si existen datos positivos. Si existen, verificar inclusión en Precauciones.",
+                      "acceptance_criteria":  "El prospecto incluye la información cuando existen datos positivos.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13.4",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  54,
+                      "objective":  "Incluir bajo efectos teratogénicos una descripción que resuma e interprete datos disponibles y estime riesgo teratogénico.",
+                      "verification_procedure":  "Revisar sección Embarazo o Efectos teratogénicos. Verificar resumen, interpretación de datos y estimación del riesgo.",
+                      "acceptance_criteria":  "El prospecto incluye descripción interpretativa de datos disponibles y estimación de riesgo teratogénico.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13.5",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  55,
+                      "objective":  "Incluir información sobre trabajo de parto y alumbramiento cuando existan datos.",
+                      "verification_procedure":  "Determinar si existen datos. Si existen, verificar inclusión en Precauciones.",
+                      "acceptance_criteria":  "El prospecto incluye información cuando existen datos.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13.6",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  56,
+                      "objective":  "Incluir información sobre excreción en leche materna y posibles efectos sobre el lactante.",
+                      "verification_procedure":  "Revisar sección Lactancia y verificar información sobre excreción del principio activo/metabolitos y efectos sobre lactante.",
+                      "acceptance_criteria":  "El prospecto incluye información de excreción en leche materna y posibles efectos.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13.7",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  57,
+                      "objective":  "Incluir la frase obligatoria si los estudios en niños son insuficientes.",
+                      "verification_procedure":  "Determinar si la evidencia pediátrica es insuficiente. Si lo es, verificar la frase obligatoria.",
+                      "acceptance_criteria":  "El prospecto incluye la frase obligatoria cuando corresponde.",
+                      "must_include_phrases":  [
+                                                   "La seguridad y eficacia en niños no ha sido establecida"
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13.8",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  58,
+                      "objective":  "Detallar indicación y dosis pediátricas en Indicaciones y Posología cuando exista uso pediátrico.",
+                      "verification_procedure":  "Verificar que la indicación pediátrica figure en Indicaciones y las dosis en Posología.",
+                      "acceptance_criteria":  "Indicaciones y dosis pediátricas figuran convenientemente detalladas.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13.8",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  59,
+                      "objective":  "Incluir información necesaria para el correcto empleo en ancianos.",
+                      "verification_procedure":  "Revisar sección Empleo en ancianos y verificar información necesaria para uso correcto.",
+                      "acceptance_criteria":  "El prospecto incluye información adecuada para uso en ancianos.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13.9",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  60,
+                      "objective":  "Incluir información necesaria para el uso correcto en insuficiencia hepática y renal.",
+                      "verification_procedure":  "Revisar secciones de insuficiencia hepática y renal. Verificar ajustes, advertencias o información necesaria.",
+                      "acceptance_criteria":  "El prospecto incluye información necesaria para insuficiencia hepática y renal cuando corresponde.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.13.10",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  61,
+                      "objective":  "Incluir sección Reacciones adversas con efectos no deseados razonablemente asociados al uso del principio activo.",
+                      "verification_procedure":  "Verificar presencia de sección Reacciones adversas y contenido asociado al principio activo.",
+                      "acceptance_criteria":  "El prospecto incluye reacciones adversas conocidas o declara adecuadamente ausencia de datos.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.14",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  62,
+                      "objective":  "Categorizar reacciones adversas por sistemas u órganos.",
+                      "verification_procedure":  "Revisar si las reacciones adversas están agrupadas por sistemas u órganos.",
+                      "acceptance_criteria":  "Las reacciones adversas se presentan categorizadas por sistemas u órganos.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.14.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  63,
+                      "objective":  "Categorizar reacciones adversas por severidad e intensidad.",
+                      "verification_procedure":  "Verificar clasificación de reacciones como leves, moderadas o graves conforme definiciones.",
+                      "acceptance_criteria":  "Las reacciones adversas se categorizan por severidad/intensidad.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.14.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  64,
+                      "objective":  "Categorizar reacciones adversas por frecuencia.",
+                      "verification_procedure":  "Verificar que la frecuencia se exprese como frecuente, ocasional o rara con los umbrales indicados.",
+                      "acceptance_criteria":  "La frecuencia se expresa como Frecuente (\u003e10%), Ocasional (1% a 10%) o Rara (\u003c1%).",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.14.3",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  65,
+                      "objective":  "Incluir reportes raros o aislados cuando la reacción adversa sea grave.",
+                      "verification_procedure":  "Evaluar reportes raros/aislados. Verificar inclusión obligatoria si la reacción es grave; opcional si no es grave.",
+                      "acceptance_criteria":  "Las reacciones raras/aisladas graves están incluidas. Las raras no graves pueden incluirse opcionalmente.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.14.3",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  66,
+                      "objective":  "Si no existen datos de reacciones adversas, manifestarlo solo con la frase indicada.",
+                      "verification_procedure":  "Si el producto carece de datos de reacciones adversas, verificar que la sección use únicamente la frase \u0027No se han descripto\u0027.",
+                      "acceptance_criteria":  "La sección utiliza solo la frase \u0027No se han descripto\u0027.",
+                      "must_include_phrases":  [
+                                                   "No se han descripto"
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.14.3",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  67,
+                      "objective":  "Incluir sección Sobredosificación.",
+                      "verification_procedure":  "Verificar presencia de sección SOBREDOSIFICACIÓN y contenido aplicable.",
+                      "acceptance_criteria":  "El prospecto contiene sección Sobredosificación con información o frases previstas según existan o no datos.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.15",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  68,
+                      "objective":  "Si no existen datos de sobredosificación, usar únicamente la frase obligatoria indicada.",
+                      "verification_procedure":  "Verificar que, ante ausencia de datos, la sección use la frase obligatoria y ninguna otra expresión.",
+                      "acceptance_criteria":  "La sección utiliza la frase obligatoria indicada.",
+                      "must_include_phrases":  [
+                                                   "Aún no se han reportado casos en que haya habido sobredosis no tratada"
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.15.1",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  69,
+                      "objective":  "Incluir la leyenda de consulta ante sobredosificación y los centros de toxicología indicados.",
+                      "verification_procedure":  "Revisar Sobredosificación y verificar la leyenda, Hospital de Pediatría Ricardo Gutiérrez, Hospital A. Posadas y teléfonos indicados. Verificar que otros centros, si aparecen, sean adicionales.",
+                      "acceptance_criteria":  "La sección incluye la leyenda y los centros de toxicología especificados.",
+                      "must_include_phrases":  [
+                                                   "Ante la eventualidad de una sobredosificación, concurrir al hospital más cercano o comunicarse con los centros de toxicología:",
+                                                   "Hospital de Pediatría Ricardo Gutiérrez: (01) 962-6666/2247.",
+                                                   "Hospital A. Posadas: (01) 654-6648/658-7777."
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.15.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  70,
+                      "objective":  "Incluir tratamiento orientativo inicial de la sobredosificación.",
+                      "verification_procedure":  "Verificar que la sección incluya evaluación clínica, tiempo transcurrido, cantidad ingerida, decisión profesional sobre rescate, medidas generales y antídotos específicos si existen.",
+                      "acceptance_criteria":  "La sección contiene tratamiento orientativo inicial y medidas generales relevantes.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.15.3",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  71,
+                      "objective":  "Regular el contenido mínimo si el laboratorio agrega un prospecto dirigido al paciente.",
+                      "verification_procedure":  "Verificar si existe Información para el paciente. Si existe, controlar título, lenguaje llano, no inducción a automedicación, leyenda CONSULTE A SU MEDICO e ítems a-f.",
+                      "acceptance_criteria":  "Cuando se incluye Información para el paciente, cumple los requisitos indicados. Si no se incluye, no corresponde incumplimiento bajo esta disposición por ser optativo.",
+                      "must_include_phrases":  [
+                                                   "CONSULTE A SU MEDICO",
+                                                   "Este medicamento ha sido prescripto sólo para su problema médico actual.",
+                                                   "No lo recomiende a otras personas"
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.16",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  72,
+                      "objective":  "Incluir el ítem Presentación.",
+                      "verification_procedure":  "Revisar el prospecto y verificar la presencia de la sección PRESENTACIÓN.",
+                      "acceptance_criteria":  "El prospecto incluye el ítem Presentación.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, punto 2.17",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  73,
+                      "objective":  "Incluir condiciones de conservación y almacenamiento.",
+                      "verification_procedure":  "Revisar la sección Conservación/Almacenamiento y verificar rangos de temperatura y sensibilidad a la luz.",
+                      "acceptance_criteria":  "El prospecto consigna rangos de temperatura de estabilidad y sensibilidad a la luz.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo I, puntos 2.18, 2.18.1 y 2.18.2",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  74,
+                      "objective":  "Presentar propuesta de modificación de prospectos no actualizados en los últimos tres años o incompatibles con Anexo I.",
+                      "verification_procedure":  "Identificar grupo terapéutico y ventana del Anexo II. Verificar si el prospecto requería adecuación y si se presentó propuesta dentro de la ventana correspondiente.",
+                      "acceptance_criteria":  "Existe propuesta de modificación presentada dentro del plazo aplicable según grupo terapéutico del Anexo II.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 2; Anexo II",
+                      "attach_reference":  [
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  75,
+                      "objective":  "Tramitar solicitudes de modificación de prospectos conforme el cursograma del Anexo III.",
+                      "verification_procedure":  "Revisar el expediente y verificar que siga el cursograma del Anexo III.",
+                      "acceptance_criteria":  "El expediente sigue el cursograma previsto.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 3; Anexo III",
+                      "attach_reference":  [
+                                               "ANEXO III"
+                                           ]
+                  },
+                  {
+                      "rule_id":  76,
+                      "objective":  "Cumplir los requisitos de información y documentación del Anexo IV.",
+                      "verification_procedure":  "Verificar que el expediente incluya datos del solicitante, titular del certificado, producto y documentación requerida.",
+                      "acceptance_criteria":  "El expediente contiene la información y documentación requeridas por Anexo IV.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 6; Anexo IV",
+                      "attach_reference":  [
+                                               "ANEXO IV"
+                                           ]
+                  },
+                  {
+                      "rule_id":  77,
+                      "objective":  "Adjuntar certificado de inscripción con última reinscripción, proyecto de prospecto por triplicado y último prospecto aprobado autenticado.",
+                      "verification_procedure":  "Revisar expediente y verificar presencia de los tres documentos exigidos.",
+                      "acceptance_criteria":  "El expediente contiene copia autenticada del certificado con última reinscripción, proyecto de prospecto por triplicado y copia autenticada del último prospecto aprobado.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo IV, Requisitos de documentación",
+                      "attach_reference":  [
+                                               "ANEXO IV"
+                                           ]
+                  },
+                  {
+                      "rule_id":  78,
+                      "objective":  "Iniciar un único trámite por nombre genérico del principio activo.",
+                      "verification_procedure":  "Revisar el alcance del expediente y verificar que se haya iniciado un único trámite por nombre genérico del principio activo.",
+                      "acceptance_criteria":  "Existe un único trámite por nombre genérico del principio activo.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo IV",
+                      "attach_reference":  [
+                                               "ANEXO IV"
+                                           ]
+                  },
+                  {
+                      "rule_id":  79,
+                      "objective":  "Utilizar textos orientativos provenientes de farmacopeas internacionales o vademécums con prospectos aprobados por autoridades sanitarias.",
+                      "verification_procedure":  "Revisar fuentes citadas como textos orientativos y verificar que correspondan a farmacopeas internacionales o vademécums aprobados por autoridades sanitarias de países con alta vigilancia.",
+                      "acceptance_criteria":  "Las fuentes orientativas corresponden a las aceptadas por la disposición.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Anexo IV",
+                      "attach_reference":  [
+                                               "ANEXO IV"
+                                           ]
+                  },
+                  {
+                      "rule_id":  80,
+                      "objective":  "Referenciar los trámites originados por la disposición con la leyenda indicada cuando se presentan dentro del plazo del grupo terapéutico.",
+                      "verification_procedure":  "Verificar fecha de presentación y grupo terapéutico. Si está dentro de plazo, revisar que el trámite no devengue arancel y que haga referencia a la leyenda indicada.",
+                      "acceptance_criteria":  "El trámite dentro de plazo no devenga arancel y contiene la referencia indicada.",
+                      "must_include_phrases":  [
+                                                   "MODIFICACION DE PROSPECTOS ORIGINADA POR DISPOSICION Nº........../96"
+                                               ],
+                      "article_reference":  "Artículo 8",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  81,
+                      "objective":  "Tramitar fuera de término como Modificación de prospectos con arancel correspondiente.",
+                      "verification_procedure":  "Verificar fecha de presentación respecto de la ventana del grupo terapéutico. Si fue fuera de término, confirmar tramitación como Modificación de prospectos y arancel correspondiente.",
+                      "acceptance_criteria":  "El trámite fuera de término se presenta como Modificación de prospectos y devenga el arancel correspondiente.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 9",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  82,
+                      "objective":  "Registrar que ANMAT debe expedirse en un plazo no mayor de 120 días desde la presentación, salvo suspensión.",
+                      "verification_procedure":  "Verificar fecha de presentación, fecha de decisión y eventuales suspensiones por requerimientos de modificaciones o información adicional.",
+                      "acceptance_criteria":  "ANMAT se expide dentro de 120 días o existe suspensión documentada del plazo.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 4",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  83,
+                      "objective":  "Registrar que ANMAT revisará prospectos que no cumplan pautas del Anexo I luego de concluido el cronograma.",
+                      "verification_procedure":  "Revisar si existe actuación o requerimiento de ANMAT posterior al cronograma respecto de prospectos no ajustados.",
+                      "acceptance_criteria":  "La matriz reconoce esta revisión como contextual, no como requisito textual del prospecto.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 5",
+                      "attach_reference":  [
+                                               "ANEXO II"
+                                           ]
+                  },
+                  {
+                      "rule_id":  84,
+                      "objective":  "Registrar que la Comisión creada por Disposición ANMAT 4823/95 verifica el avance del cronograma y garantiza su cumplimiento.",
+                      "verification_procedure":  "Revisar constancias de seguimiento por la Comisión si el alcance de auditoría incluye expediente o programa de adecuación.",
+                      "acceptance_criteria":  "Existe evidencia administrativa de seguimiento cuando corresponda al alcance.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Artículo 7",
+                      "attach_reference":  [
+                                               "ANEXO II"
+                                           ]
+                  }
+              ]
+}

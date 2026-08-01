@@ -1,0 +1,298 @@
+﻿{
+    "disposition_id":  "ANMAT_5554_2007",
+    "title":  "Actualización de prospectos para especialidades medicinales con ESCITALOPRAM (Disposición ANMAT N° 5554/2007)",
+    "source_type":  "DISPOSICIÓN",
+    "sale_condition":  "VENTA BAJO RECETA",
+    "dosage_form":  null,
+    "route_of_administration":  "Oral",
+    "active_substances":  [
+                              "ESCITALOPRAM"
+                          ],
+    "contains_alcohol":  null,
+    "objective":  "Establecer la actualización obligatoria de los prospectos de especialidades medicinales que contengan ESCITALOPRAM conforme la información del ANEXO I, fijando el trámite (Disp. 3855/98), el plazo de adecuación y la entrada en vigencia.",
+    "repealed_regulatory_order":  [
+
+                                  ],
+    "rules":  [
+                  {
+                      "rule_id":  1,
+                      "objective":  "Actualizar los prospectos de especialidades medicinales que contengan como principio activo ESCITALOPRAM según la información consignada en el ANEXO I.",
+                      "verification_procedure":  "Confirmar que el producto contiene ESCITALOPRAM como principio activo. Comparar el prospecto vigente/aprobado con el contenido del ANEXO I (proyecto de prospecto), verificando que se incorporen todas las secciones y contenidos allí consignados.",
+                      "acceptance_criteria":  "Para productos con ESCITALOPRAM, el prospecto incorpora íntegramente la información del ANEXO I (estructura y contenidos), sin omisiones de secciones requeridas.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  2,
+                      "objective":  "Adecuar los prospectos mediante el trámite previsto en la Disposición ANMAT N° 3855/98 dentro de 60 días corridos desde la entrada en vigencia.",
+                      "verification_procedure":  "En el expediente regulatorio del titular, verificar que la adecuación del prospecto se tramitó conforme la Disposición ANMAT N° 3855/98. Identificar la fecha de entrada en vigencia (día siguiente a la publicación en BO) y comprobar que la presentación se realizó dentro de los 60 días corridos.",
+                      "acceptance_criteria":  "Existe presentación por trámite ANMAT 3855/98 y fue ingresada dentro de los 60 (sesenta) días corridos contados desde la entrada en vigencia.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 2.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  3,
+                      "objective":  "Incluir en el encabezado del prospecto la condición de venta específica indicada en el ANEXO I.",
+                      "verification_procedure":  "Revisar el encabezado/identificación del prospecto (zona inicial) y verificar la inclusión de la condición de venta tal como figura en el modelo del ANEXO I.",
+                      "acceptance_criteria":  "El encabezado del prospecto incluye la condición de expendio conforme al ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "Venta Bajo Receta Archivada – PSI IV"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  4,
+                      "objective":  "Incluir las indicaciones terapéuticas del ESCITALOPRAM según DSM IV consignadas en el ANEXO I.",
+                      "verification_procedure":  "Revisar la sección \u0027INDICACIONES\u0027 del prospecto y verificar que incluya las cuatro indicaciones listadas en el ANEXO I, con su referencia a DSM IV cuando corresponda.",
+                      "acceptance_criteria":  "La sección \u0027INDICACIONES\u0027 contiene las cuatro indicaciones del ANEXO I (depresión mayor con prevención de recaída, pánico con/sin agorafobia, fobia social, ansiedad generalizada), con la referencia DSM IV tal como aplica.",
+                      "must_include_phrases":  [
+                                                   "Tratamiento del trastorno depresivo mayor y de mantenimiento para la prevención de la recaída. (según DSM IV)",
+                                                   "Tratamiento de los trastornos de angustia (trastorno de pánico) con o sin agorafobia (según DSM IV).",
+                                                   "Tratamiento de la fobia social. (según DSM IV)",
+                                                   "Tratamiento del trastorno de ansiedad generalizada. (según DSM IV)"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  5,
+                      "objective":  "Incluir en \u0027POSOLOGIA Y FORMA DE ADMINISTRACION\u0027 las restricciones y pautas de dosificación clave del ANEXO I (dosis máxima, dosis única diaria, inicio en pánico y discontinuación gradual).",
+                      "verification_procedure":  "Revisar la sección \u0027POSOLOGIA Y FORMA DE ADMINISTRACION\u0027 y \u0027Discontinuación del tratamiento\u0027. Verificar que se declare: (a) no demostrada seguridad \u003e20 mg/día, (b) administración en dosis única diaria y con o sin alimentos, (c) inicio en pánico con 5 mg la primera semana antes de subir a 10 mg, y (d) reducción gradual 1-2 semanas al discontinuar.",
+                      "acceptance_criteria":  "El prospecto incluye las pautas de dosificación/administración y discontinuación gradual según el ANEXO I (incluyendo límite de 20 mg/día, dosis única diaria, inicio 5 mg en pánico y taper 1-2 semanas).",
+                      "must_include_phrases":  [
+                                                   "No se ha demostrado aún la seguridad del Escitalopram administrado a dosis mayores a 20 mg diarios.",
+                                                   "Escitalopram se administra en dosis única diaria",
+                                                   "Se recomienda iniciar el tratamiento con una dosis única de 5 mg diarios durante la primera semana, antes de incrementar la dosis a 10 mg diarios.",
+                                                   "la dosis debe disminuirse de manera gradual durante un período de una a dos semanas"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  6,
+                      "objective":  "Incluir las posologías especiales clave del ANEXO I (ancianos, pediatría, insuficiencia renal/hepática y metabolizadores pobres CYP2C19).",
+                      "verification_procedure":  "Revisar el apartado \u0027Posologías Especiales\u0027 del prospecto y verificar que se incluyan: (a) ancianos: iniciar con la mitad de dosis y dosis máxima más baja, (b) \u003c18 años: no recomendado por no estar establecida seguridad/eficacia, (c) insuficiencia renal severa: precaución con clearance \u003c30 ml/min, (d) insuficiencia hepática: dosis inicial 5 mg por 2 semanas y luego hasta 10 mg según respuesta, (e) metabolizadores pobres CYP2C19: dosis inicial 5 mg por 2 semanas y luego hasta 10 mg según respuesta.",
+                      "acceptance_criteria":  "El prospecto incluye las posologías especiales y restricciones de uso en poblaciones especiales según ANEXO I (ancianos, \u003c18, renal severa, hepática y CYP2C19 pobres).",
+                      "must_include_phrases":  [
+                                                   "Se debe considerar iniciar el tratamiento con la mitad de la dosis usualmente recomendada",
+                                                   "No se recomienda su administración en niños y adolescentes menores de 18 años",
+                                                   "clearance de creatinina \u003c 30 ml/min",
+                                                   "Se recomienda una dosis inicial de 5 mg durante las 2 primeras semanas de tratamiento.",
+                                                   "metabolizadores pobres con respecto al CYP2C19"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  7,
+                      "objective":  "Incluir las contraindicaciones del ANEXO I (hipersensibilidad, uso concomitante con IMAO e interacción/contraindicación con pimozida).",
+                      "verification_procedure":  "Revisar la sección \u0027CONTRAINDICACIONES\u0027 y el apartado de interacciones con \u0027Pimozida\u0027. Verificar que se consigne hipersensibilidad al escitalopram/excipientes, contraindicación de uso concomitante con IMAO y contraindicación de uso concomitante con pimozida.",
+                      "acceptance_criteria":  "El prospecto incluye hipersensibilidad, IMAO y pimozida como contraindicaciones (y mantiene la contraindicación de coadministración con pimozida).",
+                      "must_include_phrases":  [
+                                                   "Hipersensibilidad al Escitalopram o a alguno de los excipientes.",
+                                                   "Tratamiento concomitante con inhibidores de la MAO (IMAO)",
+                                                   "Tratamiento concomitante con pimozida",
+                                                   "la administración concomitante de escitalopram y pimozida está contraindicada."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  8,
+                      "objective":  "Incluir advertencias de seguridad sobre ideación suicida/empeoramiento clínico, monitoreo especializado y seguimiento por familiares/cuidadores según ANEXO I.",
+                      "verification_procedure":  "Revisar la sección \u0027ADVERTENCIAS Y PRECAUCIONES ESPECIALES DE EMPLEO\u0027 y verificar la inclusión de: marco terapéutico adecuado, monitoreo por especialistas, consideración riesgo/beneficio y alerta a familiares/cuidadores sobre observación diaria y reporte inmediato.",
+                      "acceptance_criteria":  "La sección de advertencias incluye las advertencias de riesgo suicida/empeoramiento, el requisito de monitoreo por especialistas y la indicación de seguimiento por familiares/cuidadores según el ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "El uso de antidepresivos",
+                                                   "que la indicación sea hecha por especialistas",
+                                                   "Los familiares y quienes cuidan a los pacientes deberían ser alertados"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  9,
+                      "objective":  "Incluir advertencias de embarazo y lactancia según ANEXO I.",
+                      "verification_procedure":  "Revisar el apartado \u0027USO DURANTE EL EMBARAZO Y LACTANCIA\u0027 y verificar que incluya: no administrar durante embarazo salvo claramente necesario (evaluación riesgo/beneficio), posible impacto de ISRS en 3er trimestre y recomendación de no tratar durante lactancia o discontinuar lactancia.",
+                      "acceptance_criteria":  "El prospecto contiene las advertencias/restricciones de embarazo y lactancia indicadas en el ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "Escitalopram no se debe administrar a mujeres embarazadas a menos que sea claramente necesario",
+                                                   "El uso de ISRS durante el tercer trimestre del embarazo puede ocasionar",
+                                                   "Las mujeres en período de lactancia no deben ser tratadas con Escitalopram o la lactancia debe ser discontinuada."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  10,
+                      "objective":  "Incluir en \u0027SOBREDOSIS\u0027 las instrucciones generales y los teléfonos de Centros de Toxicología consignados en el ANEXO I.",
+                      "verification_procedure":  "Revisar la sección \u0027SOBREDOSIS\u0027 y verificar que se incluya la instrucción de concurrir al hospital/comunicarse con centros y que se consignen los teléfonos de Hospital Gutiérrez, Posadas y Fernández tal como en ANEXO I.",
+                      "acceptance_criteria":  "La sección \u0027SOBREDOSIS\u0027 incluye los teléfonos de los Centros de Toxicología indicados en el ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "Ante la eventualidad de una sobredosificación, concurrir al hospital más cercano o comunicarse con los Centros de Toxicología:",
+                                                   "Hospital de Pediatría Ricardo Gutiérrez: (01) 4962-6666/2247",
+                                                   "Hospital A. Posadas: (01) 4654-6648 / 4658-7777",
+                                                   "Hospital Fernández: (01) 4801-7767."
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  11,
+                      "objective":  "Incluir en \u0027PRESENTACIONES\u0027 la aclaración de uso hospitalario exclusivo para presentaciones de 100 comprimidos, según ANEXO I.",
+                      "verification_procedure":  "Revisar el apartado final donde figure \u0027PRESENTACIONES\u0027 y verificar que se consigne la leyenda de uso hospitalario exclusivo para presentaciones de 100 comprimidos, conforme al ANEXO I.",
+                      "acceptance_criteria":  "El prospecto declara que las presentaciones de 100 comprimidos son de uso hospitalario exclusivo, conforme ANEXO I.",
+                      "must_include_phrases":  [
+                                                   "PRESENTACIONES: Las presentaciones a apretar de 100 comprimidos son de Uso Hospitalario Exclusivo"
+                                               ],
+                      "article_reference":  "Art 1.",
+                      "attach_reference":  [
+                                               "ANEXO I"
+                                           ]
+                  },
+                  {
+                      "rule_id":  12,
+                      "objective":  "Aplicar correctamente la entrada en vigencia para el cómputo de plazos.",
+                      "verification_procedure":  "Identificar la fecha de publicación en el Boletín Oficial y establecer como fecha de entrada en vigencia el día siguiente. Usar esa fecha como inicio de cómputo del plazo del Art. 2.",
+                      "acceptance_criteria":  "La entrada en vigencia se considera a partir del día siguiente al de su publicación en el Boletín Oficial.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 4.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  13,
+                      "objective":  "Reconocer el régimen sancionatorio aplicable ante el incumplimiento de la disposición.",
+                      "verification_procedure":  "Ante detección de incumplimiento de las obligaciones establecidas por la disposición (Arts. 1 y 2), verificar que el encuadre sancionatorio se corresponda con Ley 16.463 y Decreto 341/92.",
+                      "acceptance_criteria":  "El incumplimiento se considera pasible de sanciones conforme Ley 16.463 y Decreto 341/92.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 3.",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  14,
+                      "objective":  "Incluir la sección Propiedades farmacológicas con mecanismo de acción y datos de eficacia del Escitalopram según el Anexo I.",
+                      "verification_procedure":  "Verificar que el prospecto incluya Propiedades farmacológicas/Mecanismo de acción y los contenidos sustantivos del modelo.",
+                      "acceptance_criteria":  "El prospecto contiene la sección y conserva la información sustantiva sobre inhibición selectiva de recaptación de serotonina y datos de eficacia.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1. / ANEXO I",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  15,
+                      "objective":  "Incluir la sección Farmacocinética con absorción, distribución, biotransformación, eliminación, ancianos, insuficiencia hepática/renal y polimorfismo CYP2C19/CYP2D6.",
+                      "verification_procedure":  "Revisar la sección Farmacocinética y confirmar que cubre los apartados generales y de poblaciones especiales incluidos en el modelo.",
+                      "acceptance_criteria":  "La sección Farmacocinética está presente y contiene los apartados sustantivos previstos en el Anexo I.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1. / ANEXO I",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  16,
+                      "objective":  "Incluir la sección Interacciones con otros medicamentos y otras formas de interacción, con IMAO/IMAR, pimozida, serotoninérgicos, fármacos que disminuyen umbral convulsivo, litio/triptofano, Hierba de San Juan, anticoagulantes, alcohol y moduladores CYP.",
+                      "verification_procedure":  "Verificar que la sección de interacciones cubra interacciones farmacodinámicas y farmacocinéticas principales del modelo.",
+                      "acceptance_criteria":  "El prospecto contiene la sección de interacciones y conserva los riesgos/interacciones sustantivos del Anexo I.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1. / ANEXO I",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  17,
+                      "objective":  "Incluir la sección Carcinogénesis, mutagénesis y deterioro de la fertilidad conforme al Anexo I.",
+                      "verification_procedure":  "Verificar la presencia de la sección y su contenido sustantivo sobre toxicidad reproductiva, fertilidad, embarazo/desarrollo postnatal y potencial mutagénico/carcinogénico.",
+                      "acceptance_criteria":  "La sección está presente con el contenido sustantivo previsto en el modelo.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1. / ANEXO I",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  18,
+                      "objective":  "Incluir la advertencia sobre capacidad para manejar vehículos u operar maquinarias conforme al Anexo I.",
+                      "verification_procedure":  "Verificar que el prospecto advierta a los pacientes sobre la capacidad para manejar vehículos u operar maquinarias.",
+                      "acceptance_criteria":  "El prospecto contiene la advertencia sustantiva sobre conducción y maquinarias.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1. / ANEXO I",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  19,
+                      "objective":  "Incluir la sección Eventos adversos con reacciones observadas con Escitalopram y reacciones adversas correspondientes al grupo terapéutico de los ISRS.",
+                      "verification_procedure":  "Verificar que el prospecto incluya la sección Eventos adversos, la clasificación/listado del modelo y las reacciones del grupo ISRS.",
+                      "acceptance_criteria":  "La sección Eventos adversos está presente y conserva el contenido sustantivo del modelo.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1. / ANEXO I",
+                      "attach_reference":  [
+
+                                           ]
+                  },
+                  {
+                      "rule_id":  20,
+                      "objective":  "Incluir la sección Conservación y almacenamiento y la información de presentaciones conforme al Anexo I.",
+                      "verification_procedure":  "Verificar la presencia de las secciones finales de conservación/almacenamiento y presentaciones, incluyendo la aclaración de uso hospitalario exclusivo cuando corresponda.",
+                      "acceptance_criteria":  "El prospecto incluye las secciones finales y conserva la aclaración aplicable sobre presentaciones de uso hospitalario exclusivo.",
+                      "must_include_phrases":  [
+
+                                               ],
+                      "article_reference":  "Art 1. / ANEXO I",
+                      "attach_reference":  [
+
+                                           ]
+                  }
+              ]
+}

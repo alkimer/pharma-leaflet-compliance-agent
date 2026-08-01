@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "prospect_name": "prospecto_minimo",
+    "prospect_file": "tests/integracion/fixtures/prospecto_minimo.md",
+    "timestamp": "2026-07-29T12:00:00",
+    "analysis_date": "2026-07-29 12:00:00"
+  },
+  "summary": {
+    "total_dispositions_evaluated": 1,
+    "applicable_dispositions": 1,
+    "verified_dispositions": 1,
+    "total_rules_checked": 2
+  },
+  "classification_results": [
+    {
+      "disposition_id": "ANMAT_TEST_9001_2026",
+      "applies": true,
+      "match_score": 1.0,
+      "reason": "Prospecto de venta bajo receta, alcanzado por la disposición.",
+      "rule_file": "disposicion_minima_rules.json",
+      "response_id": "fixture"
+    }
+  ],
+  "compliance_details": [
+    {
+      "disposition_id": "ANMAT_TEST_9001_2026",
+      "total_rules": 2,
+      "status_summary": {
+        "ok": 0,
+        "not_applicable": 0,
+        "not_evaluable": 0,
+        "missing": 2,
+        "error": 0
+      },
+      "compliance_percentage": 0.0,
+      "rules": [
+        {
+          "rule_id": 1,
+          "objective": "Incluir la leyenda textual de consulta médica ante la duda.",
+          "verification_procedure": "Buscar en la sección de advertencias la frase exacta 'ANTE LA MENOR DUDA CONSULTE A SU MÉDICO.'",
+          "acceptance_criteria": "La frase aparece textualmente en el prospecto.",
+          "status": "missing",
+          "evidence_snippets": [],
+          "checker_notes": "La sección de advertencias no contiene la frase exigida 'ANTE LA MENOR DUDA CONSULTE A SU MÉDICO.'",
+          "must_include_phrases": [
+            "ANTE LA MENOR DUDA CONSULTE A SU MÉDICO"
+          ],
+          "article_reference": "Art. 1º",
+          "attach_reference": []
+        },
+        {
+          "rule_id": 2,
+          "objective": "Consignar el número de certificado ANMAT del producto.",
+          "verification_procedure": "Buscar en la sección de presentación el número de certificado ANMAT.",
+          "acceptance_criteria": "El prospecto consigna el número de certificado ANMAT del producto.",
+          "status": "missing",
+          "evidence_snippets": [],
+          "checker_notes": "La sección de presentación no consigna el número de certificado ANMAT.",
+          "must_include_phrases": [
+            "Certificado ANMAT"
+          ],
+          "article_reference": "Art. 1º",
+          "attach_reference": []
+        }
+      ]
+    }
+  ],
+  "overall_statistics": {
+    "ok": 0,
+    "not_applicable": 0,
+    "not_evaluable": 0,
+    "missing": 2,
+    "error": 0
+  },
+  "errors": []
+}
