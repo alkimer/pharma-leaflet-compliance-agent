@@ -21,7 +21,7 @@ prospecto (PDF/MD)   ──paso 2──▶  texto limpio
                                  paso 4 ──▶  prospecto adecuado (JSON/TXT/DOCX)
 ```
 
-![Una corrida completa, del prospecto al informe y al documento adecuado](documentacion/media/corrida-pipeline.gif)
+![Una corrida completa, del prospecto al informe y al documento adecuado](documentacion/media/corrida.gif)
 
 <sub>Una corrida real sobre el prospecto de ejemplo, acelerada. 15 disposiciones
 clasificadas, 4 aplicables, **85 reglas verificadas a una llamada al modelo cada una** —
